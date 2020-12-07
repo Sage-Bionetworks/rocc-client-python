@@ -1,6 +1,6 @@
 # roccclient.UserApi
 
-All URIs are relative to *https://rocc.com/api.dev/v1*
+All URIs are relative to *https://rocc.org/api.dev/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -22,10 +22,10 @@ import time
 import roccclient
 from roccclient.rest import ApiException
 from pprint import pprint
-# Defining the host is optional and defaults to https://rocc.com/api.dev/v1
+# Defining the host is optional and defaults to https://rocc.org/api.dev/v1
 # See configuration.py for a list of all supported configuration parameters.
 configuration = roccclient.Configuration(
-    host = "https://rocc.com/api.dev/v1"
+    host = "https://rocc.org/api.dev/v1"
 )
 
 
