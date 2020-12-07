@@ -18,6 +18,7 @@ import datetime
 
 import roccclient
 from roccclient.models.page_of_challenges import PageOfChallenges  # noqa: E501
+from roccclient.models.response_page_metadata_links import ResponsePageMetadataLinks  # noqa: E501
 from roccclient.rest import ApiException
 
 class TestPageOfChallenges(unittest.TestCase):
@@ -37,36 +38,36 @@ class TestPageOfChallenges(unittest.TestCase):
         # model = roccclient.models.page_of_challenges.PageOfChallenges()  # noqa: E501
         if include_optional :
             return PageOfChallenges(
-                offset = 56, 
-                limit = 56, 
-                links = roccclient.models.response_page_metadata_links.ResponsePageMetadata_links(
-                    next = '0', ), 
+                offset = 56,
+                limit = 56,
+                links = roccclient.models.response_page_metadata_links.ResponsePageMetadataLinks(
+                    next = '0', ),
                 challenges = [
                     roccclient.models.challenge.Challenge(
-                        id = '507f1f77bcf86cd799439011', 
-                        name = 'Sample Challenge', 
-                        start_date = 'Mon Nov 09 16:00:00 PST 2020', 
-                        end_date = 'Wed Dec 30 16:00:00 PST 2020', 
-                        website = 'https://synapse.org/sample-challenge', 
-                        status = 'open', 
-                        tags = ["Machine Learning","Breast Cancer"], 
+                        id = '507f1f77bcf86cd799439011',
+                        name = 'Sample Challenge',
+                        start_date = 'Mon Nov 09 16:00:00 PST 2020',
+                        end_date = 'Wed Dec 30 16:00:00 PST 2020',
+                        website = 'https://synapse.org/sample-challenge',
+                        status = 'open',
+                        tags = ["Machine Learning","Breast Cancer"],
                         grant = [
                             roccclient.models.grant.Grant(
-                                id = '507f1f77bcf86cd799439011', 
-                                name = '0', 
-                                description = '0', 
+                                id = '507f1f77bcf86cd799439011',
+                                name = '0',
+                                description = '0',
                                 sponsor = roccclient.models.organization.Organization(
-                                    id = '507f1f77bcf86cd799439011', 
-                                    name = 'Sage Bionetworks', 
-                                    url = 'https://sagebionetworks.org/', ), 
-                                amount = 56, 
+                                    id = '507f1f77bcf86cd799439011',
+                                    name = 'Sage Bionetworks',
+                                    url = 'https://sagebionetworks.org/', ),
+                                amount = 56,
                                 url = '0', )
-                            ], 
+                            ],
                         organizers = [
                             roccclient.models.person.Person(
-                                id = '507f1f77bcf86cd799439011', 
-                                first_name = 'John', 
-                                last_name = 'Smith', 
+                                id = '507f1f77bcf86cd799439011',
+                                first_name = 'John',
+                                last_name = 'Smith',
                                 email = 'john.smith@example.com', )
                             ], )
                     ]
@@ -75,7 +76,7 @@ class TestPageOfChallenges(unittest.TestCase):
             return PageOfChallenges(
                 offset = 56,
                 limit = 56,
-                links = roccclient.models.response_page_metadata_links.ResponsePageMetadata_links(
+                links = roccclient.models.response_page_metadata_links.ResponsePageMetadataLinks(
                     next = '0', ),
         )
 

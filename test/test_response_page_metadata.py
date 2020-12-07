@@ -18,6 +18,7 @@ import datetime
 
 import roccclient
 from roccclient.models.response_page_metadata import ResponsePageMetadata  # noqa: E501
+from roccclient.models.response_page_metadata_links import ResponsePageMetadataLinks  # noqa: E501
 from roccclient.rest import ApiException
 
 class TestResponsePageMetadata(unittest.TestCase):
@@ -37,16 +38,16 @@ class TestResponsePageMetadata(unittest.TestCase):
         # model = roccclient.models.response_page_metadata.ResponsePageMetadata()  # noqa: E501
         if include_optional :
             return ResponsePageMetadata(
-                offset = 56, 
-                limit = 56, 
-                links = roccclient.models.response_page_metadata_links.ResponsePageMetadata_links(
+                offset = 56,
+                limit = 56,
+                links = roccclient.models.response_page_metadata_links.ResponsePageMetadataLinks(
                     next = '0', )
             )
         else :
             return ResponsePageMetadata(
                 offset = 56,
                 limit = 56,
-                links = roccclient.models.response_page_metadata_links.ResponsePageMetadata_links(
+                links = roccclient.models.response_page_metadata_links.ResponsePageMetadataLinks(
                     next = '0', ),
         )
 
