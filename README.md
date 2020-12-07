@@ -1,5 +1,10 @@
-# roccclient
-The OpenAPI specification implemented by the Challenge Registries.
+# ROCC Client Library for Python
+
+[![GitHub Release](https://img.shields.io/github/release/Sage-Bionetworks/rocc-client.svg?include_prereleases&color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=github)](https://github.com/Sage-Bionetworks/rocc-client/releases)
+[![GitHub CI](https://img.shields.io/github/workflow/status/Sage-Bionetworks/rocc-client/ci.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=github)](https://github.com/Sage-Bionetworks/rocc-client)
+[![GitHub License](https://img.shields.io/github/license/Sage-Bionetworks/rocc-client.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=github)](https://github.com/Sage-Bionetworks/rocc-client)
+[![PyPi](https://img.shields.io/pypi/v/rocc-client.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=PyPi&logo=PyPi)](https://pypi.org/project/rocc-client)
+
 # Introduction
 TBA
 
@@ -68,7 +73,7 @@ configuration = roccclient.Configuration(
 with roccclient.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = roccclient.ChallengeApi(api_client)
-    challenge = roccclient.Challenge() # Challenge | 
+    challenge = roccclient.Challenge() # Challenge |
 
     try:
         # Add a challenge
@@ -76,7 +81,7 @@ with roccclient.ApiClient(configuration) as api_client:
         pprint(api_response)
     except ApiException as e:
         print("Exception when calling ChallengeApi->create_challenge: %s\n" % e)
-    
+
 ```
 
 ## Documentation for API Endpoints
