@@ -94,7 +94,7 @@ class Configuration(object):
                  ):
         """Constructor
         """
-        self._base_path = "https://rocc.com/api.dev/v1" if host is None else host
+        self._base_path = "https://rocc.org/api.dev/v1" if host is None else host
         """Default Base url
         """
         self.server_index = 0 if server_index is None and host is None else server_index
@@ -385,7 +385,7 @@ class Configuration(object):
         """
         return [
             {
-                'url': "{protocol}://rocc.com/{environment}/v1",
+                'url': "{protocol}://rocc.org/{environment}/v1",
                 'description': "No description provided",
                 'variables': {
                     'protocol': {
