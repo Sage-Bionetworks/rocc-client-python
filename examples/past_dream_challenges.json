@@ -1,5 +1,5883 @@
 {
-  "organizations": [],
-  "persons": [],
-  "challenges": []
+    "challenges": [
+        {
+            "name": "NIEHS-NCATS-UNC Toxicogenetics",
+            "startDate": "2013-06-10",
+            "endDate": "2013-09-15",
+            "url": "https://www.synapse.org/#!Synapse:syn1761567",
+            "status": "closed",
+            "tags": [
+                "drug",
+                "toxicogenenetics"
+            ],
+            "organizers": [],
+            "organizations": [
+                {
+                    "name": "University of North Carolina at Chapel Hill",
+                    "url": "https://www.unc.edu/"
+                },
+                {
+                    "name": "National Institute of Environmental Health Sciences",
+                    "url": "https://www.niehs.nih.gov/"
+                },
+                {
+                    "name": "National Center for Advancing Translational Sciences",
+                    "url": "https://ncats.nih.gov/"
+                },
+                {
+                    "name": "Sage Bionetworks",
+                    "url": "https://sagebionetworks.org/"
+                }
+            ]
+        },
+        {
+            "name": "Whole-Cell Parameter Estimation",
+            "startDate": "2013-06-10",
+            "endDate": "2013-09-23",
+            "url": "https://www.synapse.org/#!Synapse:syn1876068",
+            "status": "closed",
+            "tags": [
+                "whole-cell-parameter"
+            ],
+            "organizers": [
+                {
+                    "firstName": "Brandon",
+                    "lastName": "Allgood",
+                    "organizations": [
+                        "Numerate"
+                    ]
+                },
+                {
+                    "firstName": "Christian",
+                    "lastName": "Basile",
+                    "organizations": [
+                        "Urban Green Energy"
+                    ]
+                },
+                {
+                    "firstName": "Brian",
+                    "lastName": "Bot",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Deepak",
+                    "lastName": "Chandran",
+                    "organizations": [
+                        "Autodesk"
+                    ]
+                },
+                {
+                    "firstName": "Thomas",
+                    "lastName": "Cokelaer",
+                    "organizations": [
+                        "European Bioinformatics Institute"
+                    ]
+                },
+                {
+                    "firstName": "Markus",
+                    "lastName": "Covert",
+                    "organizations": [
+                        "Stanford University"
+                    ]
+                },
+                {
+                    "firstName": "Bruce",
+                    "lastName": "Hoff",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Jay",
+                    "lastName": "Hodgson",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Jonathan",
+                    "lastName": "Karr",
+                    "organizations": [
+                        "Stanford University"
+                    ]
+                },
+                {
+                    "firstName": "Mike",
+                    "lastName": "Kellen",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Po-Ru",
+                    "lastName": "Loh",
+                    "organizations": [
+                        "Massachusetts Institute of Technology"
+                    ]
+                },
+                {
+                    "firstName": "Thea",
+                    "lastName": "Norman",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Kahn",
+                    "lastName": "Rhrissorrakrai",
+                    "organizations": [
+                        "IBM Research"
+                    ]
+                },
+                {
+                    "firstName": "Pablo",
+                    "lastName": "Meyer",
+                    "organizations": [
+                        "IBM Research"
+                    ]
+                },
+                {
+                    "firstName": "Julio",
+                    "lastName": "Saez-Rodriguez",
+                    "organizations": [
+                        "European Bioinformatics Institute",
+                        "RWTH Aachen University",
+                        "Heidelberg University"
+                    ]
+                },
+                {
+                    "firstName": "Gustavo",
+                    "lastName": "Stolovitzky",
+                    "organizations": [
+                        "IBM Research",
+                        "Mount Sinai"
+                    ]
+                },
+                {
+                    "firstName": "Alejandro",
+                    "lastName": "Villaverde",
+                    "organizations": [
+                        "Consejo Superior de Investigaciones Cientificas"
+                    ]
+                },
+                {
+                    "firstName": "Simon",
+                    "lastName": "Wilkinson",
+                    "organizations": [
+                        "Numerate"
+                    ]
+                },
+                {
+                    "firstName": "Jessen",
+                    "lastName": "Yu",
+                    "organizations": [
+                        "Numerate"
+                    ]
+                }
+            ],
+            "organizations": [
+                {
+                    "name": "Numerate",
+                    "url": "http://www.numerate.com/"
+                },
+                {
+                    "name": "Urban Green Energy",
+                    "url": "https://www.ugei.com/"
+                },
+                {
+                    "name": "Sage Bionetworks",
+                    "url": "https://sagebionetworks.org/"
+                },
+                {
+                    "name": "Autodesk",
+                    "url": "https://www.autodesk.com/"
+                },
+                {
+                    "name": "European Bioinformatics Institute",
+                    "url": "https://www.ebi.ac.uk/"
+                },
+                {
+                    "name": "Stanford University",
+                    "url": "https://www.stanford.edu/"
+                },
+                {
+                    "name": "Massachusetts Institute of Technology",
+                    "url": "https://www.mit.edu/"
+                },
+                {
+                    "name": "IBM Research",
+                    "url": "https://www.research.ibm.com/"
+                },
+                {
+                    "name": "Consejo Superior de Investigaciones Cientificas",
+                    "url": "https://www.csic.es/"
+                }
+            ]
+        },
+        {
+            "name": "HPN-DREAM Breast Cancer Network Inference",
+            "startDate": "2013-07-16",
+            "endDate": "2013-09-16",
+            "url": "https://www.synapse.org/#!Synapse:syn1720047",
+            "status": "closed",
+            "tags": [
+                "cancer",
+                "breast-cancer",
+                "network-inference",
+                "signaling"
+            ],
+            "organizers": [
+                {
+                    "firstName": "Laura",
+                    "lastName": "Heiser",
+                    "organizations": [
+                        "Oregon Health & Science University"
+                    ]
+                },
+                {
+                    "firstName": "Heinz",
+                    "lastName": "Koeppl",
+                    "organizations": [
+                        "ETH Zurich"
+                    ]
+                },
+                {
+                    "firstName": "Michael",
+                    "lastName": "Unger",
+                    "organizations": [
+                        "ETH Zurich"
+                    ]
+                },
+                {
+                    "firstName": "Sach",
+                    "lastName": "Mukherjee",
+                    "organizations": [
+                        "Nathan S. Kline Institute for Psychiatric Research"
+                    ]
+                },
+                {
+                    "firstName": "Steven",
+                    "lastName": "Hill",
+                    "organizations": [
+                        "Nathan S. Kline Institute for Psychiatric Research"
+                    ]
+                },
+                {
+                    "firstName": "Thea",
+                    "lastName": "Norman",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Bruce",
+                    "lastName": "Hoff",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Jay",
+                    "lastName": "Hodgson",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Mike",
+                    "lastName": "Kellen",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Julio",
+                    "lastName": "Saez-Rodriguez",
+                    "organizations": [
+                        "European Bioinformatics Institute",
+                        "RWTH Aachen University",
+                        "Heidelberg University"
+                    ]
+                },
+                {
+                    "firstName": "Thomas",
+                    "lastName": "Cokelaer",
+                    "organizations": [
+                        "European Bioinformatics Institute"
+                    ]
+                },
+                {
+                    "firstName": "Gustavo",
+                    "lastName": "Stolovitzky",
+                    "organizations": [
+                        "IBM Research",
+                        "Mount Sinai"
+                    ]
+                }
+            ],
+            "organizations": [
+                {
+                    "name": "Heritage Provider Network",
+                    "url": "http://www.heritageprovidernetwork.com/"
+                },
+                {
+                    "name": "MD Anderson Cancer Center",
+                    "url": "https://www.mdanderson.org/"
+                },
+                {
+                    "name": "National Cancer Institute",
+                    "url": "https://www.cancer.gov/"
+                },
+                {
+                    "name": "Nathan S. Kline Institute for Psychiatric Research",
+                    "url": "https://www.nki.rfmh.org/"
+                },
+                {
+                    "name": "Oregon Health & Science University",
+                    "url": "https://www.ohsu.edu/"
+                },
+                {
+                    "name": "ETH Zurich",
+                    "url": "https://ethz.ch/en.html"
+                }
+            ]
+        },
+        {
+            "name": "Rheumatoid Arthritis Responder",
+            "startDate": "2014-02-10",
+            "endDate": "2014-06-04",
+            "url": "https://www.synapse.org/#!Synapse:syn1734172",
+            "status": "closed",
+            "tags": [
+                "arthritis",
+                "rheumatoid-arthritis"
+            ],
+            "organizers": [
+                {
+                    "firstName": "Lara",
+                    "lastName": "Mangravite",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Solly",
+                    "lastName": "Sieberts",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Abhi",
+                    "lastName": "Pratap",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Christine",
+                    "lastName": "Suver",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Bruce",
+                    "lastName": "Hoff",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Thea",
+                    "lastName": "Norman",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Gustavo",
+                    "lastName": "Stolovitzky",
+                    "organizations": [
+                        "IBM Research",
+                        "Mount Sinai"
+                    ]
+                },
+                {
+                    "firstName": "Stephen",
+                    "lastName": "Friend",
+                    "organizations": [
+                        "Sage Bionetworks",
+                        "Apple Health"
+                    ]
+                },
+                {
+                    "firstName": "Eli",
+                    "lastName": "Stahl",
+                    "organizations": [
+                        "Mount Sinai"
+                    ]
+                },
+                {
+                    "firstName": "Jing",
+                    "lastName": "Cui",
+                    "organizations": [
+                        "Brigham And Women's Hospital"
+                    ]
+                },
+                {
+                    "firstName": "Andre",
+                    "lastName": "Falcao",
+                    "organizations": [
+                        "University of Lisbon"
+                    ]
+                },
+                {
+                    "firstName": "Robert",
+                    "lastName": "Plenge",
+                    "organizations": [
+                        "Merck"
+                    ]
+                },
+                {
+                    "firstName": "Peter",
+                    "lastName": "Gregersen",
+                    "organizations": [
+                        "Feinstein Institutes for Medical Research"
+                    ]
+                },
+                {
+                    "firstName": "Jeff",
+                    "lastName": "Greenberg",
+                    "organizations": [
+                        "Corrona"
+                    ]
+                },
+                {
+                    "firstName": "Kaleb",
+                    "lastName": "Michaud",
+                    "organizations": [
+                        "Arthritis Internet Registry"
+                    ]
+                }
+            ],
+            "organizations": [
+                {
+                    "name": "Mount Sinai",
+                    "url": "https://www.mountsinai.org/"
+                },
+                {
+                    "name": "Brigham And Women's Hospital",
+                    "url": "https://www.brighamandwomens.org/"
+                },
+                {
+                    "name": "University of Lisbon",
+                    "url": "https://www.ulisboa.pt/en"
+                },
+                {
+                    "name": "Merck",
+                    "url": "https://www.merck.com/"
+                },
+                {
+                    "name": "Feinstein Institutes for Medical Research",
+                    "url": "https://feinstein.northwell.edu/"
+                },
+                {
+                    "name": "Corrona",
+                    "url": "https://www.corrona.org/"
+                },
+                {
+                    "name": "Arthritis Internet Registry",
+                    "url": "https://www.arthritis-research.org/join-research/arthritis-internet-registry"
+                },
+                {
+                    "name": "Sage Bionetworks",
+                    "url": "https://sagebionetworks.org/"
+                }
+            ]
+        },
+        {
+            "name": "ICGC-TCGA DREAM Genomic Mutation Calling",
+            "startDate": "2013-12-12",
+            "endDate": "2016-08-19",
+            "url": "https://www.synapse.org/#!Synapse:syn312572",
+            "status": "closed",
+            "tags": [
+                "cancer",
+                "mutation-calling"
+            ],
+            "organizers": [
+                {
+                    "firstName": "Paul C.",
+                    "lastName": "Boutros",
+                    "organizations": [
+                        "Ontario Institute for Cancer Research"
+                    ]
+                },
+                {
+                    "firstName": "Lincoln D.",
+                    "lastName": "Stein",
+                    "organizations": [
+                        "Ontario Institute for Cancer Research"
+                    ]
+                },
+                {
+                    "firstName": "Josh",
+                    "lastName": "Stuart",
+                    "organizations": [
+                        "University of California Santa Cruz"
+                    ]
+                },
+                {
+                    "firstName": "Gustavo",
+                    "lastName": "Stolovitzky",
+                    "organizations": [
+                        "IBM Research",
+                        "Mount Sinai"
+                    ]
+                },
+                {
+                    "firstName": "Stephen",
+                    "lastName": "Friend",
+                    "organizations": [
+                        "Sage Bionetworks",
+                        "Apple Health"
+                    ]
+                },
+                {
+                    "firstName": "Adam",
+                    "lastName": "Margolin",
+                    "organizations": [
+                        "Oregon Health & Science University",
+                        "\"Sage Bionetworks, Oregon Health & Science University, Icahn School of Medicine at Mount Sinai\"",
+                        "Icahn School of Medicine at Mount Sinai"
+                    ]
+                },
+                {
+                    "firstName": "Thea",
+                    "lastName": "Norman",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                }
+            ],
+            "organizations": [
+                {
+                    "name": "Ontario Institute for Cancer Research",
+                    "url": "https://oicr.on.ca/"
+                },
+                {
+                    "name": "University of California Santa Cruz",
+                    "url": "https://www.ucsc.edu/"
+                },
+                {
+                    "name": "IBM Research",
+                    "url": "https://www.research.ibm.com/"
+                },
+                {
+                    "name": "Sage Bionetworks",
+                    "url": "https://sagebionetworks.org/"
+                }
+            ]
+        },
+        {
+            "name": "Acute Myeloid Leukemia Outcome Prediction",
+            "startDate": "2014-06-02",
+            "endDate": "2014-09-13",
+            "url": "https://www.synapse.org/#!Synapse:syn2455683",
+            "status": "closed",
+            "tags": [
+                "cancer",
+                "aml"
+            ],
+            "organizers": [
+                {
+                    "firstName": "Steven M.",
+                    "lastName": "Kornblau",
+                    "organizations": [
+                        "MD Anderson Cancer Center"
+                    ]
+                },
+                {
+                    "firstName": "Amina Ann",
+                    "lastName": "Qutub",
+                    "organizations": [
+                        "Rice University"
+                    ]
+                },
+                {
+                    "firstName": "David",
+                    "lastName": "Noren",
+                    "organizations": [
+                        "Rice University"
+                    ]
+                },
+                {
+                    "firstName": "Bryon",
+                    "lastName": "Long",
+                    "organizations": [
+                        "Rice University"
+                    ]
+                },
+                {
+                    "firstName": "Alex",
+                    "lastName": "Bisberg",
+                    "organizations": [
+                        "Rice University"
+                    ]
+                },
+                {
+                    "firstName": "Chenyue",
+                    "lastName": "Hu",
+                    "organizations": [
+                        "Rice University"
+                    ]
+                },
+                {
+                    "firstName": "Erik",
+                    "lastName": "Engquist",
+                    "organizations": [
+                        "Rice University"
+                    ]
+                },
+                {
+                    "firstName": "Andre",
+                    "lastName": "Schultz",
+                    "organizations": [
+                        "Rice University"
+                    ]
+                },
+                {
+                    "firstName": "Lisa",
+                    "lastName": "Geda",
+                    "organizations": [
+                        "Rice University"
+                    ]
+                },
+                {
+                    "firstName": "Ramy",
+                    "lastName": "Sweidan",
+                    "organizations": [
+                        "Rice University"
+                    ]
+                },
+                {
+                    "firstName": "Ka Wai",
+                    "lastName": "Lin",
+                    "organizations": [
+                        "Rice University"
+                    ]
+                },
+                {
+                    "firstName": "Tien",
+                    "lastName": "Tang",
+                    "organizations": [
+                        "Rice University"
+                    ]
+                },
+                {
+                    "firstName": "Arun",
+                    "lastName": "Mahadevan",
+                    "organizations": [
+                        "Rice University"
+                    ]
+                },
+                {
+                    "firstName": "Gustavo",
+                    "lastName": "Stolovitzky",
+                    "organizations": [
+                        "IBM Research",
+                        "Mount Sinai"
+                    ]
+                },
+                {
+                    "firstName": "Raquel",
+                    "lastName": "Norel",
+                    "organizations": [
+                        "IBM Research"
+                    ]
+                },
+                {
+                    "firstName": "Kahn",
+                    "lastName": "Rhissorrakrai",
+                    "organizations": [
+                        "IBM Research"
+                    ]
+                },
+                {
+                    "firstName": "Thea",
+                    "lastName": "Norman",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Bruce",
+                    "lastName": "Hoff",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Stephen",
+                    "lastName": "Friend",
+                    "organizations": [
+                        "Sage Bionetworks",
+                        "Apple Health"
+                    ]
+                },
+                {
+                    "firstName": "Christine",
+                    "lastName": "Suver",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                }
+            ],
+            "organizations": [
+                {
+                    "name": "MD Anderson Cancer Center",
+                    "url": "https://www.mdanderson.org/"
+                },
+                {
+                    "name": "IBM Research",
+                    "url": "https://www.research.ibm.com/"
+                },
+                {
+                    "name": "Sage Bionetworks",
+                    "url": "https://sagebionetworks.org/"
+                },
+                {
+                    "name": "Rice University",
+                    "url": "https://www.rice.edu/"
+                }
+            ]
+        },
+        {
+            "name": "Broad-DREAM Gene Essentiality Prediction",
+            "startDate": "2014-06-02",
+            "endDate": "2014-09-29",
+            "url": "https://www.synapse.org/#!Synapse:syn2384331",
+            "status": "closed",
+            "tags": [
+                "cancer",
+                "targeted-cancer-therapy"
+            ],
+            "organizers": [
+                {
+                    "firstName": "Mehmet",
+                    "lastName": "Gonen",
+                    "organizations": [
+                        "Oregon Health & Science University"
+                    ]
+                },
+                {
+                    "firstName": "Barbara",
+                    "lastName": "Weir",
+                    "organizations": [
+                        "Broad Institute"
+                    ]
+                },
+                {
+                    "firstName": "Aviad",
+                    "lastName": "Tsherniak",
+                    "organizations": [
+                        "Broad Institute"
+                    ]
+                },
+                {
+                    "firstName": "Daniel",
+                    "lastName": "Marbach",
+                    "organizations": [
+                        "University of Lausanne"
+                    ]
+                },
+                {
+                    "firstName": "Adam",
+                    "lastName": "Margolin",
+                    "organizations": [
+                        "Oregon Health & Science University",
+                        "\"Sage Bionetworks, Oregon Health & Science University, Icahn School of Medicine at Mount Sinai\"",
+                        "Icahn School of Medicine at Mount Sinai"
+                    ]
+                },
+                {
+                    "firstName": "Gustavo",
+                    "lastName": "Stolovitzky",
+                    "organizations": [
+                        "IBM Research",
+                        "Mount Sinai"
+                    ]
+                },
+                {
+                    "firstName": "Bruce",
+                    "lastName": "Hoff",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Thea",
+                    "lastName": "Norman",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Christine",
+                    "lastName": "Suver",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Shannon",
+                    "lastName": "Carter",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Sara",
+                    "lastName": "Howell",
+                    "organizations": [
+                        "Broad Institute"
+                    ]
+                },
+                {
+                    "firstName": "Paquita",
+                    "lastName": "Vazquez",
+                    "organizations": [
+                        "Broad Institute"
+                    ]
+                },
+                {
+                    "firstName": "Stephen",
+                    "lastName": "Friend",
+                    "organizations": [
+                        "Sage Bionetworks",
+                        "Apple Health"
+                    ]
+                },
+                {
+                    "firstName": "Bill",
+                    "lastName": "Hahn",
+                    "organizations": [
+                        "Dana-Farber Cancer Institute",
+                        "Broad Institute"
+                    ]
+                },
+                {
+                    "firstName": "Jesse",
+                    "lastName": "Boehm",
+                    "organizations": [
+                        "Broad Institute"
+                    ]
+                },
+                {
+                    "firstName": "Todd",
+                    "lastName": "Golub",
+                    "organizations": [
+                        "Broad Institute"
+                    ]
+                }
+            ],
+            "organizations": [
+                {
+                    "name": "University of Lausanne",
+                    "url": "https://www.unil.ch/central/en/home.html"
+                },
+                {
+                    "name": "IBM Research",
+                    "url": "https://www.research.ibm.com/"
+                },
+                {
+                    "name": "Oregon Health & Science University",
+                    "url": "https://www.ohsu.edu/"
+                },
+                {
+                    "name": "Broad Institute",
+                    "url": "https://www.broadinstitute.org/"
+                },
+                {
+                    "name": "Dana-Farber Cancer Institute",
+                    "url": "https://www.dana-farber.org/"
+                },
+                {
+                    "name": "Sage Bionetworks",
+                    "url": "https://sagebionetworks.org/"
+                }
+            ]
+        },
+        {
+            "name": "Alzheimer's Disease Big Data",
+            "startDate": "2014-06-02",
+            "endDate": "2014-10-17",
+            "url": "https://www.synapse.org/#!Synapse:syn2290704",
+            "status": "closed",
+            "tags": [
+                "alzheimers"
+            ],
+            "organizers": [
+                {
+                    "firstName": "Andy",
+                    "lastName": "Simmons",
+                    "organizations": [
+                        "King's College London"
+                    ]
+                },
+                {
+                    "firstName": "Arno",
+                    "lastName": "Klein",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Benjamin",
+                    "lastName": "Logsdon",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "David",
+                    "lastName": "Fardo",
+                    "organizations": [
+                        "University of Kentucky"
+                    ]
+                },
+                {
+                    "firstName": "Christine",
+                    "lastName": "Suver",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Christopher",
+                    "lastName": "Bare",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Gustavo",
+                    "lastName": "Stolovitzky",
+                    "organizations": [
+                        "IBM Research",
+                        "Mount Sinai"
+                    ]
+                },
+                null,
+                {
+                    "firstName": "Lara",
+                    "lastName": "Mangravite",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Mette",
+                    "lastName": "Peters",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Nicholas",
+                    "lastName": "Tustison",
+                    "organizations": [
+                        "University of Virginia"
+                    ]
+                },
+                {
+                    "firstName": "Richard",
+                    "lastName": "Dobson",
+                    "organizations": [
+                        "King's College London"
+                    ]
+                },
+                {
+                    "firstName": "Satrajit",
+                    "lastName": "Ghosh",
+                    "organizations": [
+                        "Massachusetts Institute of Technology"
+                    ]
+                },
+                {
+                    "firstName": "Stephen",
+                    "lastName": "Friend",
+                    "organizations": [
+                        "Sage Bionetworks",
+                        "Apple Health"
+                    ]
+                },
+                {
+                    "firstName": "Stephen",
+                    "lastName": "Newhouse",
+                    "organizations": [
+                        "King's College London"
+                    ]
+                },
+                {
+                    "firstName": "Taylor",
+                    "lastName": "Maxwell",
+                    "organizations": [
+                        "George Washington University"
+                    ]
+                },
+                {
+                    "firstName": "Thea",
+                    "lastName": "Norman",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                }
+            ],
+            "organizations": [
+                {
+                    "name": "King's College London",
+                    "url": "https://www.kcl.ac.uk/"
+                },
+                {
+                    "name": "Sage Bionetworks",
+                    "url": "https://sagebionetworks.org/"
+                },
+                {
+                    "name": "University of Kentucky",
+                    "url": "http://www.uky.edu/"
+                },
+                {
+                    "name": "IBM Research",
+                    "url": "https://www.research.ibm.com/"
+                },
+                {
+                    "name": "Brigham Young University",
+                    "url": "https://www.byu.edu/"
+                },
+                {
+                    "name": "University of Virginia",
+                    "url": "https://www.virginia.edu/"
+                },
+                {
+                    "name": "Massachusetts Institute of Technology",
+                    "url": "https://www.mit.edu/"
+                },
+                {
+                    "name": "George Washington University",
+                    "url": "https://www.gwu.edu/"
+                }
+            ]
+        },
+        {
+            "name": "DREAM Olfaction Prediction",
+            "startDate": "2015-02-01",
+            "endDate": "2015-05-01",
+            "url": "https://www.synapse.org/#!Synapse:syn2811262",
+            "status": "closed",
+            "tags": [
+                "olfaction"
+            ],
+            "organizers": [
+                {
+                    "firstName": "Andreas",
+                    "lastName": "Keller",
+                    "organizations": [
+                        "Rockefeller University"
+                    ]
+                },
+                {
+                    "firstName": "Leslie",
+                    "lastName": "Vosshall",
+                    "organizations": [
+                        "Rockefeller University"
+                    ]
+                },
+                {
+                    "firstName": "Pablo",
+                    "lastName": "Meyer",
+                    "organizations": [
+                        "IBM Research"
+                    ]
+                },
+                {
+                    "firstName": "Guillermo",
+                    "lastName": "Cecchi",
+                    "organizations": [
+                        "IBM Research"
+                    ]
+                },
+                {
+                    "firstName": "Gustavo",
+                    "lastName": "Stolovitzky",
+                    "organizations": [
+                        "IBM Research",
+                        "Mount Sinai"
+                    ]
+                },
+                {
+                    "firstName": "Andre",
+                    "lastName": "Falcao",
+                    "organizations": [
+                        "University of Lisbon"
+                    ]
+                },
+                {
+                    "firstName": "Raquel",
+                    "lastName": "Norel",
+                    "organizations": [
+                        "IBM Research"
+                    ]
+                },
+                {
+                    "firstName": "Thea",
+                    "lastName": "Norman",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Bruce",
+                    "lastName": "Hoff",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Christine",
+                    "lastName": "Suver",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Stephen",
+                    "lastName": "Friend",
+                    "organizations": [
+                        "Sage Bionetworks",
+                        "Apple Health"
+                    ]
+                }
+            ],
+            "organizations": [
+                {
+                    "name": "Rockefeller University",
+                    "url": "https://www.rockefeller.edu/"
+                },
+                {
+                    "name": "IBM Research",
+                    "url": "https://www.research.ibm.com/"
+                },
+                {
+                    "name": "University of Lisbon",
+                    "url": "https://www.ulisboa.pt/en"
+                },
+                {
+                    "name": "Sage Bionetworks",
+                    "url": "https://sagebionetworks.org/"
+                }
+            ]
+        },
+        {
+            "name": "Prostate Cancer",
+            "startDate": "2015-04-01",
+            "endDate": "2015-07-27",
+            "url": "https://www.synapse.org/#!Synapse:syn2813558",
+            "status": "closed",
+            "tags": [
+                "cancer",
+                "prostate-cancer"
+            ],
+            "organizers": [],
+            "organizations": [
+                {
+                    "name": "Dana-Farber Cancer Institute",
+                    "url": "https://www.dana-farber.org/"
+                },
+                {
+                    "name": "IBM Research",
+                    "url": "https://www.research.ibm.com/"
+                },
+                {
+                    "name": "Memorial Sloan Kettering Cancer Center",
+                    "url": "https://www.mskcc.org/"
+                },
+                {
+                    "name": "Project Data Sphere",
+                    "url": "https://www.projectdatasphere.org/"
+                },
+                {
+                    "name": "Prostate Cancer Foundation",
+                    "url": "https://www.pcf.org/"
+                },
+                {
+                    "name": "Sage Bionetworks",
+                    "url": "https://sagebionetworks.org/"
+                },
+                {
+                    "name": "Tulane University",
+                    "url": "https://tulane.edu/"
+                },
+                {
+                    "name": "University of California San Francisco",
+                    "url": "https://www.ucsf.edu/"
+                },
+                {
+                    "name": "University of Colorado Anschutz Medical Campus",
+                    "url": "https://www.cuanschutz.edu/"
+                },
+                {
+                    "name": "University of Texas Southwestern Medical Center",
+                    "url": "https://www.utsouthwestern.edu/"
+                }
+            ]
+        },
+        {
+            "name": "ALS Stratification Prize4Life",
+            "startDate": "2015-06-22",
+            "endDate": "2015-10-04",
+            "url": "https://www.synapse.org/#!Synapse:syn2873386",
+            "status": "closed",
+            "tags": [
+                "als"
+            ],
+            "organizers": [
+                {
+                    "firstName": "Robert",
+                    "lastName": "Kuffner",
+                    "organizations": [
+                        "Ludwig Maximilian University of Munich"
+                    ]
+                },
+                {
+                    "firstName": "Kely",
+                    "lastName": "Norel",
+                    "organizations": [
+                        "IBM Research"
+                    ]
+                },
+                {
+                    "firstName": "Gustavo",
+                    "lastName": "Stolovitzky",
+                    "organizations": [
+                        "IBM Research",
+                        "Mount Sinai"
+                    ]
+                },
+                {
+                    "firstName": "Lara",
+                    "lastName": "Mangravite",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Thea",
+                    "lastName": "Norman",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Stephen",
+                    "lastName": "Friend",
+                    "organizations": [
+                        "Sage Bionetworks",
+                        "Apple Health"
+                    ]
+                },
+                {
+                    "firstName": "Merit",
+                    "lastName": "Cudkowicz",
+                    "organizations": [
+                        "Massachusetts General Hospital"
+                    ]
+                },
+                {
+                    "firstName": "Orla",
+                    "lastName": "Hardiman",
+                    "organizations": [
+                        "Trinity College Institute of Neuroscience"
+                    ]
+                },
+                {
+                    "firstName": "Neta",
+                    "lastName": "Zach",
+                    "organizations": [
+                        "Prize4Life"
+                    ]
+                }
+            ],
+            "organizations": [
+                {
+                    "name": "Ludwig Maximilian University of Munich",
+                    "url": "https://www.en.uni-muenchen.de/index.html"
+                },
+                {
+                    "name": "IBM Research",
+                    "url": "https://www.research.ibm.com/"
+                },
+                {
+                    "name": "Sage Bionetworks",
+                    "url": "https://sagebionetworks.org/"
+                },
+                {
+                    "name": "Massachusetts General Hospital",
+                    "url": "https://www.massgeneral.org/"
+                },
+                {
+                    "name": "Trinity College Institute of Neuroscience",
+                    "url": "https://www.tcd.ie/Neuroscience/"
+                },
+                {
+                    "name": "Prize4Life",
+                    "url": "https://en.wikipedia.org/wiki/Prize4Life"
+                }
+            ]
+        },
+        {
+            "name": "AstraZeneca-Sanger Drug Combination Prediction",
+            "startDate": "2015-09-10",
+            "endDate": "2016-03-14",
+            "url": "https://www.synapse.org/#!Synapse:syn4231880",
+            "status": "closed",
+            "tags": [
+                "drug",
+                "drug-synergy"
+            ],
+            "organizers": [
+                {
+                    "firstName": "Jonathan",
+                    "lastName": "Dry",
+                    "organizations": [
+                        "AstraZeneca"
+                    ]
+                },
+                {
+                    "firstName": "Justin",
+                    "lastName": "Guinney",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Julio",
+                    "lastName": "Saez-Rodriguez",
+                    "organizations": [
+                        "European Bioinformatics Institute",
+                        "RWTH Aachen University",
+                        "Heidelberg University"
+                    ]
+                },
+                {
+                    "firstName": "Thea",
+                    "lastName": "Norman",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Gustavo",
+                    "lastName": "Stolovitzky",
+                    "organizations": [
+                        "IBM Research",
+                        "Mount Sinai"
+                    ]
+                },
+                {
+                    "firstName": "Stephen",
+                    "lastName": "Friend",
+                    "organizations": [
+                        "Sage Bionetworks",
+                        "Apple Health"
+                    ]
+                }
+            ],
+            "organizations": [
+                {
+                    "name": "AstraZeneca",
+                    "url": "https://www.astrazeneca.com/"
+                },
+                {
+                    "name": "European Bioinformatics Institute",
+                    "url": "https://www.ebi.ac.uk/"
+                },
+                {
+                    "name": "RWTH Aachen University",
+                    "url": "https://www.rwth-aachen.de/go/id/a/?lidx=1"
+                },
+                {
+                    "name": "IBM Research",
+                    "url": "https://www.research.ibm.com/"
+                },
+                {
+                    "name": "Sage Bionetworks",
+                    "url": "https://sagebionetworks.org/"
+                }
+            ]
+        },
+        {
+            "name": "SMC-DNA Meta",
+            "startDate": "2015-11-10",
+            "endDate": "2016-04-10",
+            "url": "https://www.synapse.org/#!Synapse:syn4588939",
+            "status": "closed",
+            "tags": [
+                "cancer",
+                "somatic-mutation-calling"
+            ],
+            "organizers": [
+                {
+                    "firstName": "Paul C.",
+                    "lastName": "Boutros",
+                    "organizations": [
+                        "Ontario Institute for Cancer Research"
+                    ]
+                },
+                {
+                    "firstName": "Josh",
+                    "lastName": "Stuart",
+                    "organizations": [
+                        "University of California Santa Cruz"
+                    ]
+                },
+                {
+                    "firstName": "Gustavo",
+                    "lastName": "Stolovitzky",
+                    "organizations": [
+                        "IBM Research",
+                        "Mount Sinai"
+                    ]
+                },
+                {
+                    "firstName": "Stephen",
+                    "lastName": "Friend",
+                    "organizations": [
+                        "Sage Bionetworks",
+                        "Apple Health"
+                    ]
+                },
+                {
+                    "firstName": "Thea",
+                    "lastName": "Norman",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                }
+            ],
+            "organizations": [
+                {
+                    "name": "Ontario Institute for Cancer Research",
+                    "url": "https://oicr.on.ca/"
+                },
+                {
+                    "name": "University of California Santa Cruz",
+                    "url": "https://www.ucsc.edu/"
+                },
+                {
+                    "name": "IBM Research",
+                    "url": "https://www.research.ibm.com/"
+                },
+                {
+                    "name": "Sage Bionetworks",
+                    "url": "https://sagebionetworks.org/"
+                }
+            ]
+        },
+        {
+            "name": "SMC-Het",
+            "startDate": "2016-02-08",
+            "endDate": "2016-06-30",
+            "url": "https://www.synapse.org/#!Synapse:syn2813581",
+            "status": "closed",
+            "tags": [
+                "cancer",
+                "somatic-mutation-calling",
+                "tumor-heterogeneity"
+            ],
+            "organizers": [
+                {
+                    "firstName": "Quaid D.",
+                    "lastName": "Morris",
+                    "organizations": [
+                        "University of Toronto"
+                    ]
+                },
+                {
+                    "firstName": "Paul C.",
+                    "lastName": "Boutros",
+                    "organizations": [
+                        "Ontario Institute for Cancer Research"
+                    ]
+                },
+                {
+                    "firstName": "Gustavo",
+                    "lastName": "Stolovitzky",
+                    "organizations": [
+                        "IBM Research",
+                        "Mount Sinai"
+                    ]
+                },
+                {
+                    "firstName": "Joshua M.",
+                    "lastName": "Stuart",
+                    "organizations": [
+                        "University of California Santa Cruz"
+                    ]
+                },
+                {
+                    "firstName": "Kyle",
+                    "lastName": "Ellrott",
+                    "organizations": [
+                        "Oregon Health & Science University"
+                    ]
+                },
+                {
+                    "firstName": "Stephen",
+                    "lastName": "Friend",
+                    "organizations": [
+                        "Sage Bionetworks",
+                        "Apple Health"
+                    ]
+                },
+                {
+                    "firstName": "Thea",
+                    "lastName": "Norman",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "David",
+                    "lastName": "Wedge",
+                    "organizations": [
+                        "Wellcome Sanger Institute"
+                    ]
+                },
+                {
+                    "firstName": "Peter Van",
+                    "lastName": "Loo",
+                    "organizations": [
+                        "Francis Crick Institute"
+                    ]
+                }
+            ],
+            "organizations": [
+                {
+                    "name": "University of Toronto",
+                    "url": "https://www.utoronto.ca/"
+                },
+                {
+                    "name": "Ontario Institute for Cancer Research",
+                    "url": "https://oicr.on.ca/"
+                },
+                {
+                    "name": "IBM Research",
+                    "url": "https://www.research.ibm.com/"
+                },
+                {
+                    "name": "University of California Santa Cruz",
+                    "url": "https://www.ucsc.edu/"
+                },
+                {
+                    "name": "Oregon Health & Science University",
+                    "url": "https://www.ohsu.edu/"
+                },
+                {
+                    "name": "Wellcome Sanger Institute",
+                    "url": "https://www.sanger.ac.uk/"
+                },
+                {
+                    "name": "Francis Crick Institute",
+                    "url": "https://www.crick.ac.uk/"
+                },
+                {
+                    "name": "Sage Bionetworks",
+                    "url": "https://sagebionetworks.org/"
+                }
+            ]
+        },
+        {
+            "name": "Respiratory Viral",
+            "startDate": "2016-07-22",
+            "endDate": "2016-09-28",
+            "url": "https://www.synapse.org/#!Synapse:syn5647810",
+            "status": "closed",
+            "tags": [
+                "viral",
+                "respiratory-viral"
+            ],
+            "organizers": [],
+            "organizations": [
+                {
+                    "name": "Duke University",
+                    "url": "https://duke.edu/"
+                },
+                {
+                    "name": "Durham VA Health Care System",
+                    "url": "https://www.durham.va.gov/"
+                },
+                {
+                    "name": "Defense Advanced Research Projects Agency",
+                    "url": "https://www.darpa.mil/"
+                },
+                {
+                    "name": "Sage Bionetworks",
+                    "url": "https://sagebionetworks.org/"
+                }
+            ]
+        },
+        {
+            "name": "Disease Module Identification",
+            "startDate": "2016-08-17",
+            "endDate": "2016-10-01",
+            "url": "https://www.synapse.org/#!Synapse:syn6156761",
+            "status": "closed",
+            "tags": [
+                "module-identification"
+            ],
+            "organizers": [
+                {
+                    "firstName": "Daniel",
+                    "lastName": "Marbach",
+                    "organizations": [
+                        "University of Lausanne"
+                    ]
+                },
+                {
+                    "firstName": "Sarvenaz",
+                    "lastName": "Choobdar",
+                    "organizations": [
+                        "University of Lausanne"
+                    ]
+                },
+                {
+                    "firstName": "Sven",
+                    "lastName": "Bergmann",
+                    "organizations": [
+                        "University of Lausanne"
+                    ]
+                },
+                {
+                    "firstName": "David",
+                    "lastName": "Lamparter",
+                    "organizations": [
+                        "University of Lausanne"
+                    ]
+                },
+                {
+                    "firstName": "Zoltan",
+                    "lastName": "Kutalik",
+                    "organizations": [
+                        "Lausanne University Hospital"
+                    ]
+                },
+                {
+                    "firstName": "Kasper",
+                    "lastName": "Lage",
+                    "organizations": [
+                        "Massachusetts General Hospital"
+                    ]
+                },
+                {
+                    "firstName": "Thea",
+                    "lastName": "Norman",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Christine",
+                    "lastName": "Suver",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Stephen",
+                    "lastName": "Friend",
+                    "organizations": [
+                        "Sage Bionetworks",
+                        "Apple Health"
+                    ]
+                },
+                {
+                    "firstName": "Gustavo",
+                    "lastName": "Stolovitzky",
+                    "organizations": [
+                        "IBM Research",
+                        "Mount Sinai"
+                    ]
+                },
+                {
+                    "firstName": "Julio Saez",
+                    "lastName": "Rodriguez",
+                    "organizations": [
+                        "RWTH Aachen University"
+                    ]
+                }
+            ],
+            "organizations": [
+                {
+                    "name": "University of Lausanne",
+                    "url": "https://www.unil.ch/central/en/home.html"
+                },
+                {
+                    "name": "Lausanne University Hospital",
+                    "url": "https://www.lausanneuniversityhospital.com/home"
+                },
+                {
+                    "name": "Massachusetts General Hospital",
+                    "url": "https://www.massgeneral.org/"
+                },
+                {
+                    "name": "Sage Bionetworks",
+                    "url": "https://sagebionetworks.org/"
+                },
+                {
+                    "name": "IBM Research",
+                    "url": "https://www.research.ibm.com/"
+                },
+                {
+                    "name": "RWTH Aachen University",
+                    "url": "https://www.rwth-aachen.de/go/id/a/?lidx=1"
+                }
+            ]
+        },
+        {
+            "name": "ENCODE",
+            "startDate": "2016-07-22",
+            "endDate": "2017-01-11",
+            "url": "https://www.synapse.org/#!Synapse:syn6131484",
+            "status": "closed",
+            "tags": [
+                "transcription-factor"
+            ],
+            "organizers": [
+                {
+                    "firstName": "Anshul",
+                    "lastName": "Kundaje",
+                    "organizations": [
+                        "Stanford University"
+                    ]
+                },
+                {
+                    "firstName": "Nathan",
+                    "lastName": "Boley",
+                    "organizations": [
+                        "Stanford University"
+                    ]
+                },
+                {
+                    "firstName": "Robert",
+                    "lastName": "Kuffner",
+                    "organizations": [
+                        "Ludwig Maximilian University of Munich"
+                    ]
+                },
+                {
+                    "firstName": "Laura",
+                    "lastName": "Heiser",
+                    "organizations": [
+                        "Oregon Health & Science University"
+                    ]
+                },
+                {
+                    "firstName": "Jim",
+                    "lastName": "Costello",
+                    "organizations": [
+                        "University of Colorado Anschutz Medical Campus"
+                    ]
+                },
+                {
+                    "firstName": "Gustavo",
+                    "lastName": "Stolovitzky",
+                    "organizations": [
+                        "IBM Research",
+                        "Mount Sinai"
+                    ]
+                },
+                {
+                    "firstName": "Thea",
+                    "lastName": "Norman",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Bruce",
+                    "lastName": "Hoff",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Stephen",
+                    "lastName": "Friend",
+                    "organizations": [
+                        "Sage Bionetworks",
+                        "Apple Health"
+                    ]
+                }
+            ],
+            "organizations": [
+                {
+                    "name": "Stanford University",
+                    "url": "https://www.stanford.edu/"
+                },
+                {
+                    "name": "Helmholtz Zentrum Munchen",
+                    "url": "https://www.helmholtz-muenchen.de/en/"
+                },
+                {
+                    "name": "Sage Bionetworks",
+                    "url": "https://sagebionetworks.org/"
+                },
+                {
+                    "name": "University of Colorado Anschutz Medical Campus",
+                    "url": "https://www.cuanschutz.edu/"
+                },
+                {
+                    "name": "IBM Research",
+                    "url": "https://www.research.ibm.com/"
+                },
+                {
+                    "name": "Oregon Health & Science University",
+                    "url": "https://www.ohsu.edu/"
+                }
+            ]
+        },
+        {
+            "name": "Idea",
+            "startDate": "2016-06-15",
+            "endDate": "2017-04-30",
+            "url": "https://www.synapse.org/#!Synapse:syn5659209",
+            "status": "closed",
+            "tags": [
+                "proposals",
+                "human-health"
+            ],
+            "organizers": [
+                {
+                    "firstName": "Chloe-Agathe",
+                    "lastName": "Azencott",
+                    "organizations": [
+                        "MINES ParisTech",
+                        "Institut Curie"
+                    ]
+                },
+                {
+                    "firstName": "Anna",
+                    "lastName": "Goldenberg",
+                    "organizations": [
+                        "Hospital for Sick Children",
+                        "University of Toronto"
+                    ]
+                },
+                {
+                    "firstName": "Stephen",
+                    "lastName": "Friend",
+                    "organizations": [
+                        "Sage Bionetworks",
+                        "Apple Health"
+                    ]
+                },
+                {
+                    "firstName": "Thea",
+                    "lastName": "Norman",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Gustavo",
+                    "lastName": "Stolovitzky",
+                    "organizations": [
+                        "IBM Research",
+                        "Mount Sinai"
+                    ]
+                }
+            ],
+            "organizations": [
+                {
+                    "name": "MINES ParisTech",
+                    "url": "http://www.mines-paristech.eu/"
+                },
+                {
+                    "name": "Institut Curie",
+                    "url": "https://institut-curie.org/"
+                },
+                {
+                    "name": "Hospital for Sick Children",
+                    "url": "https://www.sickkids.ca/Research/"
+                },
+                {
+                    "name": "University of Toronto",
+                    "url": "https://www.utoronto.ca/"
+                },
+                {
+                    "name": "Sage Bionetworks",
+                    "url": "https://sagebionetworks.org/"
+                },
+                {
+                    "name": "Apple Health",
+                    "url": "https://www.hca.wa.gov/health-care-services-supports/apple-health-medicaid-coverage"
+                },
+                {
+                    "name": "IBM Research",
+                    "url": "https://www.research.ibm.com/"
+                }
+            ]
+        },
+        {
+            "name": "SMC-RNA",
+            "startDate": "2016-07-04",
+            "endDate": "2017-05-02",
+            "url": "https://www.synapse.org/#!Synapse:syn2813589",
+            "status": "closed",
+            "tags": [
+                "cancer",
+                "somatic-mutation-calling"
+            ],
+            "organizers": [
+                {
+                    "firstName": "Kyle",
+                    "lastName": "Ellrott",
+                    "organizations": [
+                        "Oregon Health & Science University"
+                    ]
+                },
+                {
+                    "firstName": "Josh",
+                    "lastName": "Stuart",
+                    "organizations": [
+                        "University of California Santa Cruz"
+                    ]
+                },
+                {
+                    "firstName": "Paul C.",
+                    "lastName": "Boutros",
+                    "organizations": [
+                        "Ontario Institute for Cancer Research"
+                    ]
+                },
+                {
+                    "firstName": "Paul",
+                    "lastName": "Spellman",
+                    "organizations": [
+                        "Oregon Health & Science University"
+                    ]
+                },
+                {
+                    "firstName": "Christopher",
+                    "lastName": "Maher",
+                    "organizations": [
+                        "Washington University in St. Louis"
+                    ]
+                },
+                {
+                    "firstName": "Stephen",
+                    "lastName": "Friend",
+                    "organizations": [
+                        "Sage Bionetworks",
+                        "Apple Health"
+                    ]
+                },
+                {
+                    "firstName": "Thea",
+                    "lastName": "Norman",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Gustavo",
+                    "lastName": "Stolovitzky",
+                    "organizations": [
+                        "IBM Research",
+                        "Mount Sinai"
+                    ]
+                }
+            ],
+            "organizations": [
+                {
+                    "name": "Oregon Health & Science University",
+                    "url": "https://www.ohsu.edu/"
+                },
+                {
+                    "name": "University of California Santa Cruz",
+                    "url": "https://www.ucsc.edu/"
+                },
+                {
+                    "name": "Ontario Institute for Cancer Research",
+                    "url": "https://oicr.on.ca/"
+                },
+                {
+                    "name": "Washington University in St. Louis",
+                    "url": "https://wustl.edu/"
+                },
+                {
+                    "name": "Sage Bionetworks",
+                    "url": "https://sagebionetworks.org/"
+                },
+                {
+                    "name": "IBM Research",
+                    "url": "https://www.research.ibm.com/"
+                }
+            ]
+        },
+        {
+            "name": "Digital Mammography",
+            "startDate": "2016-11-18",
+            "endDate": "2017-04-28",
+            "url": "https://www.synapse.org/#!Synapse:syn4224222",
+            "status": "closed",
+            "tags": [
+                "cancer",
+                "breast-cancer",
+                "mammography"
+            ],
+            "organizers": [],
+            "organizations": [
+                {
+                    "name": "Sage Bionetworks",
+                    "url": "https://sagebionetworks.org/"
+                },
+                {
+                    "name": "IBM Research",
+                    "url": "https://www.research.ibm.com/"
+                },
+                {
+                    "name": "Kaiser Permanente Washington Health Research Institute",
+                    "url": "https://www.kpwashingtonresearch.org/"
+                },
+                {
+                    "name": "Icahn School of Medicine at Mount Sinai",
+                    "url": "https://icahn.mssm.edu/"
+                },
+                {
+                    "name": "Seattle Cancer Care Alliance",
+                    "url": "https://www.seattlecca.org/"
+                },
+                {
+                    "name": "U.S. Food & Drug Administration",
+                    "url": "https://www.fda.gov/home"
+                },
+                {
+                    "name": "Radish Medical Solutions",
+                    "url": "http://www.radishmedical.com/"
+                },
+                {
+                    "name": "National Cancer Institute",
+                    "url": "https://www.cancer.gov/"
+                }
+            ]
+        },
+        {
+            "name": "Multiple Myeloma",
+            "startDate": "2017-08-16",
+            "endDate": "2017-11-08",
+            "url": "https://www.synapse.org/#!Synapse:syn6187098",
+            "status": "closed",
+            "tags": [
+                "cancer",
+                "myeloma"
+            ],
+            "organizers": [],
+            "organizations": [
+                {
+                    "name": "Celgene",
+                    "url": "https://www.celgene.com"
+                },
+                {
+                    "name": "Multiple Myeloma Research Foundation",
+                    "url": "https://themmrf.org/"
+                },
+                {
+                    "name": "Sage Bionetworks",
+                    "url": "https://sagebionetworks.org/"
+                }
+            ]
+        },
+        {
+            "name": "GA4GH/DREAM Workflow Execution",
+            "startDate": "2017-07-21",
+            "endDate": "2017-12-31",
+            "url": "https://www.synapse.org/#!Synapse:syn8507133",
+            "status": "closed",
+            "tags": [
+                "workflow-execution"
+            ],
+            "organizers": [
+                {
+                    "firstName": "Brian",
+                    "lastName": "O'Connor",
+                    "organizations": [
+                        "Global Alliance for Genomics and Health",
+                        "University of California Santa Cruz"
+                    ]
+                },
+                {
+                    "firstName": "Kevin",
+                    "lastName": "Osborn",
+                    "organizations": [
+                        "Global Alliance for Genomics and Health",
+                        "University of California Santa Cruz"
+                    ]
+                },
+                {
+                    "firstName": "Justin",
+                    "lastName": "Guinney",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "James",
+                    "lastName": "Eddy",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Thomas",
+                    "lastName": "Yu",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Denis",
+                    "lastName": "Yuen",
+                    "organizations": [
+                        "Ontario Institute for Cancer Research",
+                        "Dockstore"
+                    ]
+                }
+            ],
+            "organizations": [
+                {
+                    "name": "University of California Santa Cruz",
+                    "url": "https://www.ucsc.edu/"
+                },
+                {
+                    "name": "Global Alliance for Genomics and Health",
+                    "url": "https://www.ga4gh.org/"
+                },
+                {
+                    "name": "Sage Bionetworks",
+                    "url": "https://sagebionetworks.org/"
+                },
+                {
+                    "name": "Ontario Institute for Cancer Research",
+                    "url": "https://oicr.on.ca/"
+                },
+                {
+                    "name": "Dockstore",
+                    "url": "https://dockstore.org/"
+                }
+            ]
+        },
+        {
+            "name": "Parkinsons Disease Digital Biomarker",
+            "startDate": "2017-09-20",
+            "endDate": "2017-10-04",
+            "url": "https://www.synapse.org/#!Synapse:syn8717496",
+            "status": "closed",
+            "tags": [
+                "parkinsons"
+            ],
+            "organizers": [
+                {
+                    "firstName": "Udi",
+                    "lastName": "Rubin",
+                    "organizations": [
+                        "Early Signal Foundation"
+                    ]
+                },
+                {
+                    "firstName": "Daniela",
+                    "lastName": "Brunner",
+                    "organizations": [
+                        "Early Signal Foundation"
+                    ]
+                },
+                {
+                    "firstName": "Paolo",
+                    "lastName": "Bonato",
+                    "organizations": [
+                        "Harvard University"
+                    ]
+                },
+                {
+                    "firstName": "Federico",
+                    "lastName": "Parisi",
+                    "organizations": [
+                        "Harvard University"
+                    ]
+                },
+                {
+                    "firstName": "Daisy",
+                    "lastName": "Daeschler",
+                    "organizations": [
+                        "Michael J. Fox Foundation"
+                    ]
+                },
+                {
+                    "firstName": "Lauren",
+                    "lastName": "Bataille",
+                    "organizations": [
+                        "Michael J. Fox Foundation"
+                    ]
+                },
+                {
+                    "firstName": "Larsson",
+                    "lastName": "Omberg",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Lara",
+                    "lastName": "Mangravite",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Solly",
+                    "lastName": "Sieberts",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Peter",
+                    "lastName": "Banda",
+                    "organizations": [
+                        "University of Luxembourg"
+                    ]
+                },
+                {
+                    "firstName": "Ray",
+                    "lastName": "Dorsey",
+                    "organizations": [
+                        "University of Rochester Medical Center"
+                    ]
+                },
+                {
+                    "firstName": "Patrick",
+                    "lastName": "Aubin",
+                    "organizations": [
+                        "University of Washington"
+                    ]
+                },
+                {
+                    "firstName": "Erin",
+                    "lastName": "Soderberg",
+                    "organizations": [
+                        "Verily"
+                    ]
+                },
+                {
+                    "firstName": "William",
+                    "lastName": "Marks",
+                    "organizations": [
+                        "Verily"
+                    ]
+                }
+            ],
+            "organizations": [
+                {
+                    "name": "Early Signal Foundation",
+                    "url": "http://www.earlysignal.org"
+                },
+                {
+                    "name": "Harvard University",
+                    "url": "https://www.harvard.edu/"
+                },
+                {
+                    "name": "Michael J. Fox Foundation",
+                    "url": "https://www.michaeljfox.org/"
+                },
+                {
+                    "name": "Sage Bionetworks",
+                    "url": "https://sagebionetworks.org/"
+                },
+                {
+                    "name": "University of Luxembourg",
+                    "url": "https://wwwen.uni.lu/"
+                },
+                {
+                    "name": "University of Rochester Medical Center",
+                    "url": "https://www.urmedicine.org/"
+                },
+                {
+                    "name": "University of Washington",
+                    "url": "https://www.washington.edu/"
+                },
+                {
+                    "name": "Verily",
+                    "url": "https://verily.com/"
+                }
+            ]
+        },
+        {
+            "name": "NCI-CPTAC Proteogenomics",
+            "startDate": "2017-09-22",
+            "endDate": "2017-11-20",
+            "url": "https://www.synapse.org/#!Synapse:syn8228304",
+            "status": "closed",
+            "tags": [
+                "proteogenomics"
+            ],
+            "organizers": [
+                {
+                    "firstName": "Mi",
+                    "lastName": "Yang",
+                    "organizations": [
+                        "RWTH Aachen University"
+                    ]
+                },
+                {
+                    "firstName": "Zhi",
+                    "lastName": "Li",
+                    "organizations": [
+                        "New York University"
+                    ]
+                },
+                {
+                    "firstName": "Francesca",
+                    "lastName": "Petralia",
+                    "organizations": [
+                        "Mount Sinai"
+                    ]
+                },
+                {
+                    "firstName": "Pei",
+                    "lastName": "Wang",
+                    "organizations": [
+                        "Mount Sinai"
+                    ]
+                },
+                {
+                    "firstName": "Thomas",
+                    "lastName": "Yu",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Xiaoyu",
+                    "lastName": "Song",
+                    "organizations": [
+                        "Mount Sinai"
+                    ]
+                },
+                {
+                    "firstName": "Reza",
+                    "lastName": "Ghanadan",
+                    "organizations": [
+                        "Defense Advanced Research Projects Agency"
+                    ]
+                },
+                {
+                    "firstName": "Henry",
+                    "lastName": "Rodriguez",
+                    "organizations": [
+                        "National Cancer Institute"
+                    ]
+                },
+                {
+                    "firstName": "Samuel",
+                    "lastName": "Payne",
+                    "organizations": [
+                        "Pacific Northwest National Laboratory"
+                    ]
+                },
+                {
+                    "firstName": "Gustavo",
+                    "lastName": "Stolovitzky",
+                    "organizations": [
+                        "IBM Research",
+                        "Mount Sinai"
+                    ]
+                },
+                {
+                    "firstName": "Paul C.",
+                    "lastName": "Boutros",
+                    "organizations": [
+                        "Ontario Institute for Cancer Research"
+                    ]
+                },
+                {
+                    "firstName": "David",
+                    "lastName": "Fenyo",
+                    "organizations": [
+                        "New York University"
+                    ]
+                },
+                {
+                    "firstName": "Julio",
+                    "lastName": "Saez-Rodriguez",
+                    "organizations": [
+                        "European Bioinformatics Institute",
+                        "RWTH Aachen University",
+                        "Heidelberg University"
+                    ]
+                }
+            ],
+            "organizations": [
+                {
+                    "name": "RWTH Aachen University",
+                    "url": "https://www.rwth-aachen.de/go/id/a/?lidx=1"
+                },
+                {
+                    "name": "New York University",
+                    "url": "https://www.nyu.edu/"
+                },
+                {
+                    "name": "Mount Sinai",
+                    "url": "https://www.mountsinai.org/"
+                },
+                {
+                    "name": "Defense Advanced Research Projects Agency",
+                    "url": "https://www.darpa.mil/"
+                },
+                {
+                    "name": "National Cancer Institute",
+                    "url": "https://www.cancer.gov/"
+                },
+                {
+                    "name": "Pacific Northwest National Laboratory",
+                    "url": "https://www.pnnl.gov/"
+                },
+                {
+                    "name": "IBM Research",
+                    "url": "https://www.research.ibm.com/"
+                },
+                {
+                    "name": "Ontario Institute for Cancer Research",
+                    "url": "https://oicr.on.ca/"
+                }
+            ]
+        },
+        {
+            "name": "Multi-Targeting Drug",
+            "startDate": "2017-10-06",
+            "endDate": "2018-02-26",
+            "url": "https://www.synapse.org/#!Synapse:syn8404040",
+            "status": "closed",
+            "tags": [
+                "drug",
+                "multi-targeting-drug"
+            ],
+            "organizers": [
+                {
+                    "firstName": "Ross",
+                    "lastName": "Cagan",
+                    "organizations": [
+                        "Icahn School of Medicine at Mount Sinai"
+                    ]
+                },
+                {
+                    "firstName": "Avner",
+                    "lastName": "Schlessinger",
+                    "organizations": [
+                        "Icahn School of Medicine at Mount Sinai"
+                    ]
+                },
+                {
+                    "firstName": "Heather",
+                    "lastName": "Carlson",
+                    "organizations": [
+                        "University of Michigan"
+                    ]
+                },
+                {
+                    "firstName": "Ruben",
+                    "lastName": "Abagyan",
+                    "organizations": [
+                        "University of California San Diego"
+                    ]
+                },
+                {
+                    "firstName": "Alex",
+                    "lastName": "Tropsha",
+                    "organizations": [
+                        "University of North Carolina at Chapel Hill"
+                    ]
+                },
+                {
+                    "firstName": "Justin",
+                    "lastName": "Guinney",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Kristen",
+                    "lastName": "Dang",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Robert",
+                    "lastName": "Allaway",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                }
+            ],
+            "organizations": [
+                {
+                    "name": "Icahn School of Medicine at Mount Sinai",
+                    "url": "https://icahn.mssm.edu/"
+                },
+                {
+                    "name": "University of Michigan",
+                    "url": "https://umich.edu/"
+                },
+                {
+                    "name": "University of California San Diego",
+                    "url": "https://ucsd.edu/"
+                },
+                {
+                    "name": "University of North Carolina at Chapel Hill",
+                    "url": "https://www.unc.edu/"
+                },
+                {
+                    "name": "Sage Bionetworks",
+                    "url": "https://sagebionetworks.org/"
+                }
+            ]
+        },
+        {
+            "name": "Single Cell Transcriptomics",
+            "startDate": "2018-10-24",
+            "endDate": "2018-11-21",
+            "url": "https://www.synapse.org/#!Synapse:syn15665609",
+            "status": "closed",
+            "tags": [
+                "transcriptomics",
+                "single-cell"
+            ],
+            "organizers": [
+                {
+                    "firstName": "Pablo",
+                    "lastName": "Meyer",
+                    "organizations": [
+                        "IBM Research"
+                    ]
+                },
+                {
+                    "firstName": "Gustavo",
+                    "lastName": "Stolovitzky",
+                    "organizations": [
+                        "IBM Research",
+                        "Mount Sinai"
+                    ]
+                },
+                {
+                    "firstName": "Nikos",
+                    "lastName": "Karaiskos",
+                    "organizations": [
+                        "Max Delbruck Center for Molecular Medicine"
+                    ]
+                },
+                {
+                    "firstName": "Nikolaus",
+                    "lastName": "Rajewsky",
+                    "organizations": [
+                        "Max Delbruck Center for Molecular Medicine"
+                    ]
+                },
+                {
+                    "firstName": "Attila",
+                    "lastName": "Gabor",
+                    "organizations": [
+                        "Heidelberg University"
+                    ]
+                },
+                {
+                    "firstName": "Julio",
+                    "lastName": "Saez-Rodriguez",
+                    "organizations": [
+                        "European Bioinformatics Institute",
+                        "RWTH Aachen University",
+                        "Heidelberg University"
+                    ]
+                },
+                {
+                    "firstName": "Jovan",
+                    "lastName": "Tanevski",
+                    "organizations": [
+                        "Heidelberg University"
+                    ]
+                },
+                {
+                    "firstName": "Thomas",
+                    "lastName": "Yu",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                }
+            ],
+            "organizations": [
+                {
+                    "name": "IBM Research",
+                    "url": "https://www.research.ibm.com/"
+                },
+                {
+                    "name": "Max Delbruck Center for Molecular Medicine",
+                    "url": "https://www.mdc-berlin.de/"
+                },
+                {
+                    "name": "Heidelberg University",
+                    "url": "https://www.heidelberg.edu/"
+                },
+                {
+                    "name": "Sage Bionetworks",
+                    "url": "https://sagebionetworks.org/"
+                }
+            ]
+        },
+        {
+            "name": "IDG Drug-Kinase Binding",
+            "startDate": "2018-10-01",
+            "endDate": "2019-03-21",
+            "url": "https://www.synapse.org/#!Synapse:syn15667962",
+            "status": "closed",
+            "tags": [
+                "drug",
+                "drug-kinase-binding"
+            ],
+            "organizers": [
+                {
+                    "firstName": "Tero",
+                    "lastName": "Aittokallio",
+                    "organizations": [
+                        "Institute for Molecular Medicine Finland"
+                    ]
+                },
+                {
+                    "firstName": "Anna",
+                    "lastName": "Cichonska",
+                    "organizations": [
+                        "Institute for Molecular Medicine Finland"
+                    ]
+                },
+                {
+                    "firstName": "Balaguru",
+                    "lastName": "Ravikumar",
+                    "organizations": [
+                        "Institute for Molecular Medicine Finland"
+                    ]
+                },
+                {
+                    "firstName": "Justin",
+                    "lastName": "Guinney",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Kristen",
+                    "lastName": "Dang",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Robert",
+                    "lastName": "Allaway",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Andrew",
+                    "lastName": "Lamb",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Stockard",
+                    "lastName": "Simon",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Amy",
+                    "lastName": "Truong",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Gustavo",
+                    "lastName": "Stolovitzky",
+                    "organizations": [
+                        "IBM Research",
+                        "Mount Sinai"
+                    ]
+                }
+            ],
+            "organizations": [
+                {
+                    "name": "Institute for Molecular Medicine Finland",
+                    "url": "https://www.helsinki.fi/en/hilife-fimm"
+                },
+                {
+                    "name": "Sage Bionetworks",
+                    "url": "https://sagebionetworks.org/"
+                },
+                {
+                    "name": "IBM Research",
+                    "url": "https://www.research.ibm.com/"
+                }
+            ]
+        },
+        {
+            "name": "Malaria",
+            "startDate": "2019-04-30",
+            "endDate": "2019-08-15",
+            "url": "https://www.synapse.org/#!Synapse:syn16924919",
+            "status": "closed",
+            "tags": [
+                "malaria"
+            ],
+            "organizers": [
+                {
+                    "firstName": "Michael T.",
+                    "lastName": "Ferdig",
+                    "organizations": [
+                        "Eck Institute for Global Health"
+                    ]
+                },
+                {
+                    "firstName": "Gustavo",
+                    "lastName": "Stolovitzky",
+                    "organizations": [
+                        "IBM Research",
+                        "Mount Sinai"
+                    ]
+                },
+                {
+                    "firstName": "Geoffrey",
+                    "lastName": "Siwo",
+                    "organizations": [
+                        "Eck Institute for Global Health",
+                        "Center for Research Computing"
+                    ]
+                },
+                {
+                    "firstName": "Sage",
+                    "lastName": "Davis",
+                    "organizations": [
+                        "Eck Institute for Global Health"
+                    ]
+                },
+                {
+                    "firstName": "Katrina",
+                    "lastName": "Button-Simons",
+                    "organizations": [
+                        "Eck Institute for Global Health"
+                    ]
+                },
+                {
+                    "firstName": "Pablo",
+                    "lastName": "Meyer",
+                    "organizations": [
+                        "IBM Research"
+                    ]
+                },
+                {
+                    "firstName": "Nicola",
+                    "lastName": "Mulder",
+                    "organizations": [
+                        "H3ABioNet"
+                    ]
+                },
+                {
+                    "firstName": "Amel",
+                    "lastName": "Ghouila",
+                    "organizations": [
+                        "H3ABioNet"
+                    ]
+                },
+                {
+                    "firstName": "Sumir",
+                    "lastName": "Panji",
+                    "organizations": [
+                        "H3ABioNet"
+                    ]
+                },
+                {
+                    "firstName": "Thomas",
+                    "lastName": "Yu",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Julie",
+                    "lastName": "Bletz",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Michael",
+                    "lastName": "Mason",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                }
+            ],
+            "organizations": [
+                {
+                    "name": "Eck Institute for Global Health",
+                    "url": "https://globalhealth.nd.edu/"
+                },
+                {
+                    "name": "IBM Research",
+                    "url": "https://www.research.ibm.com/"
+                },
+                {
+                    "name": "H3ABioNet",
+                    "url": "https://h3abionet.org/"
+                },
+                {
+                    "name": "Center for Research Computing",
+                    "url": "https://crc.nd.edu/"
+                },
+                {
+                    "name": "University of Notre Dame",
+                    "url": "https://www.nd.edu/"
+                },
+                {
+                    "name": "Sage Bionetworks",
+                    "url": "https://sagebionetworks.org/"
+                }
+            ]
+        },
+        {
+            "name": "Preterm Birth Prediction Challenge, Transcriptomics",
+            "startDate": "2019-05-22",
+            "endDate": "2019-08-15",
+            "url": "https://www.synapse.org/#!Synapse:syn18380862",
+            "status": "closed",
+            "tags": [
+                "preterm-birth"
+            ],
+            "organizers": [
+                {
+                    "firstName": "Adi L.",
+                    "lastName": "Tarca",
+                    "organizations": [
+                        "Wayne State University"
+                    ]
+                },
+                {
+                    "firstName": "Marina",
+                    "lastName": "Sirota",
+                    "organizations": [
+                        "University of California San Francisco"
+                    ]
+                },
+                {
+                    "firstName": "Roberto",
+                    "lastName": "Romero",
+                    "organizations": [
+                        "Eunice Kennedy Shriver National Institute of Child Health and Human Development"
+                    ]
+                },
+                {
+                    "firstName": "Bogdan",
+                    "lastName": "Done",
+                    "organizations": [
+                        "Wayne State University"
+                    ]
+                },
+                {
+                    "firstName": "Gaia",
+                    "lastName": "Andreoletti",
+                    "organizations": [
+                        "University of California San Francisco"
+                    ]
+                },
+                {
+                    "firstName": "Nima",
+                    "lastName": "Aghaeepour",
+                    "organizations": [
+                        "Stanford University"
+                    ]
+                },
+                {
+                    "firstName": "James",
+                    "lastName": "Costello",
+                    "organizations": [
+                        "University of Colorado Anschutz Medical Campus"
+                    ]
+                },
+                {
+                    "firstName": "Gustavo",
+                    "lastName": "Stolovitzky",
+                    "organizations": [
+                        "IBM Research",
+                        "Mount Sinai"
+                    ]
+                }
+            ],
+            "organizations": [
+                {
+                    "name": "Wayne State University",
+                    "url": "https://wayne.edu/"
+                },
+                {
+                    "name": "University of California San Francisco",
+                    "url": "https://www.ucsf.edu/"
+                },
+                {
+                    "name": "Eunice Kennedy Shriver National Institute of Child Health and Human Development",
+                    "url": "https://www.nichd.nih.gov/"
+                },
+                {
+                    "name": "Stanford University",
+                    "url": "https://www.stanford.edu/"
+                },
+                {
+                    "name": "University of Colorado Anschutz Medical Campus",
+                    "url": "https://www.cuanschutz.edu/"
+                },
+                {
+                    "name": "IBM Research",
+                    "url": "https://www.research.ibm.com/"
+                }
+            ]
+        },
+        {
+            "name": "Single Cell Signaling in Breast Cancer",
+            "startDate": "2018-09-01",
+            "endDate": "2019-11-15",
+            "url": "https://www.synapse.org/#!Synapse:syn20366914",
+            "status": "closed",
+            "tags": [
+                "single-cell",
+                "signaling",
+                "cancer",
+                "breast-cancer"
+            ],
+            "organizers": [
+                {
+                    "firstName": "Marco",
+                    "lastName": "Tognetti",
+                    "organizations": [
+                        "ETH Zurich",
+                        "University of Zurich"
+                    ]
+                },
+                {
+                    "firstName": "Bernd",
+                    "lastName": "Bodenmiller",
+                    "organizations": [
+                        "University of Zurich"
+                    ]
+                },
+                {
+                    "firstName": "Attila",
+                    "lastName": "Gabor",
+                    "organizations": [
+                        "Heidelberg University"
+                    ]
+                },
+                {
+                    "firstName": "Julio",
+                    "lastName": "Saez-Rodriguez",
+                    "organizations": [
+                        "European Bioinformatics Institute",
+                        "RWTH Aachen University",
+                        "Heidelberg University"
+                    ]
+                },
+                {
+                    "firstName": "Paola",
+                    "lastName": "Picotti",
+                    "organizations": [
+                        "ETH Zurich"
+                    ]
+                },
+                {
+                    "firstName": "Verena",
+                    "lastName": "Chung",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Thomas",
+                    "lastName": "Yu",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Julie",
+                    "lastName": "Bletz",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                }
+            ],
+            "organizations": [
+                {
+                    "name": "University of Zurich",
+                    "url": "https://www.uzh.ch/en.html"
+                },
+                {
+                    "name": "Heidelberg University",
+                    "url": "https://www.heidelberg.edu/"
+                },
+                {
+                    "name": "ETH Zurich",
+                    "url": "https://ethz.ch/en.html"
+                },
+                {
+                    "name": "Sage Bionetworks",
+                    "url": "https://sagebionetworks.org/"
+                }
+            ]
+        },
+        {
+            "name": "EHR Mortality Prediction",
+            "startDate": "2019-10-09",
+            "endDate": "2020-01-23",
+            "url": "https://www.synapse.org/#!Synapse:syn18405991",
+            "status": "closed",
+            "tags": [
+                "ehr",
+                "nlp"
+            ],
+            "organizers": [
+                {
+                    "firstName": "Tim",
+                    "lastName": "Bergquist",
+                    "organizations": [
+                        "Sage Bionetworks",
+                        "University of Washington"
+                    ]
+                },
+                {
+                    "firstName": "Thomas",
+                    "lastName": "Schaffter",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Justin",
+                    "lastName": "Prosser",
+                    "organizations": [
+                        "University of Washington"
+                    ]
+                },
+                {
+                    "firstName": "Thomas",
+                    "lastName": "Yu",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Yao",
+                    "lastName": "Yan",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Justin",
+                    "lastName": "Guinney",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Sean",
+                    "lastName": "Mooney",
+                    "organizations": [
+                        "University of Washington"
+                    ]
+                }
+            ],
+            "organizations": [
+                {
+                    "name": "University of Washington",
+                    "url": "https://www.washington.edu/"
+                },
+                {
+                    "name": "Sage Bionetworks",
+                    "url": "https://sagebionetworks.org/"
+                }
+            ]
+        },
+        {
+            "name": "Allen Institute Cell Lineage Reconstruction",
+            "startDate": "2019-12-23",
+            "endDate": "2020-02-06",
+            "url": "https://www.synapse.org/#!Synapse:syn20692755",
+            "status": "closed",
+            "tags": [
+                "crispr",
+                "cell-lineage"
+            ],
+            "organizers": [
+                {
+                    "firstName": "Pablo",
+                    "lastName": "Meyer",
+                    "organizations": [
+                        "IBM Research"
+                    ]
+                },
+                {
+                    "firstName": "Jay",
+                    "lastName": "Shendure",
+                    "organizations": [
+                        "University of Washington"
+                    ]
+                },
+                {
+                    "firstName": "Michael",
+                    "lastName": "Elowitz",
+                    "organizations": [
+                        "California Institute of Technology"
+                    ]
+                },
+                {
+                    "firstName": "Max",
+                    "lastName": "Telford",
+                    "organizations": [
+                        "London's Global University"
+                    ]
+                },
+                {
+                    "firstName": "Ehud",
+                    "lastName": "Shapiro",
+                    "organizations": [
+                        "Weizmann Institute of Science"
+                    ]
+                },
+                {
+                    "firstName": "Alejandro",
+                    "lastName": "Granados",
+                    "organizations": [
+                        "California Institute of Technology"
+                    ]
+                },
+                {
+                    "firstName": "Irepan",
+                    "lastName": "Salvador",
+                    "organizations": [
+                        "London's Global University"
+                    ]
+                },
+                {
+                    "firstName": "Ofir",
+                    "lastName": "Raz",
+                    "organizations": [
+                        "Weizmann Institute of Science"
+                    ]
+                },
+                {
+                    "firstName": "Nicole",
+                    "lastName": "Huber",
+                    "organizations": [
+                        "Allen Institute"
+                    ]
+                },
+                {
+                    "firstName": "Kathryn",
+                    "lastName": "Richmond",
+                    "organizations": [
+                        "Allen Institute"
+                    ]
+                },
+                {
+                    "firstName": "Verena",
+                    "lastName": "Chung",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Thomas",
+                    "lastName": "Yu",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Julie",
+                    "lastName": "Bletz",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Mike",
+                    "lastName": "Mason",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Amy",
+                    "lastName": "Truong",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                }
+            ],
+            "organizations": [
+                {
+                    "name": "IBM Research",
+                    "url": "https://www.research.ibm.com/"
+                },
+                {
+                    "name": "University of Washington",
+                    "url": "https://www.washington.edu/"
+                },
+                {
+                    "name": "California Institute of Technology",
+                    "url": "https://www.caltech.edu/"
+                },
+                {
+                    "name": "London's Global University",
+                    "url": "https://www.ucl.ac.uk/"
+                },
+                {
+                    "name": "Weizmann Institute of Science",
+                    "url": "https://www.weizmann.ac.il/pages/"
+                },
+                {
+                    "name": "Allen Institute",
+                    "url": "https://alleninstitute.org/"
+                },
+                {
+                    "name": "Sage Bionetworks",
+                    "url": "https://sagebionetworks.org/"
+                }
+            ]
+        },
+        {
+            "name": "Tumor Deconvolution",
+            "startDate": "2019-06-26",
+            "endDate": "2020-04-30",
+            "url": "https://www.synapse.org/#!Synapse:syn15589870",
+            "status": "closed",
+            "tags": [
+                "cancer",
+                "tumor-deconvolution"
+            ],
+            "organizers": [],
+            "organizations": [
+                {
+                    "name": "Institut Curie",
+                    "url": "https://institut-curie.org/"
+                },
+                {
+                    "name": "Ligue Nationale Contre le Cancer",
+                    "url": "https://www.ligue-cancer.net/"
+                },
+                {
+                    "name": "Oregon Health & Science University",
+                    "url": "https://www.ohsu.edu/"
+                },
+                {
+                    "name": "Sage Bionetworks",
+                    "url": "https://sagebionetworks.org/"
+                },
+                {
+                    "name": "Stanford University",
+                    "url": "https://www.stanford.edu/"
+                }
+            ]
+        },
+        {
+            "name": "CTD2 Pancancer Drug Activity",
+            "startDate": "2019-12-10",
+            "endDate": "2020-02-13",
+            "url": "https://www.synapse.org/#!Synapse:syn20968331",
+            "status": "closed",
+            "tags": [
+                "panacea",
+                "drug",
+                "cancer"
+            ],
+            "organizers": [
+                {
+                    "firstName": "Andrea",
+                    "lastName": "Califano",
+                    "organizations": [
+                        "Columbia University"
+                    ]
+                },
+                {
+                    "firstName": "Eugene",
+                    "lastName": "Douglass",
+                    "organizations": [
+                        "Columbia University"
+                    ]
+                },
+                {
+                    "firstName": "Mahalaxmi",
+                    "lastName": "Aburi",
+                    "organizations": [
+                        "Columbia University"
+                    ]
+                },
+                {
+                    "firstName": "Gustavo",
+                    "lastName": "Stolovitzky",
+                    "organizations": [
+                        "IBM Research",
+                        "Mount Sinai"
+                    ]
+                },
+                {
+                    "firstName": "Daniela",
+                    "lastName": "Gerhard",
+                    "organizations": [
+                        "Cancer Target Discovery And Development",
+                        "National Cancer Institute"
+                    ]
+                },
+                {
+                    "firstName": "Julio",
+                    "lastName": "Saez-Rodriguez",
+                    "organizations": [
+                        "European Bioinformatics Institute",
+                        "RWTH Aachen University",
+                        "Heidelberg University"
+                    ]
+                },
+                {
+                    "firstName": "Bence",
+                    "lastName": "Szalai",
+                    "organizations": [
+                        "Semmelweis University"
+                    ]
+                },
+                {
+                    "firstName": "Robert",
+                    "lastName": "Allaway",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Justin",
+                    "lastName": "Guinney",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Julie",
+                    "lastName": "Bletz",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Thomas",
+                    "lastName": "Yu",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Verena",
+                    "lastName": "Chung",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Amy",
+                    "lastName": "Truong",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                }
+            ],
+            "organizations": [
+                {
+                    "name": "Columbia University",
+                    "url": "https://www.columbia.edu/"
+                },
+                {
+                    "name": "Icahn School of Medicine at Mount Sinai",
+                    "url": "https://icahn.mssm.edu/"
+                },
+                {
+                    "name": "National Cancer Institute",
+                    "url": "https://www.cancer.gov/"
+                },
+                {
+                    "name": "Cancer Target Discovery And Development",
+                    "url": "https://ocg.cancer.gov/programs/ctd2"
+                },
+                {
+                    "name": "Heidelberg University",
+                    "url": "https://www.heidelberg.edu/"
+                },
+                {
+                    "name": "Semmelweis University",
+                    "url": "https://semmelweis.hu/english/"
+                },
+                {
+                    "name": "Sage Bionetworks",
+                    "url": "https://sagebionetworks.org/"
+                }
+            ]
+        },
+        {
+            "name": "CTD2 BeatAML",
+            "startDate": "2020-01-06",
+            "endDate": "2020-03-16",
+            "url": "https://www.synapse.org/#!Synapse:syn20940518",
+            "status": "closed",
+            "tags": [
+                "cancer",
+                "aml"
+            ],
+            "organizers": [
+                {
+                    "firstName": "Adam",
+                    "lastName": "Margolin",
+                    "organizations": [
+                        "Oregon Health & Science University",
+                        "\"Sage Bionetworks, Oregon Health & Science University, Icahn School of Medicine at Mount Sinai\"",
+                        "Icahn School of Medicine at Mount Sinai"
+                    ]
+                },
+                {
+                    "firstName": "Justin",
+                    "lastName": "Guinney",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Brian",
+                    "lastName": "White",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Mike",
+                    "lastName": "Mason",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Jacob",
+                    "lastName": "Roberts",
+                    "organizations": [
+                        "Icahn School of Medicine at Mount Sinai"
+                    ]
+                },
+                {
+                    "firstName": "Jeffrey",
+                    "lastName": "Tyner",
+                    "organizations": [
+                        "Oregon Health & Science University"
+                    ]
+                },
+                {
+                    "firstName": "Charles",
+                    "lastName": "Goldthwaite",
+                    "organizations": [
+                        "National Institutes of Health"
+                    ]
+                },
+                {
+                    "firstName": "Cindy",
+                    "lastName": "Deleon",
+                    "organizations": [
+                        "Icahn School of Medicine at Mount Sinai"
+                    ]
+                },
+                {
+                    "firstName": "Daniela S.",
+                    "lastName": "Gerhard",
+                    "organizations": [
+                        "National Institutes of Health"
+                    ]
+                },
+                {
+                    "firstName": "Krystal",
+                    "lastName": "Rivers",
+                    "organizations": [
+                        "National Institutes of Health"
+                    ]
+                },
+                {
+                    "firstName": "Julie",
+                    "lastName": "Bletz",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Pamela",
+                    "lastName": "Birriel",
+                    "organizations": [
+                        "National Institutes of Health"
+                    ]
+                },
+                {
+                    "firstName": "Thomas",
+                    "lastName": "Yu",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Verena",
+                    "lastName": "Chung",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Amy",
+                    "lastName": "Truong",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                }
+            ],
+            "organizations": [
+                {
+                    "name": "Icahn School of Medicine at Mount Sinai",
+                    "url": "https://icahn.mssm.edu/"
+                },
+                {
+                    "name": "Oregon Health & Science University",
+                    "url": "https://www.ohsu.edu/"
+                },
+                {
+                    "name": "National Institutes of Health",
+                    "url": "https://www.nih.gov/"
+                },
+                {
+                    "name": "Sage Bionetworks",
+                    "url": "https://sagebionetworks.org/"
+                }
+            ]
+        },
+        {
+            "name": "Metadata Automation DREAM Challenge",
+            "startDate": "2020-02-14",
+            "endDate": "2020-06-02",
+            "url": "https://www.synapse.org/#!Synapse:syn18065891",
+            "status": "closed",
+            "tags": [
+                "metadata"
+            ],
+            "organizers": [
+                {
+                    "firstName": "Eric",
+                    "lastName": "Johnson",
+                    "organizations": [
+                        "National Cancer Institute"
+                    ]
+                },
+                {
+                    "firstName": "Bron",
+                    "lastName": "Kisler",
+                    "organizations": [
+                        "National Cancer Institute"
+                    ]
+                },
+                {
+                    "firstName": "James",
+                    "lastName": "Eddy",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Thomas",
+                    "lastName": "Schaffter",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Gilberto",
+                    "lastName": "Fragoso",
+                    "organizations": [
+                        "National Cancer Institute"
+                    ]
+                },
+                {
+                    "firstName": "Denise",
+                    "lastName": "Warzel",
+                    "organizations": [
+                        "National Cancer Institute"
+                    ]
+                },
+                {
+                    "firstName": "Sherri De",
+                    "lastName": "Coronado",
+                    "organizations": [
+                        "National Cancer Institute"
+                    ]
+                },
+                {
+                    "firstName": "Thomas",
+                    "lastName": "Yu",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Verena",
+                    "lastName": "Chung",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Justin",
+                    "lastName": "Guinney",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Jennifer",
+                    "lastName": "Couch",
+                    "organizations": [
+                        "National Cancer Institute"
+                    ]
+                },
+                {
+                    "firstName": "Melissa",
+                    "lastName": "Haendel",
+                    "organizations": [
+                        "Oregon Health & Science University"
+                    ]
+                }
+            ],
+            "organizations": [
+                {
+                    "name": "National Cancer Institute",
+                    "url": "https://www.cancer.gov/"
+                },
+                {
+                    "name": "Oregon Health & Science University",
+                    "url": "https://www.ohsu.edu/"
+                },
+                {
+                    "name": "Sage Bionetworks",
+                    "url": "https://sagebionetworks.org/"
+                }
+            ]
+        },
+        {
+            "name": "Automated Scoring of Radiographic Joint Damage",
+            "startDate": "2019-11-22",
+            "endDate": "2020-05-21",
+            "url": "https://www.synapse.org/#!Synapse:syn20545111",
+            "status": "closed",
+            "tags": [
+                "arthritis",
+                "rheumatoid-arthritis"
+            ],
+            "organizers": [
+                {
+                    "firstName": "S. Louis Bridges",
+                    "lastName": "Jr.",
+                    "organizations": [
+                        "University of Alabama at Birmingham"
+                    ]
+                },
+                {
+                    "firstName": "Jake Y.",
+                    "lastName": "Chen",
+                    "organizations": [
+                        "University of Alabama at Birmingham"
+                    ]
+                },
+                {
+                    "firstName": "Dongmei",
+                    "lastName": "Sun",
+                    "organizations": [
+                        "University of Alabama at Birmingham"
+                    ]
+                },
+                {
+                    "firstName": "Mason",
+                    "lastName": "Frazier",
+                    "organizations": [
+                        "University of Alabama at Birmingham"
+                    ]
+                },
+                {
+                    "firstName": "Percio S.",
+                    "lastName": "Gulko",
+                    "organizations": [
+                        "Icahn School of Medicine at Mount Sinai"
+                    ]
+                },
+                {
+                    "firstName": "Gustavo",
+                    "lastName": "Stolovitzky",
+                    "organizations": [
+                        "IBM Research",
+                        "Mount Sinai"
+                    ]
+                },
+                {
+                    "firstName": "James C",
+                    "lastName": "Costello",
+                    "organizations": [
+                        "University of Colorado Anschutz Medical Campus"
+                    ]
+                },
+                {
+                    "firstName": "Jelai",
+                    "lastName": "Wang",
+                    "organizations": [
+                        "University of Alabama at Birmingham"
+                    ]
+                },
+                {
+                    "firstName": "Robert",
+                    "lastName": "Allaway",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Thomas",
+                    "lastName": "Yu",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                }
+            ],
+            "organizations": [
+                {
+                    "name": "University of Alabama at Birmingham",
+                    "url": "https://www.uab.edu/home/"
+                },
+                {
+                    "name": "Icahn School of Medicine at Mount Sinai",
+                    "url": "https://icahn.mssm.edu/"
+                },
+                {
+                    "name": "IBM Research",
+                    "url": "https://www.research.ibm.com/"
+                },
+                {
+                    "name": "University of Colorado Anschutz Medical Campus",
+                    "url": "https://www.cuanschutz.edu/"
+                },
+                {
+                    "name": "Sage Bionetworks",
+                    "url": "https://sagebionetworks.org/"
+                }
+            ]
+        },
+        {
+            "name": "Electronic Medical Record NLP DREAM Challenge",
+            "startDate": "2021-01-01",
+            "endDate": "2021-01-01",
+            "url": "https://www.synapse.org/#!Synapse:syn18361217",
+            "status": "closed",
+            "tags": [
+                "ehr",
+                "nlp"
+            ],
+            "organizers": [
+                {
+                    "firstName": "Mike",
+                    "lastName": "Mason",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Tim",
+                    "lastName": "Bergquist",
+                    "organizations": [
+                        "Sage Bionetworks",
+                        "University of Washington"
+                    ]
+                },
+                {
+                    "firstName": "Yao",
+                    "lastName": "Yan",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "Verena",
+                    "lastName": "Chung",
+                    "organizations": [
+                        "Sage Bionetworks"
+                    ]
+                },
+                {
+                    "firstName": "John",
+                    "lastName": "Philip",
+                    "organizations": [
+                        "Memorial Sloan Kettering Cancer Center"
+                    ]
+                },
+                {
+                    "firstName": "Luke",
+                    "lastName": "Geneslaw",
+                    "organizations": [
+                        "Memorial Sloan Kettering Cancer Center"
+                    ]
+                },
+                {
+                    "firstName": "Ken",
+                    "lastName": "Kehl",
+                    "organizations": [
+                        "Dana-Farber Cancer Institute"
+                    ]
+                },
+                {
+                    "firstName": "Brady",
+                    "lastName": "Bernard",
+                    "organizations": [
+                        "Providence Health & Services"
+                    ]
+                },
+                {
+                    "firstName": "Amber",
+                    "lastName": "Simpson",
+                    "organizations": [
+                        "Queen's University"
+                    ]
+                },
+                {
+                    "firstName": "Karen",
+                    "lastName": "Batch",
+                    "organizations": [
+                        "Queen's University"
+                    ]
+                },
+                {
+                    "firstName": "Meliha",
+                    "lastName": "Yetisgen",
+                    "organizations": [
+                        "University of Washington"
+                    ]
+                }
+            ],
+            "organizations": [
+                {
+                    "name": "Memorial Sloan Kettering Cancer Center",
+                    "url": "https://www.mskcc.org/"
+                },
+                {
+                    "name": "Dana-Farber Cancer Institute",
+                    "url": "https://www.dana-farber.org/"
+                },
+                {
+                    "name": "Providence Health & Services",
+                    "url": "https://www.providence.org/en"
+                },
+                {
+                    "name": "Queen's University",
+                    "url": "https://www.queensu.ca/"
+                },
+                {
+                    "name": "University of Washington",
+                    "url": "https://www.washington.edu/"
+                },
+                {
+                    "name": "Sage Bionetworks",
+                    "url": "https://sagebionetworks.org/"
+                }
+            ]
+        }
+    ],
+    "organizations": [
+        {
+            "name": "Allen Institute",
+            "url": "https://alleninstitute.org/"
+        },
+        {
+            "name": "Apple Health",
+            "url": "https://www.hca.wa.gov/health-care-services-supports/apple-health-medicaid-coverage"
+        },
+        {
+            "name": "Arthritis Internet Registry",
+            "url": "https://www.arthritis-research.org/join-research/arthritis-internet-registry"
+        },
+        {
+            "name": "AstraZeneca",
+            "url": "https://www.astrazeneca.com/"
+        },
+        {
+            "name": "Autodesk",
+            "url": "https://www.autodesk.com/"
+        },
+        {
+            "name": "Brigham And Women's Hospital",
+            "url": "https://www.brighamandwomens.org/"
+        },
+        {
+            "name": "Brigham Young University",
+            "url": "https://www.byu.edu/"
+        },
+        {
+            "name": "Broad Institute",
+            "url": "https://www.broadinstitute.org/"
+        },
+        {
+            "name": "California Institute of Technology",
+            "url": "https://www.caltech.edu/"
+        },
+        {
+            "name": "Cancer Target Discovery And Development",
+            "url": "https://ocg.cancer.gov/programs/ctd2"
+        },
+        {
+            "name": "Celgene",
+            "url": "https://www.celgene.com"
+        },
+        {
+            "name": "Center for Research Computing",
+            "url": "https://crc.nd.edu/"
+        },
+        {
+            "name": "Columbia University",
+            "url": "https://www.columbia.edu/"
+        },
+        {
+            "name": "Consejo Superior de Investigaciones Cientificas",
+            "url": "https://www.csic.es/"
+        },
+        {
+            "name": "Corrona",
+            "url": "https://www.corrona.org/"
+        },
+        {
+            "name": "Dana-Farber Cancer Institute",
+            "url": "https://www.dana-farber.org/"
+        },
+        {
+            "name": "Defense Advanced Research Projects Agency",
+            "url": "https://www.darpa.mil/"
+        },
+        {
+            "name": "Dockstore",
+            "url": "https://dockstore.org/"
+        },
+        {
+            "name": "Duke University",
+            "url": "https://duke.edu/"
+        },
+        {
+            "name": "Durham VA Health Care System",
+            "url": "https://www.durham.va.gov/"
+        },
+        {
+            "name": "Early Signal Foundation",
+            "url": "http://www.earlysignal.org"
+        },
+        {
+            "name": "Eck Institute for Global Health",
+            "url": "https://globalhealth.nd.edu/"
+        },
+        {
+            "name": "ETH Zurich",
+            "url": "https://ethz.ch/en.html"
+        },
+        {
+            "name": "Eunice Kennedy Shriver National Institute of Child Health and Human Development",
+            "url": "https://www.nichd.nih.gov/"
+        },
+        {
+            "name": "European Bioinformatics Institute",
+            "url": "https://www.ebi.ac.uk/"
+        },
+        {
+            "name": "Feinstein Institutes for Medical Research",
+            "url": "https://feinstein.northwell.edu/"
+        },
+        {
+            "name": "George Washington University",
+            "url": "https://www.gwu.edu/"
+        },
+        {
+            "name": "Global Alliance for Genomics and Health",
+            "url": "https://www.ga4gh.org/"
+        },
+        {
+            "name": "H3ABioNet",
+            "url": "https://h3abionet.org/"
+        },
+        {
+            "name": "Harvard University",
+            "url": "https://www.harvard.edu/"
+        },
+        {
+            "name": "Heidelberg University",
+            "url": "https://www.heidelberg.edu/"
+        },
+        {
+            "name": "Helmholtz Zentrum Munchen",
+            "url": "https://www.helmholtz-muenchen.de/en/"
+        },
+        {
+            "name": "Heritage Provider Network",
+            "url": "http://www.heritageprovidernetwork.com/"
+        },
+        {
+            "name": "IBM Research",
+            "url": "https://www.research.ibm.com/"
+        },
+        {
+            "name": "Icahn School of Medicine at Mount Sinai",
+            "url": "https://icahn.mssm.edu/"
+        },
+        {
+            "name": "Institut Curie",
+            "url": "https://institut-curie.org/"
+        },
+        {
+            "name": "Institute for Molecular Medicine Finland",
+            "url": "https://www.helsinki.fi/en/hilife-fimm"
+        },
+        {
+            "name": "Kaiser Permanente Washington Health Research Institute",
+            "url": "https://www.kpwashingtonresearch.org/"
+        },
+        {
+            "name": "King's College London",
+            "url": "https://www.kcl.ac.uk/"
+        },
+        {
+            "name": "Ligue Nationale Contre le Cancer",
+            "url": "https://www.ligue-cancer.net/"
+        },
+        {
+            "name": "London's Global University",
+            "url": "https://www.ucl.ac.uk/"
+        },
+        {
+            "name": "Ludwig Maximilian University of Munich",
+            "url": "https://www.en.uni-muenchen.de/index.html"
+        },
+        {
+            "name": "Massachusetts General Hospital",
+            "url": "https://www.massgeneral.org/"
+        },
+        {
+            "name": "Massachusetts Institute of Technology",
+            "url": "https://www.mit.edu/"
+        },
+        {
+            "name": "Max Delbruck Center for Molecular Medicine",
+            "url": "https://www.mdc-berlin.de/"
+        },
+        {
+            "name": "MD Anderson Cancer Center",
+            "url": "https://www.mdanderson.org/"
+        },
+        {
+            "name": "Memorial Sloan Kettering Cancer Center",
+            "url": "https://www.mskcc.org/"
+        },
+        {
+            "name": "Merck",
+            "url": "https://www.merck.com/"
+        },
+        {
+            "name": "Michael J. Fox Foundation",
+            "url": "https://www.michaeljfox.org/"
+        },
+        {
+            "name": "MINES ParisTech",
+            "url": "http://www.mines-paristech.eu/"
+        },
+        {
+            "name": "Mount Sinai",
+            "url": "https://www.mountsinai.org/"
+        },
+        {
+            "name": "Multiple Myeloma Research Foundation",
+            "url": "https://themmrf.org/"
+        },
+        {
+            "name": "Nathan S. Kline Institute for Psychiatric Research",
+            "url": "https://www.nki.rfmh.org/"
+        },
+        {
+            "name": "National Cancer Institute",
+            "url": "https://www.cancer.gov/"
+        },
+        {
+            "name": "National Center for Advancing Translational Sciences",
+            "url": "https://ncats.nih.gov/"
+        },
+        {
+            "name": "National Institute of Environmental Health Sciences",
+            "url": "https://www.niehs.nih.gov/"
+        },
+        {
+            "name": "National Institutes of Health",
+            "url": "https://www.nih.gov/"
+        },
+        {
+            "name": "New York University",
+            "url": "https://www.nyu.edu/"
+        },
+        {
+            "name": "Numerate",
+            "url": "http://www.numerate.com/"
+        },
+        {
+            "name": "Ontario Institute for Cancer Research",
+            "url": "https://oicr.on.ca/"
+        },
+        {
+            "name": "Oregon Health & Science University",
+            "url": "https://www.ohsu.edu/"
+        },
+        {
+            "name": "Pacific Northwest National Laboratory",
+            "url": "https://www.pnnl.gov/"
+        },
+        {
+            "name": "Prize4Life",
+            "url": "https://en.wikipedia.org/wiki/Prize4Life"
+        },
+        {
+            "name": "Project Data Sphere",
+            "url": "https://www.projectdatasphere.org/"
+        },
+        {
+            "name": "Prostate Cancer Foundation",
+            "url": "https://www.pcf.org/"
+        },
+        {
+            "name": "Providence Health & Services",
+            "url": "https://www.providence.org/en"
+        },
+        {
+            "name": "Queen's University",
+            "url": "https://www.queensu.ca/"
+        },
+        {
+            "name": "Radish Medical Solutions",
+            "url": "http://www.radishmedical.com/"
+        },
+        {
+            "name": "Rice University",
+            "url": "https://www.rice.edu/"
+        },
+        {
+            "name": "RWTH Aachen University",
+            "url": "https://www.rwth-aachen.de/go/id/a/?lidx=1"
+        },
+        {
+            "name": "Sage Bionetworks",
+            "url": "https://sagebionetworks.org/"
+        },
+        {
+            "name": "Seattle Cancer Care Alliance",
+            "url": "https://www.seattlecca.org/"
+        },
+        {
+            "name": "Semmelweis University",
+            "url": "https://semmelweis.hu/english/"
+        },
+        {
+            "name": "Hospital for Sick Children",
+            "url": "https://www.sickkids.ca/Research/"
+        },
+        {
+            "name": "Stanford University",
+            "url": "https://www.stanford.edu/"
+        },
+        {
+            "name": "Francis Crick Institute",
+            "url": "https://www.crick.ac.uk/"
+        },
+        {
+            "name": "Rockefeller University",
+            "url": "https://www.rockefeller.edu/"
+        },
+        {
+            "name": "Trinity College Institute of Neuroscience",
+            "url": "https://www.tcd.ie/Neuroscience/"
+        },
+        {
+            "name": "Tulane University",
+            "url": "https://tulane.edu/"
+        },
+        {
+            "name": "U.S. Food & Drug Administration",
+            "url": "https://www.fda.gov/home"
+        },
+        {
+            "name": "Lausanne University Hospital",
+            "url": "https://www.lausanneuniversityhospital.com/home"
+        },
+        {
+            "name": "University of Alabama at Birmingham",
+            "url": "https://www.uab.edu/home/"
+        },
+        {
+            "name": "University of California San Diego",
+            "url": "https://ucsd.edu/"
+        },
+        {
+            "name": "University of California San Francisco",
+            "url": "https://www.ucsf.edu/"
+        },
+        {
+            "name": "University of California Santa Cruz",
+            "url": "https://www.ucsc.edu/"
+        },
+        {
+            "name": "University of Colorado Anschutz Medical Campus",
+            "url": "https://www.cuanschutz.edu/"
+        },
+        {
+            "name": "University of Kentucky",
+            "url": "http://www.uky.edu/"
+        },
+        {
+            "name": "University of Lausanne",
+            "url": "https://www.unil.ch/central/en/home.html"
+        },
+        {
+            "name": "University of Lisbon",
+            "url": "https://www.ulisboa.pt/en"
+        },
+        {
+            "name": "University of Luxembourg",
+            "url": "https://wwwen.uni.lu/"
+        },
+        {
+            "name": "University of Michigan",
+            "url": "https://umich.edu/"
+        },
+        {
+            "name": "University of North Carolina at Chapel Hill",
+            "url": "https://www.unc.edu/"
+        },
+        {
+            "name": "University of Notre Dame",
+            "url": "https://www.nd.edu/"
+        },
+        {
+            "name": "University of Rochester Medical Center",
+            "url": "https://www.urmedicine.org/"
+        },
+        {
+            "name": "University of Texas Southwestern Medical Center",
+            "url": "https://www.utsouthwestern.edu/"
+        },
+        {
+            "name": "University of Toronto",
+            "url": "https://www.utoronto.ca/"
+        },
+        {
+            "name": "University of Washington",
+            "url": "https://www.washington.edu/"
+        },
+        {
+            "name": "University of Zurich",
+            "url": "https://www.uzh.ch/en.html"
+        },
+        {
+            "name": "Urban Green Energy",
+            "url": "https://www.ugei.com/"
+        },
+        {
+            "name": "University of Virginia",
+            "url": "https://www.virginia.edu/"
+        },
+        {
+            "name": "Verily",
+            "url": "https://verily.com/"
+        },
+        {
+            "name": "Wayne State University",
+            "url": "https://wayne.edu/"
+        },
+        {
+            "name": "Weizmann Institute of Science",
+            "url": "https://www.weizmann.ac.il/pages/"
+        },
+        {
+            "name": "Wellcome Sanger Institute",
+            "url": "https://www.sanger.ac.uk/"
+        },
+        {
+            "name": "Washington University in St. Louis",
+            "url": "https://wustl.edu/"
+        }
+    ],
+    "persons": [
+        {
+            "firstName": "Abhi",
+            "lastName": "Pratap",
+            "organizations": [
+                "Sage Bionetworks"
+            ]
+        },
+        {
+            "firstName": "Adam",
+            "lastName": "Margolin",
+            "organizations": [
+                "Oregon Health & Science University",
+                "\"Sage Bionetworks, Oregon Health & Science University, Icahn School of Medicine at Mount Sinai\"",
+                "Icahn School of Medicine at Mount Sinai"
+            ]
+        },
+        {
+            "firstName": "Adi L.",
+            "lastName": "Tarca",
+            "organizations": [
+                "Wayne State University"
+            ]
+        },
+        {
+            "firstName": "Alejandro",
+            "lastName": "Granados",
+            "organizations": [
+                "California Institute of Technology"
+            ]
+        },
+        {
+            "firstName": "Alejandro",
+            "lastName": "Villaverde",
+            "organizations": [
+                "Consejo Superior de Investigaciones Cientificas"
+            ]
+        },
+        {
+            "firstName": "Alex",
+            "lastName": "Bisberg",
+            "organizations": [
+                "Rice University"
+            ]
+        },
+        {
+            "firstName": "Alex",
+            "lastName": "Tropsha",
+            "organizations": [
+                "University of North Carolina at Chapel Hill"
+            ]
+        },
+        {
+            "firstName": "Amber",
+            "lastName": "Simpson",
+            "organizations": [
+                "Queen's University"
+            ]
+        },
+        {
+            "firstName": "Amel",
+            "lastName": "Ghouila",
+            "organizations": [
+                "H3ABioNet"
+            ]
+        },
+        {
+            "firstName": "Amina Ann",
+            "lastName": "Qutub",
+            "organizations": [
+                "Rice University"
+            ]
+        },
+        {
+            "firstName": "Amy",
+            "lastName": "Truong",
+            "organizations": [
+                "Sage Bionetworks"
+            ]
+        },
+        {
+            "firstName": "Andre",
+            "lastName": "Falcao",
+            "organizations": [
+                "University of Lisbon"
+            ]
+        },
+        {
+            "firstName": "Andre",
+            "lastName": "Schultz",
+            "organizations": [
+                "Rice University"
+            ]
+        },
+        {
+            "firstName": "Andrea",
+            "lastName": "Califano",
+            "organizations": [
+                "Columbia University"
+            ]
+        },
+        {
+            "firstName": "Andreas",
+            "lastName": "Keller",
+            "organizations": [
+                "Rockefeller University"
+            ]
+        },
+        {
+            "firstName": "Andrew",
+            "lastName": "Lamb",
+            "organizations": [
+                "Sage Bionetworks"
+            ]
+        },
+        {
+            "firstName": "Andy",
+            "lastName": "Simmons",
+            "organizations": [
+                "King's College London"
+            ]
+        },
+        {
+            "firstName": "Anna",
+            "lastName": "Cichonska",
+            "organizations": [
+                "Institute for Molecular Medicine Finland"
+            ]
+        },
+        {
+            "firstName": "Anna",
+            "lastName": "Goldenberg",
+            "organizations": [
+                "Hospital for Sick Children",
+                "University of Toronto"
+            ]
+        },
+        {
+            "firstName": "Anshul",
+            "lastName": "Kundaje",
+            "organizations": [
+                "Stanford University"
+            ]
+        },
+        {
+            "firstName": "Arno",
+            "lastName": "Klein",
+            "organizations": [
+                "Sage Bionetworks"
+            ]
+        },
+        {
+            "firstName": "Arun",
+            "lastName": "Mahadevan",
+            "organizations": [
+                "Rice University"
+            ]
+        },
+        {
+            "firstName": "Attila",
+            "lastName": "Gabor",
+            "organizations": [
+                "Heidelberg University"
+            ]
+        },
+        {
+            "firstName": "Aviad",
+            "lastName": "Tsherniak",
+            "organizations": [
+                "Broad Institute"
+            ]
+        },
+        {
+            "firstName": "Avner",
+            "lastName": "Schlessinger",
+            "organizations": [
+                "Icahn School of Medicine at Mount Sinai"
+            ]
+        },
+        {
+            "firstName": "Balaguru",
+            "lastName": "Ravikumar",
+            "organizations": [
+                "Institute for Molecular Medicine Finland"
+            ]
+        },
+        {
+            "firstName": "Barbara",
+            "lastName": "Weir",
+            "organizations": [
+                "Broad Institute"
+            ]
+        },
+        {
+            "firstName": "Bence",
+            "lastName": "Szalai",
+            "organizations": [
+                "Semmelweis University"
+            ]
+        },
+        {
+            "firstName": "Benjamin",
+            "lastName": "Logsdon",
+            "organizations": [
+                "Sage Bionetworks"
+            ]
+        },
+        {
+            "firstName": "Bernd",
+            "lastName": "Bodenmiller",
+            "organizations": [
+                "University of Zurich"
+            ]
+        },
+        {
+            "firstName": "Bill",
+            "lastName": "Hahn",
+            "organizations": [
+                "Dana-Farber Cancer Institute",
+                "Broad Institute"
+            ]
+        },
+        {
+            "firstName": "Bogdan",
+            "lastName": "Done",
+            "organizations": [
+                "Wayne State University"
+            ]
+        },
+        {
+            "firstName": "Brady",
+            "lastName": "Bernard",
+            "organizations": [
+                "Providence Health & Services"
+            ]
+        },
+        {
+            "firstName": "Brandon",
+            "lastName": "Allgood",
+            "organizations": [
+                "Numerate"
+            ]
+        },
+        {
+            "firstName": "Brian",
+            "lastName": "Bot",
+            "organizations": [
+                "Sage Bionetworks"
+            ]
+        },
+        {
+            "firstName": "Brian",
+            "lastName": "O'Connor",
+            "organizations": [
+                "Global Alliance for Genomics and Health",
+                "University of California Santa Cruz"
+            ]
+        },
+        {
+            "firstName": "Brian",
+            "lastName": "White",
+            "organizations": [
+                "Sage Bionetworks"
+            ]
+        },
+        {
+            "firstName": "Bron",
+            "lastName": "Kisler",
+            "organizations": [
+                "National Cancer Institute"
+            ]
+        },
+        {
+            "firstName": "Bruce",
+            "lastName": "Hoff",
+            "organizations": [
+                "Sage Bionetworks"
+            ]
+        },
+        {
+            "firstName": "Bryon",
+            "lastName": "Long",
+            "organizations": [
+                "Rice University"
+            ]
+        },
+        {
+            "firstName": "Charles",
+            "lastName": "Goldthwaite",
+            "organizations": [
+                "National Institutes of Health"
+            ]
+        },
+        {
+            "firstName": "Chenyue",
+            "lastName": "Hu",
+            "organizations": [
+                "Rice University"
+            ]
+        },
+        {
+            "firstName": "Chloe-Agathe",
+            "lastName": "Azencott",
+            "organizations": [
+                "MINES ParisTech",
+                "Institut Curie"
+            ]
+        },
+        {
+            "firstName": "Christian",
+            "lastName": "Basile",
+            "organizations": [
+                "Urban Green Energy"
+            ]
+        },
+        {
+            "firstName": "Christine",
+            "lastName": "Suver",
+            "organizations": [
+                "Sage Bionetworks"
+            ]
+        },
+        {
+            "firstName": "Christopher",
+            "lastName": "Bare",
+            "organizations": [
+                "Sage Bionetworks"
+            ]
+        },
+        {
+            "firstName": "Christopher",
+            "lastName": "Maher",
+            "organizations": [
+                "Washington University in St. Louis"
+            ]
+        },
+        {
+            "firstName": "Cindy",
+            "lastName": "Deleon",
+            "organizations": [
+                "Icahn School of Medicine at Mount Sinai"
+            ]
+        },
+        {
+            "firstName": "Daisy",
+            "lastName": "Daeschler",
+            "organizations": [
+                "Michael J. Fox Foundation"
+            ]
+        },
+        {
+            "firstName": "Daniel",
+            "lastName": "Marbach",
+            "organizations": [
+                "University of Lausanne"
+            ]
+        },
+        {
+            "firstName": "Daniela",
+            "lastName": "Brunner",
+            "organizations": [
+                "Early Signal Foundation"
+            ]
+        },
+        {
+            "firstName": "Daniela",
+            "lastName": "Gerhard",
+            "organizations": [
+                "Cancer Target Discovery And Development",
+                "National Cancer Institute"
+            ]
+        },
+        {
+            "firstName": "Daniela S.",
+            "lastName": "Gerhard",
+            "organizations": [
+                "National Institutes of Health"
+            ]
+        },
+        {
+            "firstName": "David",
+            "lastName": "Fardo",
+            "organizations": [
+                "University of Kentucky"
+            ]
+        },
+        {
+            "firstName": "David",
+            "lastName": "Fenyo",
+            "organizations": [
+                "New York University"
+            ]
+        },
+        {
+            "firstName": "David",
+            "lastName": "Lamparter",
+            "organizations": [
+                "University of Lausanne"
+            ]
+        },
+        {
+            "firstName": "David",
+            "lastName": "Noren",
+            "organizations": [
+                "Rice University"
+            ]
+        },
+        {
+            "firstName": "David",
+            "lastName": "Wedge",
+            "organizations": [
+                "Wellcome Sanger Institute"
+            ]
+        },
+        {
+            "firstName": "Deepak",
+            "lastName": "Chandran",
+            "organizations": [
+                "Autodesk"
+            ]
+        },
+        {
+            "firstName": "Denis",
+            "lastName": "Yuen",
+            "organizations": [
+                "Ontario Institute for Cancer Research",
+                "Dockstore"
+            ]
+        },
+        {
+            "firstName": "Denise",
+            "lastName": "Warzel",
+            "organizations": [
+                "National Cancer Institute"
+            ]
+        },
+        {
+            "firstName": "Dongmei",
+            "lastName": "Sun",
+            "organizations": [
+                "University of Alabama at Birmingham"
+            ]
+        },
+        {
+            "firstName": "Ehud",
+            "lastName": "Shapiro",
+            "organizations": [
+                "Weizmann Institute of Science"
+            ]
+        },
+        {
+            "firstName": "Eli",
+            "lastName": "Stahl",
+            "organizations": [
+                "Mount Sinai"
+            ]
+        },
+        {
+            "firstName": "Eric",
+            "lastName": "Johnson",
+            "organizations": [
+                "National Cancer Institute"
+            ]
+        },
+        {
+            "firstName": "Erik",
+            "lastName": "Engquist",
+            "organizations": [
+                "Rice University"
+            ]
+        },
+        {
+            "firstName": "Erin",
+            "lastName": "Soderberg",
+            "organizations": [
+                "Verily"
+            ]
+        },
+        {
+            "firstName": "Eugene",
+            "lastName": "Douglass",
+            "organizations": [
+                "Columbia University"
+            ]
+        },
+        {
+            "firstName": "Federico",
+            "lastName": "Parisi",
+            "organizations": [
+                "Harvard University"
+            ]
+        },
+        {
+            "firstName": "Francesca",
+            "lastName": "Petralia",
+            "organizations": [
+                "Mount Sinai"
+            ]
+        },
+        {
+            "firstName": "Gaia",
+            "lastName": "Andreoletti",
+            "organizations": [
+                "University of California San Francisco"
+            ]
+        },
+        {
+            "firstName": "Geoffrey",
+            "lastName": "Siwo",
+            "organizations": [
+                "Eck Institute for Global Health",
+                "Center for Research Computing"
+            ]
+        },
+        {
+            "firstName": "Gilberto",
+            "lastName": "Fragoso",
+            "organizations": [
+                "National Cancer Institute"
+            ]
+        },
+        {
+            "firstName": "Guillermo",
+            "lastName": "Cecchi",
+            "organizations": [
+                "IBM Research"
+            ]
+        },
+        {
+            "firstName": "Gustavo",
+            "lastName": "Stolovitzky",
+            "organizations": [
+                "IBM Research",
+                "Mount Sinai"
+            ]
+        },
+        {
+            "firstName": "Heather",
+            "lastName": "Carlson",
+            "organizations": [
+                "University of Michigan"
+            ]
+        },
+        {
+            "firstName": "Heinz",
+            "lastName": "Koeppl",
+            "organizations": [
+                "ETH Zurich"
+            ]
+        },
+        {
+            "firstName": "Henry",
+            "lastName": "Rodriguez",
+            "organizations": [
+                "National Cancer Institute"
+            ]
+        },
+        {
+            "firstName": "Irepan",
+            "lastName": "Salvador",
+            "organizations": [
+                "London's Global University"
+            ]
+        },
+        {
+            "firstName": "Jacob",
+            "lastName": "Roberts",
+            "organizations": [
+                "Icahn School of Medicine at Mount Sinai"
+            ]
+        },
+        {
+            "firstName": "Jake Y.",
+            "lastName": "Chen",
+            "organizations": [
+                "University of Alabama at Birmingham"
+            ]
+        },
+        {
+            "firstName": "James C",
+            "lastName": "Costello",
+            "organizations": [
+                "University of Colorado Anschutz Medical Campus"
+            ]
+        },
+        {
+            "firstName": "James",
+            "lastName": "Costello",
+            "organizations": [
+                "University of Colorado Anschutz Medical Campus"
+            ]
+        },
+        {
+            "firstName": "James",
+            "lastName": "Eddy",
+            "organizations": [
+                "Sage Bionetworks"
+            ]
+        },
+        {
+            "firstName": "Jay",
+            "lastName": "Hodgson",
+            "organizations": [
+                "Sage Bionetworks"
+            ]
+        },
+        {
+            "firstName": "Jay",
+            "lastName": "Shendure",
+            "organizations": [
+                "University of Washington"
+            ]
+        },
+        {
+            "firstName": "Jeff",
+            "lastName": "Greenberg",
+            "organizations": [
+                "Corrona"
+            ]
+        },
+        {
+            "firstName": "Jeffrey",
+            "lastName": "Tyner",
+            "organizations": [
+                "Oregon Health & Science University"
+            ]
+        },
+        {
+            "firstName": "Jelai",
+            "lastName": "Wang",
+            "organizations": [
+                "University of Alabama at Birmingham"
+            ]
+        },
+        {
+            "firstName": "Jennifer",
+            "lastName": "Couch",
+            "organizations": [
+                "National Cancer Institute"
+            ]
+        },
+        {
+            "firstName": "Jesse",
+            "lastName": "Boehm",
+            "organizations": [
+                "Broad Institute"
+            ]
+        },
+        {
+            "firstName": "Jessen",
+            "lastName": "Yu",
+            "organizations": [
+                "Numerate"
+            ]
+        },
+        {
+            "firstName": "Jim",
+            "lastName": "Costello",
+            "organizations": [
+                "University of Colorado Anschutz Medical Campus"
+            ]
+        },
+        {
+            "firstName": "Jing",
+            "lastName": "Cui",
+            "organizations": [
+                "Brigham And Women's Hospital"
+            ]
+        },
+        {
+            "firstName": "\"John \"\"Keoni\"\"\"",
+            "lastName": "Kauwe",
+            "organizations": [
+                "Brigham Young University"
+            ]
+        },
+        {
+            "firstName": "John",
+            "lastName": "Philip",
+            "organizations": [
+                "Memorial Sloan Kettering Cancer Center"
+            ]
+        },
+        {
+            "firstName": "Jonathan",
+            "lastName": "Dry",
+            "organizations": [
+                "AstraZeneca"
+            ]
+        },
+        {
+            "firstName": "Jonathan",
+            "lastName": "Karr",
+            "organizations": [
+                "Stanford University"
+            ]
+        },
+        {
+            "firstName": "Josh",
+            "lastName": "Stuart",
+            "organizations": [
+                "University of California Santa Cruz"
+            ]
+        },
+        {
+            "firstName": "Joshua M.",
+            "lastName": "Stuart",
+            "organizations": [
+                "University of California Santa Cruz"
+            ]
+        },
+        {
+            "firstName": "Jovan",
+            "lastName": "Tanevski",
+            "organizations": [
+                "Heidelberg University"
+            ]
+        },
+        {
+            "firstName": "Julie",
+            "lastName": "Bletz",
+            "organizations": [
+                "Sage Bionetworks"
+            ]
+        },
+        {
+            "firstName": "Julio Saez",
+            "lastName": "Rodriguez",
+            "organizations": [
+                "RWTH Aachen University"
+            ]
+        },
+        {
+            "firstName": "Julio",
+            "lastName": "Saez-Rodriguez",
+            "organizations": [
+                "European Bioinformatics Institute",
+                "RWTH Aachen University",
+                "Heidelberg University"
+            ]
+        },
+        {
+            "firstName": "Justin",
+            "lastName": "Guinney",
+            "organizations": [
+                "Sage Bionetworks"
+            ]
+        },
+        {
+            "firstName": "Justin",
+            "lastName": "Prosser",
+            "organizations": [
+                "University of Washington"
+            ]
+        },
+        {
+            "firstName": "Ka Wai",
+            "lastName": "Lin",
+            "organizations": [
+                "Rice University"
+            ]
+        },
+        {
+            "firstName": "Kahn",
+            "lastName": "Rhissorrakrai",
+            "organizations": [
+                "IBM Research"
+            ]
+        },
+        {
+            "firstName": "Kahn",
+            "lastName": "Rhrissorrakrai",
+            "organizations": [
+                "IBM Research"
+            ]
+        },
+        {
+            "firstName": "Kaleb",
+            "lastName": "Michaud",
+            "organizations": [
+                "Arthritis Internet Registry"
+            ]
+        },
+        {
+            "firstName": "Karen",
+            "lastName": "Batch",
+            "organizations": [
+                "Queen's University"
+            ]
+        },
+        {
+            "firstName": "Kasper",
+            "lastName": "Lage",
+            "organizations": [
+                "Massachusetts General Hospital"
+            ]
+        },
+        {
+            "firstName": "Kathryn",
+            "lastName": "Richmond",
+            "organizations": [
+                "Allen Institute"
+            ]
+        },
+        {
+            "firstName": "Katrina",
+            "lastName": "Button-Simons",
+            "organizations": [
+                "Eck Institute for Global Health"
+            ]
+        },
+        {
+            "firstName": "Kely",
+            "lastName": "Norel",
+            "organizations": [
+                "IBM Research"
+            ]
+        },
+        {
+            "firstName": "Ken",
+            "lastName": "Kehl",
+            "organizations": [
+                "Dana-Farber Cancer Institute"
+            ]
+        },
+        {
+            "firstName": "Kevin",
+            "lastName": "Osborn",
+            "organizations": [
+                "Global Alliance for Genomics and Health",
+                "University of California Santa Cruz"
+            ]
+        },
+        {
+            "firstName": "Kristen",
+            "lastName": "Dang",
+            "organizations": [
+                "Sage Bionetworks"
+            ]
+        },
+        {
+            "firstName": "Krystal",
+            "lastName": "Rivers",
+            "organizations": [
+                "National Institutes of Health"
+            ]
+        },
+        {
+            "firstName": "Kyle",
+            "lastName": "Ellrott",
+            "organizations": [
+                "Oregon Health & Science University"
+            ]
+        },
+        {
+            "firstName": "Lara",
+            "lastName": "Mangravite",
+            "organizations": [
+                "Sage Bionetworks"
+            ]
+        },
+        {
+            "firstName": "Larsson",
+            "lastName": "Omberg",
+            "organizations": [
+                "Sage Bionetworks"
+            ]
+        },
+        {
+            "firstName": "Laura",
+            "lastName": "Heiser",
+            "organizations": [
+                "Oregon Health & Science University"
+            ]
+        },
+        {
+            "firstName": "Lauren",
+            "lastName": "Bataille",
+            "organizations": [
+                "Michael J. Fox Foundation"
+            ]
+        },
+        {
+            "firstName": "Leslie",
+            "lastName": "Vosshall",
+            "organizations": [
+                "Rockefeller University"
+            ]
+        },
+        {
+            "firstName": "Lincoln D.",
+            "lastName": "Stein",
+            "organizations": [
+                "Ontario Institute for Cancer Research"
+            ]
+        },
+        {
+            "firstName": "Lisa",
+            "lastName": "Geda",
+            "organizations": [
+                "Rice University"
+            ]
+        },
+        {
+            "firstName": "Luke",
+            "lastName": "Geneslaw",
+            "organizations": [
+                "Memorial Sloan Kettering Cancer Center"
+            ]
+        },
+        {
+            "firstName": "Mahalaxmi",
+            "lastName": "Aburi",
+            "organizations": [
+                "Columbia University"
+            ]
+        },
+        {
+            "firstName": "Marco",
+            "lastName": "Tognetti",
+            "organizations": [
+                "ETH Zurich",
+                "University of Zurich"
+            ]
+        },
+        {
+            "firstName": "Marina",
+            "lastName": "Sirota",
+            "organizations": [
+                "University of California San Francisco"
+            ]
+        },
+        {
+            "firstName": "Markus",
+            "lastName": "Covert",
+            "organizations": [
+                "Stanford University"
+            ]
+        },
+        {
+            "firstName": "Mason",
+            "lastName": "Frazier",
+            "organizations": [
+                "University of Alabama at Birmingham"
+            ]
+        },
+        {
+            "firstName": "Max",
+            "lastName": "Telford",
+            "organizations": [
+                "London's Global University"
+            ]
+        },
+        {
+            "firstName": "Mehmet",
+            "lastName": "Gonen",
+            "organizations": [
+                "Oregon Health & Science University"
+            ]
+        },
+        {
+            "firstName": "Meliha",
+            "lastName": "Yetisgen",
+            "organizations": [
+                "University of Washington"
+            ]
+        },
+        {
+            "firstName": "Melissa",
+            "lastName": "Haendel",
+            "organizations": [
+                "Oregon Health & Science University"
+            ]
+        },
+        {
+            "firstName": "Merit",
+            "lastName": "Cudkowicz",
+            "organizations": [
+                "Massachusetts General Hospital"
+            ]
+        },
+        {
+            "firstName": "Mette",
+            "lastName": "Peters",
+            "organizations": [
+                "Sage Bionetworks"
+            ]
+        },
+        {
+            "firstName": "Mi",
+            "lastName": "Yang",
+            "organizations": [
+                "RWTH Aachen University"
+            ]
+        },
+        {
+            "firstName": "Michael",
+            "lastName": "Elowitz",
+            "organizations": [
+                "California Institute of Technology"
+            ]
+        },
+        {
+            "firstName": "Michael",
+            "lastName": "Mason",
+            "organizations": [
+                "Sage Bionetworks"
+            ]
+        },
+        {
+            "firstName": "Michael T.",
+            "lastName": "Ferdig",
+            "organizations": [
+                "Eck Institute for Global Health"
+            ]
+        },
+        {
+            "firstName": "Michael",
+            "lastName": "Unger",
+            "organizations": [
+                "ETH Zurich"
+            ]
+        },
+        {
+            "firstName": "Mike",
+            "lastName": "Kellen",
+            "organizations": [
+                "Sage Bionetworks"
+            ]
+        },
+        {
+            "firstName": "Mike",
+            "lastName": "Mason",
+            "organizations": [
+                "Sage Bionetworks"
+            ]
+        },
+        {
+            "firstName": "Nathan",
+            "lastName": "Boley",
+            "organizations": [
+                "Stanford University"
+            ]
+        },
+        {
+            "firstName": "Neta",
+            "lastName": "Zach",
+            "organizations": [
+                "Prize4Life"
+            ]
+        },
+        {
+            "firstName": "Nicholas",
+            "lastName": "Tustison",
+            "organizations": [
+                "University of Virginia"
+            ]
+        },
+        {
+            "firstName": "Nicola",
+            "lastName": "Mulder",
+            "organizations": [
+                "H3ABioNet"
+            ]
+        },
+        {
+            "firstName": "Nicole",
+            "lastName": "Huber",
+            "organizations": [
+                "Allen Institute"
+            ]
+        },
+        {
+            "firstName": "Nikolaus",
+            "lastName": "Rajewsky",
+            "organizations": [
+                "Max Delbruck Center for Molecular Medicine"
+            ]
+        },
+        {
+            "firstName": "Nikos",
+            "lastName": "Karaiskos",
+            "organizations": [
+                "Max Delbruck Center for Molecular Medicine"
+            ]
+        },
+        {
+            "firstName": "Nima",
+            "lastName": "Aghaeepour",
+            "organizations": [
+                "Stanford University"
+            ]
+        },
+        {
+            "firstName": "Ofir",
+            "lastName": "Raz",
+            "organizations": [
+                "Weizmann Institute of Science"
+            ]
+        },
+        {
+            "firstName": "Orla",
+            "lastName": "Hardiman",
+            "organizations": [
+                "Trinity College Institute of Neuroscience"
+            ]
+        },
+        {
+            "firstName": "Pablo",
+            "lastName": "Meyer",
+            "organizations": [
+                "IBM Research"
+            ]
+        },
+        {
+            "firstName": "Pamela",
+            "lastName": "Birriel",
+            "organizations": [
+                "National Institutes of Health"
+            ]
+        },
+        {
+            "firstName": "Paola",
+            "lastName": "Picotti",
+            "organizations": [
+                "ETH Zurich"
+            ]
+        },
+        {
+            "firstName": "Paolo",
+            "lastName": "Bonato",
+            "organizations": [
+                "Harvard University"
+            ]
+        },
+        {
+            "firstName": "Paquita",
+            "lastName": "Vazquez",
+            "organizations": [
+                "Broad Institute"
+            ]
+        },
+        {
+            "firstName": "Patrick",
+            "lastName": "Aubin",
+            "organizations": [
+                "University of Washington"
+            ]
+        },
+        {
+            "firstName": "Paul C.",
+            "lastName": "Boutros",
+            "organizations": [
+                "Ontario Institute for Cancer Research"
+            ]
+        },
+        {
+            "firstName": "Paul",
+            "lastName": "Spellman",
+            "organizations": [
+                "Oregon Health & Science University"
+            ]
+        },
+        {
+            "firstName": "Pei",
+            "lastName": "Wang",
+            "organizations": [
+                "Mount Sinai"
+            ]
+        },
+        {
+            "firstName": "Percio S.",
+            "lastName": "Gulko",
+            "organizations": [
+                "Icahn School of Medicine at Mount Sinai"
+            ]
+        },
+        {
+            "firstName": "Peter",
+            "lastName": "Banda",
+            "organizations": [
+                "University of Luxembourg"
+            ]
+        },
+        {
+            "firstName": "Peter",
+            "lastName": "Gregersen",
+            "organizations": [
+                "Feinstein Institutes for Medical Research"
+            ]
+        },
+        {
+            "firstName": "Peter Van",
+            "lastName": "Loo",
+            "organizations": [
+                "Francis Crick Institute"
+            ]
+        },
+        {
+            "firstName": "Po-Ru",
+            "lastName": "Loh",
+            "organizations": [
+                "Massachusetts Institute of Technology"
+            ]
+        },
+        {
+            "firstName": "Quaid D.",
+            "lastName": "Morris",
+            "organizations": [
+                "University of Toronto"
+            ]
+        },
+        {
+            "firstName": "Ramy",
+            "lastName": "Sweidan",
+            "organizations": [
+                "Rice University"
+            ]
+        },
+        {
+            "firstName": "Raquel",
+            "lastName": "Norel",
+            "organizations": [
+                "IBM Research"
+            ]
+        },
+        {
+            "firstName": "Ray",
+            "lastName": "Dorsey",
+            "organizations": [
+                "University of Rochester Medical Center"
+            ]
+        },
+        {
+            "firstName": "Reza",
+            "lastName": "Ghanadan",
+            "organizations": [
+                "Defense Advanced Research Projects Agency"
+            ]
+        },
+        {
+            "firstName": "Richard",
+            "lastName": "Dobson",
+            "organizations": [
+                "King's College London"
+            ]
+        },
+        {
+            "firstName": "Robert",
+            "lastName": "Allaway",
+            "organizations": [
+                "Sage Bionetworks"
+            ]
+        },
+        {
+            "firstName": "Robert",
+            "lastName": "Kuffner",
+            "organizations": [
+                "Ludwig Maximilian University of Munich"
+            ]
+        },
+        {
+            "firstName": "Robert",
+            "lastName": "Plenge",
+            "organizations": [
+                "Merck"
+            ]
+        },
+        {
+            "firstName": "Roberto",
+            "lastName": "Romero",
+            "organizations": [
+                "Eunice Kennedy Shriver National Institute of Child Health and Human Development"
+            ]
+        },
+        {
+            "firstName": "Ross",
+            "lastName": "Cagan",
+            "organizations": [
+                "Icahn School of Medicine at Mount Sinai"
+            ]
+        },
+        {
+            "firstName": "Ruben",
+            "lastName": "Abagyan",
+            "organizations": [
+                "University of California San Diego"
+            ]
+        },
+        {
+            "firstName": "S. Louis Bridges",
+            "lastName": "Jr.",
+            "organizations": [
+                "University of Alabama at Birmingham"
+            ]
+        },
+        {
+            "firstName": "Sach",
+            "lastName": "Mukherjee",
+            "organizations": [
+                "Nathan S. Kline Institute for Psychiatric Research"
+            ]
+        },
+        {
+            "firstName": "Sage",
+            "lastName": "Davis",
+            "organizations": [
+                "Eck Institute for Global Health"
+            ]
+        },
+        {
+            "firstName": "Samuel",
+            "lastName": "Payne",
+            "organizations": [
+                "Pacific Northwest National Laboratory"
+            ]
+        },
+        {
+            "firstName": "Sara",
+            "lastName": "Howell",
+            "organizations": [
+                "Broad Institute"
+            ]
+        },
+        {
+            "firstName": "Sarvenaz",
+            "lastName": "Choobdar",
+            "organizations": [
+                "University of Lausanne"
+            ]
+        },
+        {
+            "firstName": "Satrajit",
+            "lastName": "Ghosh",
+            "organizations": [
+                "Massachusetts Institute of Technology"
+            ]
+        },
+        {
+            "firstName": "Sean",
+            "lastName": "Mooney",
+            "organizations": [
+                "University of Washington"
+            ]
+        },
+        {
+            "firstName": "Shannon",
+            "lastName": "Carter",
+            "organizations": [
+                "Sage Bionetworks"
+            ]
+        },
+        {
+            "firstName": "Sherri De",
+            "lastName": "Coronado",
+            "organizations": [
+                "National Cancer Institute"
+            ]
+        },
+        {
+            "firstName": "Simon",
+            "lastName": "Wilkinson",
+            "organizations": [
+                "Numerate"
+            ]
+        },
+        {
+            "firstName": "Solly",
+            "lastName": "Sieberts",
+            "organizations": [
+                "Sage Bionetworks"
+            ]
+        },
+        {
+            "firstName": "Stephen",
+            "lastName": "Friend",
+            "organizations": [
+                "Sage Bionetworks",
+                "Apple Health"
+            ]
+        },
+        {
+            "firstName": "Stephen",
+            "lastName": "Newhouse",
+            "organizations": [
+                "King's College London"
+            ]
+        },
+        {
+            "firstName": "Steven",
+            "lastName": "Hill",
+            "organizations": [
+                "Nathan S. Kline Institute for Psychiatric Research"
+            ]
+        },
+        {
+            "firstName": "Steven M.",
+            "lastName": "Kornblau",
+            "organizations": [
+                "MD Anderson Cancer Center"
+            ]
+        },
+        {
+            "firstName": "Stockard",
+            "lastName": "Simon",
+            "organizations": [
+                "Sage Bionetworks"
+            ]
+        },
+        {
+            "firstName": "Sumir",
+            "lastName": "Panji",
+            "organizations": [
+                "H3ABioNet"
+            ]
+        },
+        {
+            "firstName": "Sven",
+            "lastName": "Bergmann",
+            "organizations": [
+                "University of Lausanne"
+            ]
+        },
+        {
+            "firstName": "Taylor",
+            "lastName": "Maxwell",
+            "organizations": [
+                "George Washington University"
+            ]
+        },
+        {
+            "firstName": "Tero",
+            "lastName": "Aittokallio",
+            "organizations": [
+                "Institute for Molecular Medicine Finland"
+            ]
+        },
+        {
+            "firstName": "Thea",
+            "lastName": "Norman",
+            "organizations": [
+                "Sage Bionetworks"
+            ]
+        },
+        {
+            "firstName": "Thomas",
+            "lastName": "Cokelaer",
+            "organizations": [
+                "European Bioinformatics Institute"
+            ]
+        },
+        {
+            "firstName": "Thomas",
+            "lastName": "Schaffter",
+            "organizations": [
+                "Sage Bionetworks"
+            ]
+        },
+        {
+            "firstName": "Thomas",
+            "lastName": "Yu",
+            "organizations": [
+                "Sage Bionetworks"
+            ]
+        },
+        {
+            "firstName": "Tien",
+            "lastName": "Tang",
+            "organizations": [
+                "Rice University"
+            ]
+        },
+        {
+            "firstName": "Tim",
+            "lastName": "Bergquist",
+            "organizations": [
+                "Sage Bionetworks",
+                "University of Washington"
+            ]
+        },
+        {
+            "firstName": "Todd",
+            "lastName": "Golub",
+            "organizations": [
+                "Broad Institute"
+            ]
+        },
+        {
+            "firstName": "Udi",
+            "lastName": "Rubin",
+            "organizations": [
+                "Early Signal Foundation"
+            ]
+        },
+        {
+            "firstName": "Verena",
+            "lastName": "Chung",
+            "organizations": [
+                "Sage Bionetworks"
+            ]
+        },
+        {
+            "firstName": "William",
+            "lastName": "Marks",
+            "organizations": [
+                "Verily"
+            ]
+        },
+        {
+            "firstName": "Xiaoyu",
+            "lastName": "Song",
+            "organizations": [
+                "Mount Sinai"
+            ]
+        },
+        {
+            "firstName": "Yao",
+            "lastName": "Yan",
+            "organizations": [
+                "Sage Bionetworks"
+            ]
+        },
+        {
+            "firstName": "Zhi",
+            "lastName": "Li",
+            "organizations": [
+                "New York University"
+            ]
+        },
+        {
+            "firstName": "Zoltan",
+            "lastName": "Kutalik",
+            "organizations": [
+                "Lausanne University Hospital"
+            ]
+        }
+    ]
 }
