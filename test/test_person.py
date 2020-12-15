@@ -37,9 +37,8 @@ class TestPerson(unittest.TestCase):
         # model = roccclient.models.person.Person()  # noqa: E501
         if include_optional :
             return Person(
-                id = '507f1f77bcf86cd799439011', 
-                first_name = 'John', 
-                last_name = 'Smith', 
+                first_name = 'John',
+                last_name = 'Smith',
                 email = 'john.smith@example.com'
             )
         else :

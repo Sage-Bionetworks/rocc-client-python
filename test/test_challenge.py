@@ -37,30 +37,30 @@ class TestChallenge(unittest.TestCase):
         # model = roccclient.models.challenge.Challenge()  # noqa: E501
         if include_optional :
             return Challenge(
-                id = '507f1f77bcf86cd799439011', 
-                name = 'Sample Challenge', 
-                start_date = 'Mon Nov 09 16:00:00 PST 2020', 
-                end_date = 'Wed Dec 30 16:00:00 PST 2020', 
-                website = 'https://synapse.org/sample-challenge', 
-                status = 'open', 
-                tags = ["Machine Learning","Breast Cancer"], 
+                id = '507f1f77bcf86cd799439011',
+                name = 'Sample Challenge',
+                start_date = 'Mon Nov 09 16:00:00 PST 2020',
+                end_date = 'Wed Dec 30 16:00:00 PST 2020',
+                website = 'https://synapse.org/sample-challenge',
+                status = 'open',
+                tags = ["Machine Learning","Breast Cancer"],
                 grant = [
                     roccclient.models.grant.Grant(
-                        id = '507f1f77bcf86cd799439011', 
-                        name = '0', 
-                        description = '0', 
+                        id = '507f1f77bcf86cd799439011',
+                        name = '0',
+                        description = '0',
                         sponsor = roccclient.models.organization.Organization(
-                            id = '507f1f77bcf86cd799439011', 
-                            name = 'Sage Bionetworks', 
-                            url = 'https://sagebionetworks.org/', ), 
-                        amount = 56, 
+                            id = '507f1f77bcf86cd799439011',
+                            name = 'Sage Bionetworks',
+                            url = 'https://sagebionetworks.org/', ),
+                        amount = 56,
                         url = '0', )
-                    ], 
+                    ],
                 organizers = [
                     roccclient.models.person.Person(
-                        id = '507f1f77bcf86cd799439011', 
-                        first_name = 'John', 
-                        last_name = 'Smith', 
+                        id = '507f1f77bcf86cd799439011',
+                        first_name = 'John',
+                        last_name = 'Smith',
                         email = 'john.smith@example.com', )
                     ]
             )
@@ -72,10 +72,10 @@ class TestChallenge(unittest.TestCase):
                 status = 'open',
         )
 
-    def testChallenge(self):
-        """Test Challenge"""
-        inst_req_only = self.make_instance(include_optional=False)
-        inst_req_and_optional = self.make_instance(include_optional=True)
+    # def testChallenge(self):
+    #     """Test Challenge"""
+    #     inst_req_only = self.make_instance(include_optional=False)
+    #     inst_req_and_optional = self.make_instance(include_optional=True)
 
 
 if __name__ == '__main__':

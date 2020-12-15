@@ -1,12 +1,12 @@
 # roccclient.ChallengeApi
 
-All URIs are relative to *https://rocc.org/api.dev/v1*
+All URIs are relative to *https://rocc.org/api/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**create_challenge**](ChallengeApi.md#create_challenge) | **POST** /challenges | Add a challenge
-[**delete_challenge**](ChallengeApi.md#delete_challenge) | **DELETE** /challenges/{id} | Delete a challenge
-[**get_challenge**](ChallengeApi.md#get_challenge) | **GET** /challenges/{id} | Get a challenge
+[**delete_challenge**](ChallengeApi.md#delete_challenge) | **DELETE** /challenges/{challengeId} | Delete a challenge
+[**get_challenge**](ChallengeApi.md#get_challenge) | **GET** /challenges/{challengeId} | Get a challenge
 [**list_challenges**](ChallengeApi.md#list_challenges) | **GET** /challenges | List all the challenges
 
 
@@ -25,10 +25,10 @@ import time
 import roccclient
 from roccclient.rest import ApiException
 from pprint import pprint
-# Defining the host is optional and defaults to https://rocc.org/api.dev/v1
+# Defining the host is optional and defaults to https://rocc.org/api/v1
 # See configuration.py for a list of all supported configuration parameters.
 configuration = roccclient.Configuration(
-    host = "https://rocc.org/api.dev/v1"
+    host = "https://rocc.org/api/v1"
 )
 
 
@@ -76,7 +76,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **delete_challenge**
-> Challenge delete_challenge(id)
+> Challenge delete_challenge(challenge_id)
 
 Delete a challenge
 
@@ -90,10 +90,10 @@ import time
 import roccclient
 from roccclient.rest import ApiException
 from pprint import pprint
-# Defining the host is optional and defaults to https://rocc.org/api.dev/v1
+# Defining the host is optional and defaults to https://rocc.org/api/v1
 # See configuration.py for a list of all supported configuration parameters.
 configuration = roccclient.Configuration(
-    host = "https://rocc.org/api.dev/v1"
+    host = "https://rocc.org/api/v1"
 )
 
 
@@ -101,11 +101,11 @@ configuration = roccclient.Configuration(
 with roccclient.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = roccclient.ChallengeApi(api_client)
-    id = 'id_example' # str | The ID of the challenge
+    challenge_id = 'challenge_id_example' # str | The ID of the challenge
 
     try:
         # Delete a challenge
-        api_response = api_instance.delete_challenge(id)
+        api_response = api_instance.delete_challenge(challenge_id)
         pprint(api_response)
     except ApiException as e:
         print("Exception when calling ChallengeApi->delete_challenge: %s\n" % e)
@@ -115,7 +115,7 @@ with roccclient.ApiClient() as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **str**| The ID of the challenge | 
+ **challenge_id** | **str**| The ID of the challenge | 
 
 ### Return type
 
@@ -140,7 +140,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **get_challenge**
-> Challenge get_challenge(id)
+> Challenge get_challenge(challenge_id)
 
 Get a challenge
 
@@ -154,10 +154,10 @@ import time
 import roccclient
 from roccclient.rest import ApiException
 from pprint import pprint
-# Defining the host is optional and defaults to https://rocc.org/api.dev/v1
+# Defining the host is optional and defaults to https://rocc.org/api/v1
 # See configuration.py for a list of all supported configuration parameters.
 configuration = roccclient.Configuration(
-    host = "https://rocc.org/api.dev/v1"
+    host = "https://rocc.org/api/v1"
 )
 
 
@@ -165,11 +165,11 @@ configuration = roccclient.Configuration(
 with roccclient.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = roccclient.ChallengeApi(api_client)
-    id = 'id_example' # str | The ID of the challenge
+    challenge_id = 'challenge_id_example' # str | The ID of the challenge
 
     try:
         # Get a challenge
-        api_response = api_instance.get_challenge(id)
+        api_response = api_instance.get_challenge(challenge_id)
         pprint(api_response)
     except ApiException as e:
         print("Exception when calling ChallengeApi->get_challenge: %s\n" % e)
@@ -179,7 +179,7 @@ with roccclient.ApiClient() as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **id** | **str**| The ID of the challenge | 
+ **challenge_id** | **str**| The ID of the challenge | 
 
 ### Return type
 
@@ -218,10 +218,10 @@ import time
 import roccclient
 from roccclient.rest import ApiException
 from pprint import pprint
-# Defining the host is optional and defaults to https://rocc.org/api.dev/v1
+# Defining the host is optional and defaults to https://rocc.org/api/v1
 # See configuration.py for a list of all supported configuration parameters.
 configuration = roccclient.Configuration(
-    host = "https://rocc.org/api.dev/v1"
+    host = "https://rocc.org/api/v1"
 )
 
 
