@@ -1,21 +1,21 @@
-# roccclient.ChallengeApi
+# roccclient.GrantApi
 
 All URIs are relative to *https://rocc.org/api/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**create_challenge**](ChallengeApi.md#create_challenge) | **POST** /challenges | Add a challenge
-[**delete_challenge**](ChallengeApi.md#delete_challenge) | **DELETE** /challenges/{challengeId} | Delete a challenge
-[**get_challenge**](ChallengeApi.md#get_challenge) | **GET** /challenges/{challengeId} | Get a challenge
-[**list_challenges**](ChallengeApi.md#list_challenges) | **GET** /challenges | List all the challenges
+[**create_grant**](GrantApi.md#create_grant) | **POST** /grants | Create a grant
+[**delete_grant**](GrantApi.md#delete_grant) | **DELETE** /grants/{grantId} | Delete a grant
+[**get_grant**](GrantApi.md#get_grant) | **GET** /grants/{grantId} | Get a grant
+[**list_grants**](GrantApi.md#list_grants) | **GET** /grants | Get all grants
 
 
-# **create_challenge**
-> Challenge create_challenge(challenge)
+# **create_grant**
+> Grant create_grant(grant=grant)
 
-Add a challenge
+Create a grant
 
-Adds a challenge
+Create a grant with the specified name
 
 ### Example
 
@@ -35,26 +35,26 @@ configuration = roccclient.Configuration(
 # Enter a context with an instance of the API client
 with roccclient.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = roccclient.ChallengeApi(api_client)
-    challenge = roccclient.Challenge() # Challenge | 
+    api_instance = roccclient.GrantApi(api_client)
+    grant = roccclient.Grant() # Grant |  (optional)
 
     try:
-        # Add a challenge
-        api_response = api_instance.create_challenge(challenge)
+        # Create a grant
+        api_response = api_instance.create_grant(grant=grant)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling ChallengeApi->create_challenge: %s\n" % e)
+        print("Exception when calling GrantApi->create_grant: %s\n" % e)
 ```
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **challenge** | [**Challenge**](Challenge.md)|  | 
+ **grant** | [**Grant**](Grant.md)|  | [optional] 
 
 ### Return type
 
-[**Challenge**](Challenge.md)
+[**Grant**](Grant.md)
 
 ### Authorization
 
@@ -75,12 +75,12 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **delete_challenge**
-> Challenge delete_challenge(challenge_id)
+# **delete_grant**
+> Grant delete_grant(grant_id)
 
-Delete a challenge
+Delete a grant
 
-Deletes the challenge specified
+Deletes the grant specified
 
 ### Example
 
@@ -100,26 +100,26 @@ configuration = roccclient.Configuration(
 # Enter a context with an instance of the API client
 with roccclient.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = roccclient.ChallengeApi(api_client)
-    challenge_id = 'challenge_id_example' # str | The ID of the challenge
+    api_instance = roccclient.GrantApi(api_client)
+    grant_id = 'grant_id_example' # str | The ID of the grant that is being created
 
     try:
-        # Delete a challenge
-        api_response = api_instance.delete_challenge(challenge_id)
+        # Delete a grant
+        api_response = api_instance.delete_grant(grant_id)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling ChallengeApi->delete_challenge: %s\n" % e)
+        print("Exception when calling GrantApi->delete_grant: %s\n" % e)
 ```
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **challenge_id** | **str**| The ID of the challenge | 
+ **grant_id** | **str**| The ID of the grant that is being created | 
 
 ### Return type
 
-[**Challenge**](Challenge.md)
+[**Grant**](Grant.md)
 
 ### Authorization
 
@@ -139,12 +139,12 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **get_challenge**
-> Challenge get_challenge(challenge_id)
+# **get_grant**
+> Grant get_grant(grant_id)
 
-Get a challenge
+Get a grant
 
-Returns the challenge specified
+Returns the grant specified
 
 ### Example
 
@@ -164,26 +164,26 @@ configuration = roccclient.Configuration(
 # Enter a context with an instance of the API client
 with roccclient.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = roccclient.ChallengeApi(api_client)
-    challenge_id = 'challenge_id_example' # str | The ID of the challenge
+    api_instance = roccclient.GrantApi(api_client)
+    grant_id = 'grant_id_example' # str | The ID of the grant that is being created
 
     try:
-        # Get a challenge
-        api_response = api_instance.get_challenge(challenge_id)
+        # Get a grant
+        api_response = api_instance.get_grant(grant_id)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling ChallengeApi->get_challenge: %s\n" % e)
+        print("Exception when calling GrantApi->get_grant: %s\n" % e)
 ```
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **challenge_id** | **str**| The ID of the challenge | 
+ **grant_id** | **str**| The ID of the grant that is being created | 
 
 ### Return type
 
-[**Challenge**](Challenge.md)
+[**Grant**](Grant.md)
 
 ### Authorization
 
@@ -203,12 +203,12 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **list_challenges**
-> PageOfChallenges list_challenges(limit=limit, offset=offset)
+# **list_grants**
+> PageOfGrants list_grants(limit=limit, offset=offset)
 
-List all the challenges
+Get all grants
 
-Returns all the challenges
+Returns the grants
 
 ### Example
 
@@ -228,16 +228,16 @@ configuration = roccclient.Configuration(
 # Enter a context with an instance of the API client
 with roccclient.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = roccclient.ChallengeApi(api_client)
+    api_instance = roccclient.GrantApi(api_client)
     limit = 10 # int | Maximum number of results returned (optional) (default to 10)
 offset = 0 # int | Index of the first result that must be returned (optional) (default to 0)
 
     try:
-        # List all the challenges
-        api_response = api_instance.list_challenges(limit=limit, offset=offset)
+        # Get all grants
+        api_response = api_instance.list_grants(limit=limit, offset=offset)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling ChallengeApi->list_challenges: %s\n" % e)
+        print("Exception when calling GrantApi->list_grants: %s\n" % e)
 ```
 
 ### Parameters
@@ -249,7 +249,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**PageOfChallenges**](PageOfChallenges.md)
+[**PageOfGrants**](PageOfGrants.md)
 
 ### Authorization
 

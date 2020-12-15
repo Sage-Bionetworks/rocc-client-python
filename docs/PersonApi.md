@@ -1,21 +1,21 @@
-# roccclient.ChallengeApi
+# roccclient.PersonApi
 
 All URIs are relative to *https://rocc.org/api/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**create_challenge**](ChallengeApi.md#create_challenge) | **POST** /challenges | Add a challenge
-[**delete_challenge**](ChallengeApi.md#delete_challenge) | **DELETE** /challenges/{challengeId} | Delete a challenge
-[**get_challenge**](ChallengeApi.md#get_challenge) | **GET** /challenges/{challengeId} | Get a challenge
-[**list_challenges**](ChallengeApi.md#list_challenges) | **GET** /challenges | List all the challenges
+[**create_person**](PersonApi.md#create_person) | **POST** /persons | Create a person
+[**delete_person**](PersonApi.md#delete_person) | **DELETE** /persons/{personId} | Delete a person
+[**get_person**](PersonApi.md#get_person) | **GET** /persons/{personId} | Get a person
+[**list_persons**](PersonApi.md#list_persons) | **GET** /persons | Get all persons
 
 
-# **create_challenge**
-> Challenge create_challenge(challenge)
+# **create_person**
+> Person create_person(person=person)
 
-Add a challenge
+Create a person
 
-Adds a challenge
+Create a person with the specified name
 
 ### Example
 
@@ -35,26 +35,26 @@ configuration = roccclient.Configuration(
 # Enter a context with an instance of the API client
 with roccclient.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = roccclient.ChallengeApi(api_client)
-    challenge = roccclient.Challenge() # Challenge | 
+    api_instance = roccclient.PersonApi(api_client)
+    person = roccclient.Person() # Person |  (optional)
 
     try:
-        # Add a challenge
-        api_response = api_instance.create_challenge(challenge)
+        # Create a person
+        api_response = api_instance.create_person(person=person)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling ChallengeApi->create_challenge: %s\n" % e)
+        print("Exception when calling PersonApi->create_person: %s\n" % e)
 ```
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **challenge** | [**Challenge**](Challenge.md)|  | 
+ **person** | [**Person**](Person.md)|  | [optional] 
 
 ### Return type
 
-[**Challenge**](Challenge.md)
+[**Person**](Person.md)
 
 ### Authorization
 
@@ -75,12 +75,12 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **delete_challenge**
-> Challenge delete_challenge(challenge_id)
+# **delete_person**
+> Person delete_person(person_id)
 
-Delete a challenge
+Delete a person
 
-Deletes the challenge specified
+Deletes the person specified
 
 ### Example
 
@@ -100,26 +100,26 @@ configuration = roccclient.Configuration(
 # Enter a context with an instance of the API client
 with roccclient.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = roccclient.ChallengeApi(api_client)
-    challenge_id = 'challenge_id_example' # str | The ID of the challenge
+    api_instance = roccclient.PersonApi(api_client)
+    person_id = 'person_id_example' # str | The ID of the person
 
     try:
-        # Delete a challenge
-        api_response = api_instance.delete_challenge(challenge_id)
+        # Delete a person
+        api_response = api_instance.delete_person(person_id)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling ChallengeApi->delete_challenge: %s\n" % e)
+        print("Exception when calling PersonApi->delete_person: %s\n" % e)
 ```
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **challenge_id** | **str**| The ID of the challenge | 
+ **person_id** | **str**| The ID of the person | 
 
 ### Return type
 
-[**Challenge**](Challenge.md)
+[**Person**](Person.md)
 
 ### Authorization
 
@@ -139,12 +139,12 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **get_challenge**
-> Challenge get_challenge(challenge_id)
+# **get_person**
+> Person get_person(person_id)
 
-Get a challenge
+Get a person
 
-Returns the challenge specified
+Returns the person specified
 
 ### Example
 
@@ -164,26 +164,26 @@ configuration = roccclient.Configuration(
 # Enter a context with an instance of the API client
 with roccclient.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = roccclient.ChallengeApi(api_client)
-    challenge_id = 'challenge_id_example' # str | The ID of the challenge
+    api_instance = roccclient.PersonApi(api_client)
+    person_id = 'person_id_example' # str | The ID of the person
 
     try:
-        # Get a challenge
-        api_response = api_instance.get_challenge(challenge_id)
+        # Get a person
+        api_response = api_instance.get_person(person_id)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling ChallengeApi->get_challenge: %s\n" % e)
+        print("Exception when calling PersonApi->get_person: %s\n" % e)
 ```
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **challenge_id** | **str**| The ID of the challenge | 
+ **person_id** | **str**| The ID of the person | 
 
 ### Return type
 
-[**Challenge**](Challenge.md)
+[**Person**](Person.md)
 
 ### Authorization
 
@@ -203,12 +203,12 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **list_challenges**
-> PageOfChallenges list_challenges(limit=limit, offset=offset)
+# **list_persons**
+> PageOfPersons list_persons(limit=limit, offset=offset)
 
-List all the challenges
+Get all persons
 
-Returns all the challenges
+Returns the persons
 
 ### Example
 
@@ -228,16 +228,16 @@ configuration = roccclient.Configuration(
 # Enter a context with an instance of the API client
 with roccclient.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = roccclient.ChallengeApi(api_client)
+    api_instance = roccclient.PersonApi(api_client)
     limit = 10 # int | Maximum number of results returned (optional) (default to 10)
 offset = 0 # int | Index of the first result that must be returned (optional) (default to 0)
 
     try:
-        # List all the challenges
-        api_response = api_instance.list_challenges(limit=limit, offset=offset)
+        # Get all persons
+        api_response = api_instance.list_persons(limit=limit, offset=offset)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling ChallengeApi->list_challenges: %s\n" % e)
+        print("Exception when calling PersonApi->list_persons: %s\n" % e)
 ```
 
 ### Parameters
@@ -249,7 +249,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**PageOfChallenges**](PageOfChallenges.md)
+[**PageOfPersons**](PageOfPersons.md)
 
 ### Authorization
 

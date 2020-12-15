@@ -4,9 +4,10 @@ An organization
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**id** | **str** | The ID of the organization | [optional] [readonly] 
-**name** | **str** | The organization name | 
-**url** | **str** | The URL to the homepage of the organization | 
+**organization_id** | **str** | The ID of the organization | [optional] 
+**name** | **str** | The organization name | [optional] 
+**short_name** | **str** | The organization short name | [optional] 
+**url** | **str** | The URL to the homepage of the organization | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

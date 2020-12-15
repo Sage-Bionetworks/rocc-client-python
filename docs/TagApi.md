@@ -1,21 +1,21 @@
-# roccclient.ChallengeApi
+# roccclient.TagApi
 
 All URIs are relative to *https://rocc.org/api/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**create_challenge**](ChallengeApi.md#create_challenge) | **POST** /challenges | Add a challenge
-[**delete_challenge**](ChallengeApi.md#delete_challenge) | **DELETE** /challenges/{challengeId} | Delete a challenge
-[**get_challenge**](ChallengeApi.md#get_challenge) | **GET** /challenges/{challengeId} | Get a challenge
-[**list_challenges**](ChallengeApi.md#list_challenges) | **GET** /challenges | List all the challenges
+[**create_tag**](TagApi.md#create_tag) | **POST** /tags | Create a tag
+[**delete_tag**](TagApi.md#delete_tag) | **DELETE** /tags/{tagId} | Delete a tag
+[**get_tag**](TagApi.md#get_tag) | **GET** /tags/{tagId} | Get a tag
+[**list_tags**](TagApi.md#list_tags) | **GET** /tags | Get all tags
 
 
-# **create_challenge**
-> Challenge create_challenge(challenge)
+# **create_tag**
+> Tag create_tag(tag_id, tag=tag)
 
-Add a challenge
+Create a tag
 
-Adds a challenge
+Create a tag with the specified name
 
 ### Example
 
@@ -35,26 +35,28 @@ configuration = roccclient.Configuration(
 # Enter a context with an instance of the API client
 with roccclient.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = roccclient.ChallengeApi(api_client)
-    challenge = roccclient.Challenge() # Challenge | 
+    api_instance = roccclient.TagApi(api_client)
+    tag_id = 'tag_id_example' # str | The ID of the tag that is being created
+tag = roccclient.Tag() # Tag |  (optional)
 
     try:
-        # Add a challenge
-        api_response = api_instance.create_challenge(challenge)
+        # Create a tag
+        api_response = api_instance.create_tag(tag_id, tag=tag)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling ChallengeApi->create_challenge: %s\n" % e)
+        print("Exception when calling TagApi->create_tag: %s\n" % e)
 ```
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **challenge** | [**Challenge**](Challenge.md)|  | 
+ **tag_id** | **str**| The ID of the tag that is being created | 
+ **tag** | [**Tag**](Tag.md)|  | [optional] 
 
 ### Return type
 
-[**Challenge**](Challenge.md)
+[**Tag**](Tag.md)
 
 ### Authorization
 
@@ -69,18 +71,19 @@ No authorization required
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | Success |  -  |
+**400** | Invalid request |  -  |
 **403** | Unauthorized |  -  |
 **404** | The specified resource was not found |  -  |
 **409** | The request conflicts with current state of the target resource |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **delete_challenge**
-> Challenge delete_challenge(challenge_id)
+# **delete_tag**
+> Tag delete_tag(tag_id)
 
-Delete a challenge
+Delete a tag
 
-Deletes the challenge specified
+Deletes the tag specified
 
 ### Example
 
@@ -100,26 +103,26 @@ configuration = roccclient.Configuration(
 # Enter a context with an instance of the API client
 with roccclient.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = roccclient.ChallengeApi(api_client)
-    challenge_id = 'challenge_id_example' # str | The ID of the challenge
+    api_instance = roccclient.TagApi(api_client)
+    tag_id = 'tag_id_example' # str | The ID of the tag
 
     try:
-        # Delete a challenge
-        api_response = api_instance.delete_challenge(challenge_id)
+        # Delete a tag
+        api_response = api_instance.delete_tag(tag_id)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling ChallengeApi->delete_challenge: %s\n" % e)
+        print("Exception when calling TagApi->delete_tag: %s\n" % e)
 ```
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **challenge_id** | **str**| The ID of the challenge | 
+ **tag_id** | **str**| The ID of the tag | 
 
 ### Return type
 
-[**Challenge**](Challenge.md)
+[**Tag**](Tag.md)
 
 ### Authorization
 
@@ -139,12 +142,12 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **get_challenge**
-> Challenge get_challenge(challenge_id)
+# **get_tag**
+> Tag get_tag(tag_id)
 
-Get a challenge
+Get a tag
 
-Returns the challenge specified
+Returns the tag specified
 
 ### Example
 
@@ -164,26 +167,26 @@ configuration = roccclient.Configuration(
 # Enter a context with an instance of the API client
 with roccclient.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = roccclient.ChallengeApi(api_client)
-    challenge_id = 'challenge_id_example' # str | The ID of the challenge
+    api_instance = roccclient.TagApi(api_client)
+    tag_id = 'tag_id_example' # str | The ID of the tag
 
     try:
-        # Get a challenge
-        api_response = api_instance.get_challenge(challenge_id)
+        # Get a tag
+        api_response = api_instance.get_tag(tag_id)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling ChallengeApi->get_challenge: %s\n" % e)
+        print("Exception when calling TagApi->get_tag: %s\n" % e)
 ```
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **challenge_id** | **str**| The ID of the challenge | 
+ **tag_id** | **str**| The ID of the tag | 
 
 ### Return type
 
-[**Challenge**](Challenge.md)
+[**Tag**](Tag.md)
 
 ### Authorization
 
@@ -203,12 +206,12 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **list_challenges**
-> PageOfChallenges list_challenges(limit=limit, offset=offset)
+# **list_tags**
+> PageOfTags list_tags(limit=limit, offset=offset)
 
-List all the challenges
+Get all tags
 
-Returns all the challenges
+Returns the tags
 
 ### Example
 
@@ -228,16 +231,16 @@ configuration = roccclient.Configuration(
 # Enter a context with an instance of the API client
 with roccclient.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = roccclient.ChallengeApi(api_client)
+    api_instance = roccclient.TagApi(api_client)
     limit = 10 # int | Maximum number of results returned (optional) (default to 10)
 offset = 0 # int | Index of the first result that must be returned (optional) (default to 0)
 
     try:
-        # List all the challenges
-        api_response = api_instance.list_challenges(limit=limit, offset=offset)
+        # Get all tags
+        api_response = api_instance.list_tags(limit=limit, offset=offset)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling ChallengeApi->list_challenges: %s\n" % e)
+        print("Exception when calling TagApi->list_tags: %s\n" % e)
 ```
 
 ### Parameters
@@ -249,7 +252,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**PageOfChallenges**](PageOfChallenges.md)
+[**PageOfTags**](PageOfTags.md)
 
 ### Authorization
 

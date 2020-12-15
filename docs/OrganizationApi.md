@@ -1,21 +1,21 @@
-# roccclient.ChallengeApi
+# roccclient.OrganizationApi
 
 All URIs are relative to *https://rocc.org/api/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**create_challenge**](ChallengeApi.md#create_challenge) | **POST** /challenges | Add a challenge
-[**delete_challenge**](ChallengeApi.md#delete_challenge) | **DELETE** /challenges/{challengeId} | Delete a challenge
-[**get_challenge**](ChallengeApi.md#get_challenge) | **GET** /challenges/{challengeId} | Get a challenge
-[**list_challenges**](ChallengeApi.md#list_challenges) | **GET** /challenges | List all the challenges
+[**create_organization**](OrganizationApi.md#create_organization) | **POST** /organizations | Create an organization
+[**delete_organization**](OrganizationApi.md#delete_organization) | **DELETE** /organizations/{organizationId} | Delete an organization
+[**get_organization**](OrganizationApi.md#get_organization) | **GET** /organizations/{organizationId} | Get an organization
+[**list_organizations**](OrganizationApi.md#list_organizations) | **GET** /organizations | Get all organizations
 
 
-# **create_challenge**
-> Challenge create_challenge(challenge)
+# **create_organization**
+> Organization create_organization(organization_id, organization=organization)
 
-Add a challenge
+Create an organization
 
-Adds a challenge
+Create an organization with the specified name
 
 ### Example
 
@@ -35,26 +35,28 @@ configuration = roccclient.Configuration(
 # Enter a context with an instance of the API client
 with roccclient.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = roccclient.ChallengeApi(api_client)
-    challenge = roccclient.Challenge() # Challenge | 
+    api_instance = roccclient.OrganizationApi(api_client)
+    organization_id = 'organization_id_example' # str | The ID of the organization that is being created
+organization = roccclient.Organization() # Organization |  (optional)
 
     try:
-        # Add a challenge
-        api_response = api_instance.create_challenge(challenge)
+        # Create an organization
+        api_response = api_instance.create_organization(organization_id, organization=organization)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling ChallengeApi->create_challenge: %s\n" % e)
+        print("Exception when calling OrganizationApi->create_organization: %s\n" % e)
 ```
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **challenge** | [**Challenge**](Challenge.md)|  | 
+ **organization_id** | **str**| The ID of the organization that is being created | 
+ **organization** | [**Organization**](Organization.md)|  | [optional] 
 
 ### Return type
 
-[**Challenge**](Challenge.md)
+[**Organization**](Organization.md)
 
 ### Authorization
 
@@ -75,12 +77,12 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **delete_challenge**
-> Challenge delete_challenge(challenge_id)
+# **delete_organization**
+> Organization delete_organization(organization_id)
 
-Delete a challenge
+Delete an organization
 
-Deletes the challenge specified
+Deletes the organization specified
 
 ### Example
 
@@ -100,26 +102,26 @@ configuration = roccclient.Configuration(
 # Enter a context with an instance of the API client
 with roccclient.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = roccclient.ChallengeApi(api_client)
-    challenge_id = 'challenge_id_example' # str | The ID of the challenge
+    api_instance = roccclient.OrganizationApi(api_client)
+    organization_id = 'organization_id_example' # str | The ID of the organization
 
     try:
-        # Delete a challenge
-        api_response = api_instance.delete_challenge(challenge_id)
+        # Delete an organization
+        api_response = api_instance.delete_organization(organization_id)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling ChallengeApi->delete_challenge: %s\n" % e)
+        print("Exception when calling OrganizationApi->delete_organization: %s\n" % e)
 ```
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **challenge_id** | **str**| The ID of the challenge | 
+ **organization_id** | **str**| The ID of the organization | 
 
 ### Return type
 
-[**Challenge**](Challenge.md)
+[**Organization**](Organization.md)
 
 ### Authorization
 
@@ -139,12 +141,12 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **get_challenge**
-> Challenge get_challenge(challenge_id)
+# **get_organization**
+> Organization get_organization(organization_id)
 
-Get a challenge
+Get an organization
 
-Returns the challenge specified
+Returns the organization specified
 
 ### Example
 
@@ -164,26 +166,26 @@ configuration = roccclient.Configuration(
 # Enter a context with an instance of the API client
 with roccclient.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = roccclient.ChallengeApi(api_client)
-    challenge_id = 'challenge_id_example' # str | The ID of the challenge
+    api_instance = roccclient.OrganizationApi(api_client)
+    organization_id = 'organization_id_example' # str | The ID of the organization
 
     try:
-        # Get a challenge
-        api_response = api_instance.get_challenge(challenge_id)
+        # Get an organization
+        api_response = api_instance.get_organization(organization_id)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling ChallengeApi->get_challenge: %s\n" % e)
+        print("Exception when calling OrganizationApi->get_organization: %s\n" % e)
 ```
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **challenge_id** | **str**| The ID of the challenge | 
+ **organization_id** | **str**| The ID of the organization | 
 
 ### Return type
 
-[**Challenge**](Challenge.md)
+[**Organization**](Organization.md)
 
 ### Authorization
 
@@ -203,12 +205,12 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **list_challenges**
-> PageOfChallenges list_challenges(limit=limit, offset=offset)
+# **list_organizations**
+> PageOfOrganizations list_organizations(limit=limit, offset=offset)
 
-List all the challenges
+Get all organizations
 
-Returns all the challenges
+Returns the organizations
 
 ### Example
 
@@ -228,16 +230,16 @@ configuration = roccclient.Configuration(
 # Enter a context with an instance of the API client
 with roccclient.ApiClient() as api_client:
     # Create an instance of the API class
-    api_instance = roccclient.ChallengeApi(api_client)
+    api_instance = roccclient.OrganizationApi(api_client)
     limit = 10 # int | Maximum number of results returned (optional) (default to 10)
 offset = 0 # int | Index of the first result that must be returned (optional) (default to 0)
 
     try:
-        # List all the challenges
-        api_response = api_instance.list_challenges(limit=limit, offset=offset)
+        # Get all organizations
+        api_response = api_instance.list_organizations(limit=limit, offset=offset)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling ChallengeApi->list_challenges: %s\n" % e)
+        print("Exception when calling OrganizationApi->list_organizations: %s\n" % e)
 ```
 
 ### Parameters
@@ -249,7 +251,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**PageOfChallenges**](PageOfChallenges.md)
+[**PageOfOrganizations**](PageOfOrganizations.md)
 
 ### Authorization
 
