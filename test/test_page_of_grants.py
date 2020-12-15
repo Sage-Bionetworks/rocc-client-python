@@ -37,15 +37,15 @@ class TestPageOfGrants(unittest.TestCase):
         # model = roccclient.models.page_of_grants.PageOfGrants()  # noqa: E501
         if include_optional :
             return PageOfGrants(
-                offset = 56, 
-                limit = 56, 
-                links = roccclient.models.response_page_metadata_links.ResponsePageMetadata_links(
-                    next = '0', ), 
+                offset = 56,
+                limit = 56,
+                links = roccclient.models.response_page_metadata_links.ResponsePageMetadataLinks(
+                    next = '0', ),
                 grants = [
                     roccclient.models.grant.Grant(
-                        grant_id = '507f1f77bcf86cd799439011', 
-                        name = '0', 
-                        description = '0', 
+                        grant_id = '507f1f77bcf86cd799439011',
+                        name = '0',
+                        description = '0',
                         url = '0', )
                     ]
             )
@@ -53,7 +53,7 @@ class TestPageOfGrants(unittest.TestCase):
             return PageOfGrants(
                 offset = 56,
                 limit = 56,
-                links = roccclient.models.response_page_metadata_links.ResponsePageMetadata_links(
+                links = roccclient.models.response_page_metadata_links.ResponsePageMetadataLinks(
                     next = '0', ),
         )
 

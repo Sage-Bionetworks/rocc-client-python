@@ -37,15 +37,15 @@ class TestPageOfOrganizations(unittest.TestCase):
         # model = roccclient.models.page_of_organizations.PageOfOrganizations()  # noqa: E501
         if include_optional :
             return PageOfOrganizations(
-                offset = 56, 
-                limit = 56, 
-                links = roccclient.models.response_page_metadata_links.ResponsePageMetadata_links(
-                    next = '0', ), 
+                offset = 56,
+                limit = 56,
+                links = roccclient.models.response_page_metadata_links.ResponsePageMetadataLinks(
+                    next = '0', ),
                 organizations = [
                     roccclient.models.organization.Organization(
-                        organization_id = 'awesome-organization', 
-                        name = '0', 
-                        short_name = '0', 
+                        organization_id = 'awesome-organization',
+                        name = '0',
+                        short_name = '0',
                         url = '0', )
                     ]
             )
@@ -53,7 +53,7 @@ class TestPageOfOrganizations(unittest.TestCase):
             return PageOfOrganizations(
                 offset = 56,
                 limit = 56,
-                links = roccclient.models.response_page_metadata_links.ResponsePageMetadata_links(
+                links = roccclient.models.response_page_metadata_links.ResponsePageMetadataLinks(
                     next = '0', ),
         )
 

@@ -56,7 +56,7 @@ class TestPageOfPersons(unittest.TestCase):
             return PageOfPersons(
                 offset = 56,
                 limit = 56,
-                links = roccclient.models.response_page_metadata_links.ResponsePageMetadata_links(
+                links = roccclient.models.response_page_metadata_links.ResponsePageMetadataLinks(
                     next = '0', ),
         )
 

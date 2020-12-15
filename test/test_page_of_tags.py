@@ -37,13 +37,13 @@ class TestPageOfTags(unittest.TestCase):
         # model = roccclient.models.page_of_tags.PageOfTags()  # noqa: E501
         if include_optional :
             return PageOfTags(
-                offset = 56, 
-                limit = 56, 
-                links = roccclient.models.response_page_metadata_links.ResponsePageMetadata_links(
-                    next = '0', ), 
+                offset = 56,
+                limit = 56,
+                links = roccclient.models.response_page_metadata_links.ResponsePageMetadataLinks(
+                    next = '0', ),
                 tags = [
                     roccclient.models.tag.Tag(
-                        tag_id = 'awesome-tag', 
+                        tag_id = 'awesome-tag',
                         description = '0', )
                     ]
             )
@@ -51,7 +51,7 @@ class TestPageOfTags(unittest.TestCase):
             return PageOfTags(
                 offset = 56,
                 limit = 56,
-                links = roccclient.models.response_page_metadata_links.ResponsePageMetadata_links(
+                links = roccclient.models.response_page_metadata_links.ResponsePageMetadataLinks(
                     next = '0', ),
         )
 
