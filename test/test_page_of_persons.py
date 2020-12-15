@@ -37,16 +37,16 @@ class TestPageOfPersons(unittest.TestCase):
         # model = roccclient.models.page_of_persons.PageOfPersons()  # noqa: E501
         if include_optional :
             return PageOfPersons(
-                offset = 56, 
-                limit = 56, 
-                links = roccclient.models.response_page_metadata_links.ResponsePageMetadata_links(
-                    next = '0', ), 
+                offset = 56,
+                limit = 56,
+                links = roccclient.models.response_page_metadata_links.ResponsePageMetadataLinks(
+                    next = '0', ),
                 persons = [
                     roccclient.models.person.Person(
-                        person_id = '507f1f77bcf86cd799439011', 
-                        first_name = 'John', 
-                        last_name = 'Smith', 
-                        email = 'john.smith@example.com', 
+                        person_id = '507f1f77bcf86cd799439011',
+                        first_name = 'John',
+                        last_name = 'Smith',
+                        email = 'john.smith@example.com',
                         organizations = [
                             'awesome-organization'
                             ], )

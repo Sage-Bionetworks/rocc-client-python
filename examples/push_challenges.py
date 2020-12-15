@@ -17,7 +17,38 @@ configuration = roccclient.Configuration(
 # fhir_store_id = 'evaluation'
 # annotation_store_id = 'goldstandard'
 
-# json_filename = 'evaluation-patient-bundles.json'
+json_filename = 'past_dream_challenges.json'
+
+with roccclient.ApiClient(configuration) as api_client:
+    tag_api = roccclient.TagApi(api_client)
+
+    # quick test to get data from the ROCC API service
+    tags = tag_api.list_tags()
+    print(f'tags: {tags}')
+
+
+    # with open(json_filename) as f:
+    #     data = json.load(f)
+
+
+
+    # try:
+    #     # get the dataset
+    #     tag = tag_api.get_tag(dataset_id)
+    # except ApiException as e:
+    #     if e.status == 404:
+    #         # create dataset if not found
+    #         try:
+    #             dataset = dataset_api.create_dataset(
+    #                 dataset_id,
+    #                 dataset=datanodeclient.Dataset()
+    #             )
+    #         except ApiException as e:
+    #             print("Exception when calling DatasetApi->create_dataset: %s\n" % e)
+    #             sys.exit(-1)
+    #     else:
+    #         print("Exception when calling DatasetApi->get_dataset: %s\n" % e)
+    #         sys.exit(-1)
 
 # with datanodeclient.ApiClient(configuration) as api_client:
 #     dataset_api = datanodeclient.DatasetApi(api_client)
