@@ -37,8 +37,8 @@ class TestOrganization(unittest.TestCase):
         # model = roccclient.models.organization.Organization()  # noqa: E501
         if include_optional :
             return Organization(
-                id = '507f1f77bcf86cd799439011', 
-                name = 'Sage Bionetworks', 
+                organization_id = '507f1f77bcf86cd799439011',
+                name = 'Sage Bionetworks',
                 url = 'https://sagebionetworks.org/'
             )
         else :

@@ -37,29 +37,29 @@ class TestGrant(unittest.TestCase):
         # model = roccclient.models.grant.Grant()  # noqa: E501
         if include_optional :
             return Grant(
-                id = '507f1f77bcf86cd799439011', 
-                name = '0', 
-                description = '0', 
+                id = '507f1f77bcf86cd799439011',
+                name = '0',
+                description = '0',
                 sponsor = roccclient.models.organization.Organization(
-                    id = '507f1f77bcf86cd799439011', 
-                    name = 'Sage Bionetworks', 
-                    url = 'https://sagebionetworks.org/', ), 
-                amount = 56, 
+                    id = '507f1f77bcf86cd799439011',
+                    name = 'Sage Bionetworks',
+                    url = 'https://sagebionetworks.org/', ),
+                amount = 56,
                 url = '0'
             )
         else :
             return Grant(
                 name = '0',
                 sponsor = roccclient.models.organization.Organization(
-                    id = '507f1f77bcf86cd799439011', 
-                    name = 'Sage Bionetworks', 
+                    id = '507f1f77bcf86cd799439011',
+                    name = 'Sage Bionetworks',
                     url = 'https://sagebionetworks.org/', ),
         )
 
-    def testGrant(self):
-        """Test Grant"""
-        inst_req_only = self.make_instance(include_optional=False)
-        inst_req_and_optional = self.make_instance(include_optional=True)
+    # def testGrant(self):
+    #     """Test Grant"""
+    #     inst_req_only = self.make_instance(include_optional=False)
+    #     inst_req_and_optional = self.make_instance(include_optional=True)
 
 
 if __name__ == '__main__':

@@ -27,11 +27,8 @@
 .openapi-generator-ignore
 .travis.yml
 git_push.sh
-README.md
 requirements.txt
 setup.cfg
 setup.py
 test-requirements.txt
 tox.ini
-
-dist.yaml

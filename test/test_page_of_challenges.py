@@ -80,10 +80,10 @@ class TestPageOfChallenges(unittest.TestCase):
                     next = '0', ),
         )
 
-    def testPageOfChallenges(self):
-        """Test PageOfChallenges"""
-        inst_req_only = self.make_instance(include_optional=False)
-        inst_req_and_optional = self.make_instance(include_optional=True)
+    # def testPageOfChallenges(self):
+    #     """Test PageOfChallenges"""
+    #     inst_req_only = self.make_instance(include_optional=False)
+    #     inst_req_and_optional = self.make_instance(include_optional=True)
 
 
 if __name__ == '__main__':
