@@ -52,4 +52,5 @@ from roccclient.models.person import Person
 from roccclient.models.response_page_metadata import ResponsePageMetadata
 from roccclient.models.response_page_metadata_links import ResponsePageMetadataLinks
 from roccclient.models.tag import Tag
+from roccclient.models.tag_filter import TagFilter
 

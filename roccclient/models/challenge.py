@@ -40,7 +40,8 @@ class Challenge(object):
         'end_date': 'date',
         'url': 'str',
         'status': 'str',
-        'tags': 'list[str]'
+        'tags': 'list[str]',
+        'organizers': 'list[str]'
     }
 
     attribute_map = {
@@ -50,10 +51,11 @@ class Challenge(object):
         'end_date': 'endDate',
         'url': 'url',
         'status': 'status',
-        'tags': 'tags'
+        'tags': 'tags',
+        'organizers': 'organizers'
     }
 
-    def __init__(self, challenge_id=None, name=None, start_date=None, end_date=None, url=None, status=None, tags=None, local_vars_configuration=None):  # noqa: E501
+    def __init__(self, challenge_id=None, name=None, start_date=None, end_date=None, url=None, status=None, tags=None, organizers=None, local_vars_configuration=None):  # noqa: E501
         """Challenge - a model defined in OpenAPI"""  # noqa: E501
         if local_vars_configuration is None:
             local_vars_configuration = Configuration()
@@ -66,6 +68,7 @@ class Challenge(object):
         self._url = None
         self._status = None
         self._tags = None
+        self._organizers = None
         self.discriminator = None
 
         if challenge_id is not None:
@@ -82,6 +85,8 @@ class Challenge(object):
             self.status = status
         if tags is not None:
             self.tags = tags
+        if organizers is not None:
+            self.organizers = organizers
 
     @property
     def challenge_id(self):
@@ -249,6 +254,29 @@ class Challenge(object):
         """
 
         self._tags = tags
+
+    @property
+    def organizers(self):
+        """Gets the organizers of this Challenge.  # noqa: E501
+
+        The organizers of the challenge  # noqa: E501
+
+        :return: The organizers of this Challenge.  # noqa: E501
+        :rtype: list[str]
+        """
+        return self._organizers
+
+    @organizers.setter
+    def organizers(self, organizers):
+        """Sets the organizers of this Challenge.
+
+        The organizers of the challenge  # noqa: E501
+
+        :param organizers: The organizers of this Challenge.  # noqa: E501
+        :type organizers: list[str]
+        """
+
+        self._organizers = organizers
 
     def to_dict(self):
         """Returns the model properties as a dict"""
