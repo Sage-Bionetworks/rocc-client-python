@@ -11,6 +11,7 @@ Name | Type | Description | Notes
 **url** | **str** | The URL to the challenge website | [optional] 
 **status** | **str** | The status of challenge | [optional] 
 **tags** | **list[str]** | The tags associated to the challenge | [optional] 
+**organizers** | **list[str]** | The organizers of the challenge | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

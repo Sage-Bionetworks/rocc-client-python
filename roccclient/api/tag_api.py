@@ -479,6 +479,8 @@ class TagApi(object):
         :type limit: int
         :param offset: Index of the first result that must be returned
         :type offset: int
+        :param filter: Object that describes how to filter the results
+        :type filter: TagFilter
         :param async_req: Whether to execute the request asynchronously.
         :type async_req: bool, optional
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -511,6 +513,8 @@ class TagApi(object):
         :type limit: int
         :param offset: Index of the first result that must be returned
         :type offset: int
+        :param filter: Object that describes how to filter the results
+        :type filter: TagFilter
         :param async_req: Whether to execute the request asynchronously.
         :type async_req: bool, optional
         :param _return_http_data_only: response data without head status code
@@ -538,7 +542,8 @@ class TagApi(object):
 
         all_params = [
             'limit',
-            'offset'
+            'offset',
+            'filter'
         ]
         all_params.extend(
             [
@@ -574,6 +579,8 @@ class TagApi(object):
             query_params.append(('limit', local_var_params['limit']))  # noqa: E501
         if 'offset' in local_var_params and local_var_params['offset'] is not None:  # noqa: E501
             query_params.append(('offset', local_var_params['offset']))  # noqa: E501
+        if 'filter' in local_var_params and local_var_params['filter'] is not None:  # noqa: E501
+            query_params.append(('filter', local_var_params['filter']))  # noqa: E501
 
         header_params = {}
 

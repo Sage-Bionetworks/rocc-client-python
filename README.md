@@ -61,10 +61,10 @@ import roccclient
 from roccclient.rest import ApiException
 from pprint import pprint
 
-# Defining the host is optional and defaults to https://rocc.com/api.dev/v1
+# Defining the host is optional and defaults to https://rocc.org/api/v1
 # See configuration.py for a list of all supported configuration parameters.
 configuration = roccclient.Configuration(
-    host = "https://rocc.com/api.dev/v1"
+    host = "https://rocc.org/api/v1"
 )
 
 
@@ -86,15 +86,30 @@ with roccclient.ApiClient(configuration) as api_client:
 
 ## Documentation for API Endpoints
 
-All URIs are relative to *https://rocc.com/api.dev/v1*
+All URIs are relative to *https://rocc.org/api/v1*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
 *ChallengeApi* | [**create_challenge**](docs/ChallengeApi.md#create_challenge) | **POST** /challenges | Add a challenge
-*ChallengeApi* | [**delete_challenge**](docs/ChallengeApi.md#delete_challenge) | **DELETE** /challenges/{id} | Delete a challenge
-*ChallengeApi* | [**get_challenge**](docs/ChallengeApi.md#get_challenge) | **GET** /challenges/{id} | Get a challenge
+*ChallengeApi* | [**delete_challenge**](docs/ChallengeApi.md#delete_challenge) | **DELETE** /challenges/{challengeId} | Delete a challenge
+*ChallengeApi* | [**get_challenge**](docs/ChallengeApi.md#get_challenge) | **GET** /challenges/{challengeId} | Get a challenge
 *ChallengeApi* | [**list_challenges**](docs/ChallengeApi.md#list_challenges) | **GET** /challenges | List all the challenges
-*UserApi* | [**get_user_by_name**](docs/UserApi.md#get_user_by_name) | **GET** /users/{username} | Get user by user name
+*GrantApi* | [**create_grant**](docs/GrantApi.md#create_grant) | **POST** /grants | Create a grant
+*GrantApi* | [**delete_grant**](docs/GrantApi.md#delete_grant) | **DELETE** /grants/{grantId} | Delete a grant
+*GrantApi* | [**get_grant**](docs/GrantApi.md#get_grant) | **GET** /grants/{grantId} | Get a grant
+*GrantApi* | [**list_grants**](docs/GrantApi.md#list_grants) | **GET** /grants | Get all grants
+*OrganizationApi* | [**create_organization**](docs/OrganizationApi.md#create_organization) | **POST** /organizations | Create an organization
+*OrganizationApi* | [**delete_organization**](docs/OrganizationApi.md#delete_organization) | **DELETE** /organizations/{organizationId} | Delete an organization
+*OrganizationApi* | [**get_organization**](docs/OrganizationApi.md#get_organization) | **GET** /organizations/{organizationId} | Get an organization
+*OrganizationApi* | [**list_organizations**](docs/OrganizationApi.md#list_organizations) | **GET** /organizations | Get all organizations
+*PersonApi* | [**create_person**](docs/PersonApi.md#create_person) | **POST** /persons | Create a person
+*PersonApi* | [**delete_person**](docs/PersonApi.md#delete_person) | **DELETE** /persons/{personId} | Delete a person
+*PersonApi* | [**get_person**](docs/PersonApi.md#get_person) | **GET** /persons/{personId} | Get a person
+*PersonApi* | [**list_persons**](docs/PersonApi.md#list_persons) | **GET** /persons | Get all persons
+*TagApi* | [**create_tag**](docs/TagApi.md#create_tag) | **POST** /tags | Create a tag
+*TagApi* | [**delete_tag**](docs/TagApi.md#delete_tag) | **DELETE** /tags/{tagId} | Delete a tag
+*TagApi* | [**get_tag**](docs/TagApi.md#get_tag) | **GET** /tags/{tagId} | Get a tag
+*TagApi* | [**list_tags**](docs/TagApi.md#list_tags) | **GET** /tags | Get all tags
 
 
 ## Documentation For Models
@@ -105,10 +120,19 @@ Class | Method | HTTP request | Description
  - [Organization](docs/Organization.md)
  - [PageOfChallenges](docs/PageOfChallenges.md)
  - [PageOfChallengesAllOf](docs/PageOfChallengesAllOf.md)
+ - [PageOfGrants](docs/PageOfGrants.md)
+ - [PageOfGrantsAllOf](docs/PageOfGrantsAllOf.md)
+ - [PageOfOrganizations](docs/PageOfOrganizations.md)
+ - [PageOfOrganizationsAllOf](docs/PageOfOrganizationsAllOf.md)
+ - [PageOfPersons](docs/PageOfPersons.md)
+ - [PageOfPersonsAllOf](docs/PageOfPersonsAllOf.md)
+ - [PageOfTags](docs/PageOfTags.md)
+ - [PageOfTagsAllOf](docs/PageOfTagsAllOf.md)
  - [Person](docs/Person.md)
  - [ResponsePageMetadata](docs/ResponsePageMetadata.md)
  - [ResponsePageMetadataLinks](docs/ResponsePageMetadataLinks.md)
- - [User](docs/User.md)
+ - [Tag](docs/Tag.md)
+ - [TagFilter](docs/TagFilter.md)
 
 
 ## Documentation For Authorization
