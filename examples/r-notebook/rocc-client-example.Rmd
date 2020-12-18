@@ -19,18 +19,18 @@ renv::restore()
 
 # Install dependencies
 packages <- c(
-  # 'dplyr',
+  'dplyr',
   # 'fs',
   # 'jsonlite',
   # 'parallel',
   # 'purrr',
   # 'renv',
-  'reticulate'
+  'reticulate',
   # 'rlist',
   # 'rprojroot',
   # 'stringr',
   # 'tibble',
-  # 'tidyr',
+  'tidyr'
   # 'xml2'
 )
 
@@ -48,6 +48,8 @@ noop <- lapply(packages, require, character.only = TRUE)
 use_condaenv("rocc", required = TRUE)
 ```
 
+### List Tags
+
 ```{python}
 from __future__ import print_function
 
@@ -57,13 +59,136 @@ from roccclient.rest import ApiException
 # Defining the host is optional and defaults to http://example.com/api/v1
 # See configuration.py for a list of all supported configuration parameters.
 configuration = roccclient.Configuration(
-    host="http://host.docker.internal:8080/api/v1"  # local ROCC API service
-    # host="http://10.41.27.32:8080/api/v1"  # ROCC API service
+    # host="http://host.docker.internal:8080/api/v1"  # local ROCC API service
+    host="http://10.41.27.32:8080/api/v1"  # ROCC API service
 )
 
 with roccclient.ApiClient(configuration) as api_client:
     tag_api = roccclient.TagApi(api_client)
 
-    tags = tag_api.list_tags()
+    tags = tag_api.list_tags(limit=100)
+    print(f'number of tags: {len(tags.tags)}')
     print(f'tags: {tags}')
 ```
+
+### List Challenges
+
+```{python}
+from __future__ import print_function
+
+import roccclient
+from roccclient.rest import ApiException
+
+# Defining the host is optional and defaults to http://example.com/api/v1
+# See configuration.py for a list of all supported configuration parameters.
+configuration = roccclient.Configuration(
+    # host="http://host.docker.internal:8080/api/v1"  # local ROCC API service
+    host="http://10.41.27.32:8080/api/v1"  # ROCC API service
+)
+
+with roccclient.ApiClient(configuration) as api_client:
+    challenge_api = roccclient.ChallengeApi(api_client)
+
+    challenges = challenge_api.list_challenges(limit=100).challenges
+    print(f'number of challenges: {len(challenges)}')
+    print(f'challenge example: {challenges[1]}')
+```
+```{r rows.print=15, echo=FALSE}
+challenges <- do.call(rbind, lapply(py$challenges, function(challenge) {
+  data.frame(
+    name=challenge['name'],
+    status=challenge['status'],
+    startDate=challenge['start_date'],
+    endDate=challenge['end_date'],
+    nOrganizers=length(challenge['organizers']),
+    tags=paste(challenge['tags'], collapse=" | "),
+    nSubmissions=challenge['challenge_results']['n_submissions'],
+    nRegisteredParticipants=challenge['challenge_results']['n_registered_participants'],
+    stringsAsFactors=FALSE
+  )
+}))
+
+challenges
+```
+
+### Number of Participants in Challenges
+
+```{r}
+
+```
+
+
+
+
+
+
+
+```{python}
+from __future__ import print_function
+
+import roccclient
+from roccclient.rest import ApiException
+
+# Defining the host is optional and defaults to http://example.com/api/v1
+# See configuration.py for a list of all supported configuration parameters.
+configuration = roccclient.Configuration(
+    # host="http://host.docker.internal:8080/api/v1"  # local ROCC API service
+    host="http://10.41.27.32:8080/api/v1"  # ROCC API service
+)
+
+with roccclient.ApiClient(configuration) as api_client:
+    person_api = roccclient.PersonApi(api_client)
+
+    # TODO: Use link returned to get the next page
+    persons = person_api.list_persons(offset=0, limit=100).persons \
+      + person_api.list_persons(offset=100, limit=100).persons \
+      + person_api.list_persons(offset=200, limit=100).persons
+```
+
+### List all the Organizers
+
+```{r rows.print=15}
+persons <- do.call(rbind, lapply(py$persons, function(person) {
+  person = unlist(person)
+  data.frame(
+    firstName=person['first_name'],
+    lastName=person['last_name'],
+    organizations=paste(person['organizations'], sep = ','),
+    stringsAsFactors=FALSE
+  )
+}))
+
+persons %>%
+  arrange(firstName)
+```
+
+### List only the Organizers at Sage Bionetworks
+
+```{r rows.print=15}
+persons %>%
+  filter(across(organizations, ~ grepl('sage', .))) %>%
+  arrange(firstName)
+```
+
+### List Challenges
+
+
+
+
+```{r rows.print=15, echo=FALSE}
+challenges <- do.call(rbind, lapply(py$challenges, function(challenge) {
+  data.frame(
+    name=challenge['name'],
+    status=challenge['status'],
+    startDate=challenge['start_date'],
+    endDate=challenge['end_date'],
+    nOrganizers=length(challenge['organizers']),
+    # tags=paste(challenge['tags'], collapse=", "),
+    nSubmissions=challenge['challenge_results']['n_submissions'],
+    stringsAsFactors=FALSE
+  )
+}))
+
+challenges[challenges$status == 'open']
+```
+
