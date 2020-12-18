@@ -1,175 +1,156 @@
 from __future__ import print_function
 
 import json
-import sys
+import re
+import time
 
 import roccclient
 from roccclient.rest import ApiException
 
-# Defining the host is optional and defaults to http://example.com/api/v1
-# See configuration.py for a list of all supported configuration parameters.
-configuration = roccclient.Configuration(
-    host="http://localhost:8080/api/v1"
-)
+
+def reformat_id(s):
+    """Reformat ID string.
+
+    Valid IDs must be lowercase and single dash-delimited.
+    """
+    s = s.replace("'", "")
+    s = re.sub(r"[ \"'\.?!/]", "-", s)
+    s = re.sub(r"\-+", "-", s)
+    return s.lower()
 
 
-# dataset_id = '2014-i2b2-20201203'
-# fhir_store_id = 'evaluation'
-# annotation_store_id = 'goldstandard'
+def add_tag(api, tag):
+    """Create a new Tag entry in the database.
 
-json_filename = 'past_dream_challenges.json'
-
-with roccclient.ApiClient(configuration) as api_client:
-    tag_api = roccclient.TagApi(api_client)
-
-    # quick test to get data from the ROCC API service
-    tags = tag_api.list_tags()
-    print(f'tags: {tags}')
-
-
-    # with open(json_filename) as f:
-    #     data = json.load(f)
+    Exception:
+        409: tagId already exists
+    """
+    tag_id = reformat_id(tag.get("tagId"))
+    try:
+        api.create_tag(tag_id, tag=roccclient.Tag())
+    except ApiException as err:
+        if err.status == 409:
+            print(f"Duplicate tag: {tag_id}")
+        else:
+            print(f"Exception when calling TagApi->create_tag: {err}")
 
 
+def add_organization(api, org):
+    """Create a new Organization entry in the database.
 
-    # try:
-    #     # get the dataset
-    #     tag = tag_api.get_tag(dataset_id)
-    # except ApiException as e:
-    #     if e.status == 404:
-    #         # create dataset if not found
-    #         try:
-    #             dataset = dataset_api.create_dataset(
-    #                 dataset_id,
-    #                 dataset=datanodeclient.Dataset()
-    #             )
-    #         except ApiException as e:
-    #             print("Exception when calling DatasetApi->create_dataset: %s\n" % e)
-    #             sys.exit(-1)
-    #     else:
-    #         print("Exception when calling DatasetApi->get_dataset: %s\n" % e)
-    #         sys.exit(-1)
+    Exception:
+        409: organizationId already exists
+    """
 
-# with datanodeclient.ApiClient(configuration) as api_client:
-#     dataset_api = datanodeclient.DatasetApi(api_client)
-#     fhir_store_api = datanodeclient.FhirStoreApi(api_client)
-#     annotation_store_api = datanodeclient.AnnotationStoreApi(api_client)
-#     patient_api = datanodeclient.PatientApi(api_client)
-#     note_api = datanodeclient.NoteApi(api_client)
-#     annotation_api = datanodeclient.AnnotationApi(api_client)
+    # Use organization's short name for ID; otherwise, full name.
+    org_id = reformat_id(org.get("shortName", org.get("name")))
+    try:
+        api.create_organization(
+            org_id,
+            organization=org
+        )
+    except ApiException as err:
+        if err.status == 409:
+            print(f"Duplicate organization: {org_id}")
+        else:
+            print("Exception when calling OrganizationApi ->"
+                  f"create_organization: {err}")
 
-#     try:
-#         # get the dataset
-#         dataset = dataset_api.get_dataset(dataset_id)
-#     except ApiException as e:
-#         if e.status == 404:
-#             # create dataset if not found
-#             try:
-#                 dataset = dataset_api.create_dataset(
-#                     dataset_id,
-#                     dataset=datanodeclient.Dataset()
-#                 )
-#             except ApiException as e:
-#                 print("Exception when calling DatasetApi->create_dataset: %s\n" % e)
-#                 sys.exit(-1)
-#         else:
-#             print("Exception when calling DatasetApi->get_dataset: %s\n" % e)
-#             sys.exit(-1)
 
-#     try:
-#         # get the FHIR store
-#         fhir_store = fhir_store_api.get_fhir_store(dataset_id, fhir_store_id)
-#     except ApiException as e:
-#         if e.status == 404:
-#             # create fhir store if not found
-#             try:
-#                 fhir_store = fhir_store_api.create_fhir_store(
-#                     dataset_id,
-#                     fhir_store_id,
-#                     fhir_store=datanodeclient.FhirStore()
-#                 )
-#             except ApiException as e:
-#                 print("Exception when calling FhirStoreApi->create_fhir_store: %s\n" % e)
-#                 sys.exit(-1)
-#         else:
-#             print("Exception when calling FhirStoreApi->get_fhir_store: %s\n" % e)
-#             sys.exit(-1)
+def add_person(api, person, organizations):
+    """Create a new Person entry in the database.
 
-#     try:
-#         # get the annotation store
-#         annotation_store = annotation_store_api.get_annotation_store(dataset_id, annotation_store_id)
-#     except ApiException as e:
-#         if e.status == 404:
-#             # create annotation store if not found
-#             try:
-#                 annotation_store = annotation_store_api.create_annotation_store(
-#                     dataset_id,
-#                     annotation_store_id,
-#                     annotation_store=datanodeclient.AnnotationStore()
-#                 )
-#             except ApiException as e:
-#                 print("Exception when calling AnnotationStoreApi->create_annotation_store: %s\n" % e)
-#                 sys.exit(-1)
-#         else:
-#             print("Exception when calling AnnotationStoreApi->get_annotation_store: %s\n" % e)
-#             sys.exit(-1)
+    Returns:
+        person.personId
 
-#     print(f"dataset: {dataset}")
-#     print(f"fhir_store: {fhir_store}")
-#     print(f"annotation_store: {annotation_store}")
+    TODO:
+        Use some properties to check for duplicates (maybe email?)
+    """
 
-#     with open(json_filename) as f:
-#         data = json.load(f)
-#         patient_bundles = data['patient_bundles']
-#         # patient_bundles = patient_bundles[:1]
+    # Replace person.organizations with properly-formatted list
+    person_orgs = [
+        reformat_id(organizations.get(org).get("shortName", org))
+        for org in person.get("organizations")
+    ]
+    person["organizations"] = person_orgs
 
-#     for patient_bundle in patient_bundles:
-#         patient = patient_bundle['patient']
+    person = api.create_person(person=person)
+    return person.person_id
 
-#         try:
-#             # Create a FHIR Patient
-#             patient = patient_api.create_patient(
-#                 dataset_id,
-#                 fhir_store_id,
-#                 patient=patient)
-#             print(f"patient: {patient}")
 
-#             # Create the Note and Annotation objects linked to the patient
-#             note_bundles = patient_bundle['note_bundles']
-#             # note_bundles = note_bundles[:1]
+def add_challenge(api, challenge, persons):
+    """Create a new Challenge entry in the database.
 
-#             for note_bundle in note_bundles:
-#                 note = note_bundle['note']
-#                 note['patientId'] = patient.id
-#                 try:
-#                     note = note_api.create_note(
-#                         dataset_id,
-#                         fhir_store_id,
-#                         note=note
-#                     )
-#                     print(f"note: {note}")
-#                 except ApiException as e:
-#                     print("Exception when calling NoteApi->create_note: %s\n" % e)
+    Exception:
+        409: challenge name already exists
+    """
+    try:
+        # Replace challenge.organizers with properly-formatted list
+        organizers = [
+            persons.get(person.get("firstName") + person.get("lastName"))
+            for person in challenge.get("organizers")
+        ]
+        challenge["organizers"] = organizers
+        api.create_challenge(challenge=challenge)
 
-#                 annotation = note_bundle['annotation']
-#                 annotation['annotationSource']['resourceSource']['name'] = \
-#                     "{fhir_store_name}/fhir/Note/{note_id}".format(
-#                         fhir_store_name=fhir_store.name,
-#                         note_id=note.id
-#                     )
-#                 try:
-#                     annotation = annotation_api.create_annotation(
-#                         dataset_id,
-#                         annotation_store_id,
-#                         annotation=annotation
-#                     )
-#                     print(f"annotation: {annotation}")
-#                 except ApiException as e:
-#                     print("Exception when calling AnnotationApi->create_annotation: %s\n" % e)
+    except ApiException as err:
+        if err.status == 409:
+            print(f"Duplicate challenge: {challenge.get('name')}")
+        else:
+            print("Exception when calling ChallengeApi ->"
+                  f"create_challenge: {err}")
 
-#                 # time.sleep(1)
 
-#         except ApiException as e:
-#             print("Exception when calling PatientApi->create_patient: %s\n" % e)
+def populate_db(client, dump):
+    """Add past challenges from the JSON dump file."""
+    tag_api = roccclient.TagApi(client)
+    org_api = roccclient.OrganizationApi(client)
+    person_api = roccclient.PersonApi(client)
+    challenge_api = roccclient.ChallengeApi(client)
 
-#         # time.sleep(1)
+    data = json.load(dump)
+
+    # Add 5ms of sleep so connection does not time out.
+    print("Adding tags...")
+    tags = data.get("tags")
+    for tag in tags:
+        add_tag(tag_api, tag)
+        time.sleep(0.05)
+
+    print("Adding organizations...")
+    organizations = data.get("organizations")
+    for _, org in organizations.items():
+        add_organization(org_api, org)
+        time.sleep(0.05)
+
+    print("Adding persons...")
+    person_ids = {}
+    persons = data.get("persons")
+    for person in persons:
+        person_id = add_person(person_api, person, organizations)
+        name = person.get("firstName") + person.get("lastName")
+        person_ids[name] = person_id
+        time.sleep(0.05)
+
+    print("Adding challenges...")
+    challenges = data.get("challenges")
+    for challenge in challenges:
+        add_challenge(challenge_api, challenge, person_ids)
+        time.sleep(0.05)
+
+
+def main():
+    """Main function."""
+
+    configuration = roccclient.Configuration(
+        # host="http://10.41.27.32:8080/api/v1"  # prod
+        host="http://localhost:8080/api/v1"  # dev
+    )
+    json_filename = "past_dream_challenges.json"
+    with roccclient.ApiClient(configuration) as api_client, \
+            open(json_filename) as json_dump:
+        populate_db(api_client, json_dump)
+
+
+if __name__ == "__main__":
+    main()
