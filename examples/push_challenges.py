@@ -35,7 +35,7 @@ def add_tag(api, tag):
             print(f"Exception when calling TagApi->create_tag: {err}")
 
 
-def add_org(api, org):
+def add_organization(api, org):
     """Create a new Organization entry in the database.
 
     Exception:
@@ -112,7 +112,7 @@ def populate_db(client, dump):
 
     organizations = data.get("organizations")
     for _, org in organizations.items():
-        add_org(org_api, org)
+        add_organization(org_api, org)
         time.sleep(0.05)
 
     person_ids = {}
