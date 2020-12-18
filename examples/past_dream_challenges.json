@@ -1,43 +1,58 @@
 {
     "tags": [
         {
-            "tagId": "respiratory-viral"
-        },
-        {
-            "tagId": "nlp"
-        },
-        {
-            "tagId": "myeloma"
-        },
-        {
-            "tagId": "prostate-cancer"
-        },
-        {
-            "tagId": "rheumatoid-arthritis"
-        },
-        {
-            "tagId": "cancer"
-        },
-        {
             "tagId": "mutation-calling"
         },
         {
-            "tagId": "olfaction"
+            "tagId": "workflow-execution"
         },
         {
-            "tagId": "transcriptomics"
+            "tagId": "proposals"
         },
         {
-            "tagId": "cell-lineage"
+            "tagId": "transcription-factor"
+        },
+        {
+            "tagId": "multi-targeting-drug"
+        },
+        {
+            "tagId": "crispr"
+        },
+        {
+            "tagId": "drug"
+        },
+        {
+            "tagId": "breast-cancer"
         },
         {
             "tagId": "drug-kinase-binding"
         },
         {
-            "tagId": "panacea"
+            "tagId": "somatic-mutation-calling"
         },
         {
-            "tagId": "viral"
+            "tagId": "single-cell"
+        },
+        {
+            "tagId": "myeloma"
+        },
+        {
+            "tagId": "targeted-cancer-therapy"
+        },
+        {
+            "tagId": "whole-cell-parameter"
+        },
+        {
+            "tagId": "drug-synergy"
+        },
+        {
+            "tagId": "parkinsons"
+        },
+        {
+            "tagId": "tumor-deconvolution"
+        },
+        {
+            "tagId": "network-inference"
         },
         {
             "tagId": "aml"
@@ -46,88 +61,73 @@
             "tagId": "alzheimers"
         },
         {
-            "tagId": "toxicogenenetics"
-        },
-        {
-            "tagId": "drug"
-        },
-        {
-            "tagId": "als"
-        },
-        {
-            "tagId": "whole-cell-parameter"
-        },
-        {
-            "tagId": "tumor-deconvolution"
-        },
-        {
             "tagId": "mammography"
-        },
-        {
-            "tagId": "human-health"
-        },
-        {
-            "tagId": "malaria"
-        },
-        {
-            "tagId": "drug-synergy"
-        },
-        {
-            "tagId": "preterm-birth"
-        },
-        {
-            "tagId": "workflow-execution"
-        },
-        {
-            "tagId": "breast-cancer"
-        },
-        {
-            "tagId": "proteogenomics"
         },
         {
             "tagId": "ehr"
         },
         {
-            "tagId": "tumor-heterogeneity"
+            "tagId": "malaria"
         },
         {
             "tagId": "arthritis"
         },
         {
-            "tagId": "proposals"
+            "tagId": "human-health"
         },
         {
-            "tagId": "single-cell"
-        },
-        {
-            "tagId": "network-inference"
-        },
-        {
-            "tagId": "metadata"
-        },
-        {
-            "tagId": "signaling"
-        },
-        {
-            "tagId": "transcription-factor"
-        },
-        {
-            "tagId": "parkinsons"
-        },
-        {
-            "tagId": "multi-targeting-drug"
-        },
-        {
-            "tagId": "targeted-cancer-therapy"
-        },
-        {
-            "tagId": "crispr"
+            "tagId": "rheumatoid-arthritis"
         },
         {
             "tagId": "module-identification"
         },
         {
-            "tagId": "somatic-mutation-calling"
+            "tagId": "tumor-heterogeneity"
+        },
+        {
+            "tagId": "preterm-birth"
+        },
+        {
+            "tagId": "nlp"
+        },
+        {
+            "tagId": "proteogenomics"
+        },
+        {
+            "tagId": "transcriptomics"
+        },
+        {
+            "tagId": "prostate-cancer"
+        },
+        {
+            "tagId": "respiratory-viral"
+        },
+        {
+            "tagId": "panacea"
+        },
+        {
+            "tagId": "als"
+        },
+        {
+            "tagId": "cell-lineage"
+        },
+        {
+            "tagId": "metadata"
+        },
+        {
+            "tagId": "viral"
+        },
+        {
+            "tagId": "olfaction"
+        },
+        {
+            "tagId": "signaling"
+        },
+        {
+            "tagId": "cancer"
+        },
+        {
+            "tagId": "toxicogenenetics"
         }
     ],
     "organizations": {
@@ -634,9 +634,9 @@
             "firstName": "Adam",
             "lastName": "Margolin",
             "organizations": [
-                "Icahn School of Medicine at Mount Sinai",
+                "Sage Bionetworks",
                 "Oregon Health & Science University",
-                "Sage Bionetworks"
+                "Icahn School of Medicine at Mount Sinai"
             ]
         },
         {
@@ -755,8 +755,8 @@
             "firstName": "Anna",
             "lastName": "Goldenberg",
             "organizations": [
-                "Hospital for Sick Children",
-                "University of Toronto"
+                "University of Toronto",
+                "Hospital for Sick Children"
             ]
         },
         {
@@ -840,8 +840,8 @@
             "firstName": "Bill",
             "lastName": "Hahn",
             "organizations": [
-                "Dana-Farber Cancer Institute",
-                "Broad Institute"
+                "Broad Institute",
+                "Dana-Farber Cancer Institute"
             ]
         },
         {
@@ -990,15 +990,9 @@
             "firstName": "Daniela",
             "lastName": "Gerhard",
             "organizations": [
-                "Cancer Target Discovery And Development",
-                "National Cancer Institute"
-            ]
-        },
-        {
-            "firstName": "Daniela S.",
-            "lastName": "Gerhard",
-            "organizations": [
-                "National Institutes of Health"
+                "National Institutes of Health",
+                "National Cancer Institute",
+                "Cancer Target Discovery And Development"
             ]
         },
         {
@@ -1047,8 +1041,8 @@
             "firstName": "Denis",
             "lastName": "Yuen",
             "organizations": [
-                "Ontario Institute for Cancer Research",
-                "Dockstore"
+                "Dockstore",
+                "Ontario Institute for Cancer Research"
             ]
         },
         {
@@ -1201,13 +1195,6 @@
             ]
         },
         {
-            "firstName": "James C",
-            "lastName": "Costello",
-            "organizations": [
-                "University of Colorado Anschutz Medical Campus"
-            ]
-        },
-        {
             "firstName": "James",
             "lastName": "Costello",
             "organizations": [
@@ -1278,13 +1265,6 @@
             ]
         },
         {
-            "firstName": "Jim",
-            "lastName": "Costello",
-            "organizations": [
-                "University of Colorado Anschutz Medical Campus"
-            ]
-        },
-        {
             "firstName": "Jing",
             "lastName": "Cui",
             "organizations": [
@@ -1348,19 +1328,12 @@
             ]
         },
         {
-            "firstName": "Julio Saez",
-            "lastName": "Rodriguez",
-            "organizations": [
-                "RWTH Aachen University"
-            ]
-        },
-        {
             "firstName": "Julio",
             "lastName": "Saez-Rodriguez",
             "organizations": [
                 "Heidelberg University",
-                "RWTH Aachen University",
-                "European Bioinformatics Institute"
+                "European Bioinformatics Institute",
+                "RWTH Aachen University"
             ]
         },
         {
@@ -1382,13 +1355,6 @@
             "lastName": "Lin",
             "organizations": [
                 "Rice University"
-            ]
-        },
-        {
-            "firstName": "Kahn",
-            "lastName": "Rhissorrakrai",
-            "organizations": [
-                "IBM Research"
             ]
         },
         {
@@ -1648,13 +1614,6 @@
         {
             "firstName": "Mike",
             "lastName": "Kellen",
-            "organizations": [
-                "Sage Bionetworks"
-            ]
-        },
-        {
-            "firstName": "Mike",
-            "lastName": "Mason",
             "organizations": [
                 "Sage Bionetworks"
             ]
@@ -1999,8 +1958,8 @@
             "firstName": "Stephen",
             "lastName": "Friend",
             "organizations": [
-                "Apple Health",
-                "Sage Bionetworks"
+                "Sage Bionetworks",
+                "Apple Health"
             ]
         },
         {
@@ -2098,8 +2057,8 @@
             "firstName": "Tim",
             "lastName": "Bergquist",
             "organizations": [
-                "University of Washington",
-                "Sage Bionetworks"
+                "Sage Bionetworks",
+                "University of Washington"
             ]
         },
         {
@@ -2192,7 +2151,11 @@
                     "url": "https://sagebionetworks.org/",
                     "shortName": "Sage"
                 }
-            ]
+            ],
+            "challengeResults": {
+                "nSubmissions": 184,
+                "nRegisteredParticipants": 229
+            }
         },
         {
             "name": "Whole-Cell Parameter Estimation",
@@ -2307,8 +2270,8 @@
                     "lastName": "Saez-Rodriguez",
                     "organizations": [
                         "Heidelberg University",
-                        "RWTH Aachen University",
-                        "European Bioinformatics Institute"
+                        "European Bioinformatics Institute",
+                        "RWTH Aachen University"
                     ]
                 },
                 {
@@ -2384,7 +2347,11 @@
                     "url": "https://www.csic.es/",
                     "shortName": "CSIC"
                 }
-            ]
+            ],
+            "challengeResults": {
+                "nSubmissions": 23,
+                "nRegisteredParticipants": 104
+            }
         },
         {
             "name": "HPN-DREAM Breast Cancer Network Inference",
@@ -2467,8 +2434,8 @@
                     "lastName": "Saez-Rodriguez",
                     "organizations": [
                         "Heidelberg University",
-                        "RWTH Aachen University",
-                        "European Bioinformatics Institute"
+                        "European Bioinformatics Institute",
+                        "RWTH Aachen University"
                     ]
                 },
                 {
@@ -2516,7 +2483,11 @@
                     "url": "https://ethz.ch/en.html",
                     "shortName": "ETH"
                 }
-            ]
+            ],
+            "challengeResults": {
+                "nSubmissions": 178,
+                "nRegisteredParticipants": 284
+            }
         },
         {
             "name": "Rheumatoid Arthritis Responder",
@@ -2583,8 +2554,8 @@
                     "firstName": "Stephen",
                     "lastName": "Friend",
                     "organizations": [
-                        "Apple Health",
-                        "Sage Bionetworks"
+                        "Sage Bionetworks",
+                        "Apple Health"
                     ]
                 },
                 {
@@ -2675,7 +2646,11 @@
                     "url": "https://sagebionetworks.org/",
                     "shortName": "Sage"
                 }
-            ]
+            ],
+            "challengeResults": {
+                "nSubmissions": 55,
+                "nRegisteredParticipants": 242
+            }
         },
         {
             "name": "ICGC-TCGA DREAM Genomic Mutation Calling",
@@ -2721,17 +2696,17 @@
                     "firstName": "Stephen",
                     "lastName": "Friend",
                     "organizations": [
-                        "Apple Health",
-                        "Sage Bionetworks"
+                        "Sage Bionetworks",
+                        "Apple Health"
                     ]
                 },
                 {
                     "firstName": "Adam",
                     "lastName": "Margolin",
                     "organizations": [
-                        "Icahn School of Medicine at Mount Sinai",
+                        "Sage Bionetworks",
                         "Oregon Health & Science University",
-                        "Sage Bionetworks"
+                        "Icahn School of Medicine at Mount Sinai"
                     ]
                 },
                 {
@@ -2762,7 +2737,11 @@
                     "url": "https://sagebionetworks.org/",
                     "shortName": "Sage"
                 }
-            ]
+            ],
+            "challengeResults": {
+                "nSubmissions": 2823,
+                "nRegisteredParticipants": 110
+            }
         },
         {
             "name": "Acute Myeloid Leukemia Outcome Prediction",
@@ -2883,7 +2862,7 @@
                 },
                 {
                     "firstName": "Kahn",
-                    "lastName": "Rhissorrakrai",
+                    "lastName": "Rhrissorrakrai",
                     "organizations": [
                         "IBM Research"
                     ]
@@ -2906,8 +2885,8 @@
                     "firstName": "Stephen",
                     "lastName": "Friend",
                     "organizations": [
-                        "Apple Health",
-                        "Sage Bionetworks"
+                        "Sage Bionetworks",
+                        "Apple Health"
                     ]
                 },
                 {
@@ -2937,7 +2916,11 @@
                     "url": "https://www.rice.edu/",
                     "shortName": "Rice"
                 }
-            ]
+            ],
+            "challengeResults": {
+                "nSubmissions": 63,
+                "nRegisteredParticipants": 285
+            }
         },
         {
             "name": "Broad-DREAM Gene Essentiality Prediction",
@@ -2982,9 +2965,9 @@
                     "firstName": "Adam",
                     "lastName": "Margolin",
                     "organizations": [
-                        "Icahn School of Medicine at Mount Sinai",
+                        "Sage Bionetworks",
                         "Oregon Health & Science University",
-                        "Sage Bionetworks"
+                        "Icahn School of Medicine at Mount Sinai"
                     ]
                 },
                 {
@@ -3041,16 +3024,16 @@
                     "firstName": "Stephen",
                     "lastName": "Friend",
                     "organizations": [
-                        "Apple Health",
-                        "Sage Bionetworks"
+                        "Sage Bionetworks",
+                        "Apple Health"
                     ]
                 },
                 {
                     "firstName": "Bill",
                     "lastName": "Hahn",
                     "organizations": [
-                        "Dana-Farber Cancer Institute",
-                        "Broad Institute"
+                        "Broad Institute",
+                        "Dana-Farber Cancer Institute"
                     ]
                 },
                 {
@@ -3098,7 +3081,11 @@
                     "url": "https://sagebionetworks.org/",
                     "shortName": "Sage"
                 }
-            ]
+            ],
+            "challengeResults": {
+                "nSubmissions": 81,
+                "nRegisteredParticipants": 354
+            }
         },
         {
             "name": "Alzheimer's Disease Big Data",
@@ -3206,8 +3193,8 @@
                     "firstName": "Stephen",
                     "lastName": "Friend",
                     "organizations": [
-                        "Apple Health",
-                        "Sage Bionetworks"
+                        "Sage Bionetworks",
+                        "Apple Health"
                     ]
                 },
                 {
@@ -3272,7 +3259,11 @@
                     "url": "https://www.gwu.edu/",
                     "shortName": "GWU"
                 }
-            ]
+            ],
+            "challengeResults": {
+                "nSubmissions": 76,
+                "nRegisteredParticipants": 116
+            }
         },
         {
             "name": "DREAM Olfaction Prediction",
@@ -3359,8 +3350,8 @@
                     "firstName": "Stephen",
                     "lastName": "Friend",
                     "organizations": [
-                        "Apple Health",
-                        "Sage Bionetworks"
+                        "Sage Bionetworks",
+                        "Apple Health"
                     ]
                 }
             ],
@@ -3383,7 +3374,11 @@
                     "url": "https://sagebionetworks.org/",
                     "shortName": "Sage"
                 }
-            ]
+            ],
+            "challengeResults": {
+                "nSubmissions": 37,
+                "nRegisteredParticipants": 197
+            }
         },
         {
             "name": "Prostate Cancer",
@@ -3445,7 +3440,11 @@
                     "url": "https://www.utsouthwestern.edu/",
                     "shortName": "UTSW"
                 }
-            ]
+            ],
+            "challengeResults": {
+                "nSubmissions": 1708,
+                "nRegisteredParticipants": 568
+            }
         },
         {
             "name": "ALS Stratification Prize4Life",
@@ -3497,8 +3496,8 @@
                     "firstName": "Stephen",
                     "lastName": "Friend",
                     "organizations": [
-                        "Apple Health",
-                        "Sage Bionetworks"
+                        "Sage Bionetworks",
+                        "Apple Health"
                     ]
                 },
                 {
@@ -3552,7 +3551,11 @@
                     "name": "Prize4Life",
                     "url": "https://en.wikipedia.org/wiki/Prize4Life"
                 }
-            ]
+            ],
+            "challengeResults": {
+                "nSubmissions": 79,
+                "nRegisteredParticipants": 286
+            }
         },
         {
             "name": "AstraZeneca-Sanger Drug Combination Prediction",
@@ -3584,8 +3587,8 @@
                     "lastName": "Saez-Rodriguez",
                     "organizations": [
                         "Heidelberg University",
-                        "RWTH Aachen University",
-                        "European Bioinformatics Institute"
+                        "European Bioinformatics Institute",
+                        "RWTH Aachen University"
                     ]
                 },
                 {
@@ -3607,8 +3610,8 @@
                     "firstName": "Stephen",
                     "lastName": "Friend",
                     "organizations": [
-                        "Apple Health",
-                        "Sage Bionetworks"
+                        "Sage Bionetworks",
+                        "Apple Health"
                     ]
                 }
             ],
@@ -3636,7 +3639,11 @@
                     "url": "https://sagebionetworks.org/",
                     "shortName": "Sage"
                 }
-            ]
+            ],
+            "challengeResults": {
+                "nSubmissions": 177,
+                "nRegisteredParticipants": 971
+            }
         },
         {
             "name": "SMC-DNA Meta",
@@ -3675,8 +3682,8 @@
                     "firstName": "Stephen",
                     "lastName": "Friend",
                     "organizations": [
-                        "Apple Health",
-                        "Sage Bionetworks"
+                        "Sage Bionetworks",
+                        "Apple Health"
                     ]
                 },
                 {
@@ -3707,7 +3714,11 @@
                     "url": "https://sagebionetworks.org/",
                     "shortName": "Sage"
                 }
-            ]
+            ],
+            "challengeResults": {
+                "nSubmissions": 61,
+                "nRegisteredParticipants": 132
+            }
         },
         {
             "name": "SMC-Het",
@@ -3761,8 +3772,8 @@
                     "firstName": "Stephen",
                     "lastName": "Friend",
                     "organizations": [
-                        "Apple Health",
-                        "Sage Bionetworks"
+                        "Sage Bionetworks",
+                        "Apple Health"
                     ]
                 },
                 {
@@ -3825,7 +3836,11 @@
                     "url": "https://sagebionetworks.org/",
                     "shortName": "Sage"
                 }
-            ]
+            ],
+            "challengeResults": {
+                "nSubmissions": 32,
+                "nRegisteredParticipants": 235
+            }
         },
         {
             "name": "Respiratory Viral",
@@ -3844,7 +3859,10 @@
                     "url": "https://duke.edu/",
                     "shortName": "Duke"
                 },
-                null,
+                {
+                    "name": "Durham VA Health Care System",
+                    "url": "https://www.durham.va.gov/"
+                },
                 {
                     "name": "Defense Advanced Research Projects Agency",
                     "url": "https://www.darpa.mil/",
@@ -3855,7 +3873,11 @@
                     "url": "https://sagebionetworks.org/",
                     "shortName": "Sage"
                 }
-            ]
+            ],
+            "challengeResults": {
+                "nSubmissions": 43,
+                "nRegisteredParticipants": 571
+            }
         },
         {
             "name": "Disease Module Identification",
@@ -3927,8 +3949,8 @@
                     "firstName": "Stephen",
                     "lastName": "Friend",
                     "organizations": [
-                        "Apple Health",
-                        "Sage Bionetworks"
+                        "Sage Bionetworks",
+                        "Apple Health"
                     ]
                 },
                 {
@@ -3940,9 +3962,11 @@
                     ]
                 },
                 {
-                    "firstName": "Julio Saez",
-                    "lastName": "Rodriguez",
+                    "firstName": "Julio",
+                    "lastName": "Saez-Rodriguez",
                     "organizations": [
+                        "Heidelberg University",
+                        "European Bioinformatics Institute",
                         "RWTH Aachen University"
                     ]
                 }
@@ -3977,7 +4001,11 @@
                     "url": "https://www.rwth-aachen.de/go/id/a/?lidx=1",
                     "shortName": "RWTH Aachen"
                 }
-            ]
+            ],
+            "challengeResults": {
+                "nSubmissions": 74,
+                "nRegisteredParticipants": 435
+            }
         },
         {
             "name": "ENCODE",
@@ -4018,7 +4046,7 @@
                     ]
                 },
                 {
-                    "firstName": "Jim",
+                    "firstName": "James",
                     "lastName": "Costello",
                     "organizations": [
                         "University of Colorado Anschutz Medical Campus"
@@ -4050,8 +4078,8 @@
                     "firstName": "Stephen",
                     "lastName": "Friend",
                     "organizations": [
-                        "Apple Health",
-                        "Sage Bionetworks"
+                        "Sage Bionetworks",
+                        "Apple Health"
                     ]
                 }
             ],
@@ -4084,7 +4112,11 @@
                     "url": "https://www.ohsu.edu/",
                     "shortName": "OHSU"
                 }
-            ]
+            ],
+            "challengeResults": {
+                "nSubmissions": 40,
+                "nRegisteredParticipants": 517
+            }
         },
         {
             "name": "Idea",
@@ -4109,16 +4141,16 @@
                     "firstName": "Anna",
                     "lastName": "Goldenberg",
                     "organizations": [
-                        "Hospital for Sick Children",
-                        "University of Toronto"
+                        "University of Toronto",
+                        "Hospital for Sick Children"
                     ]
                 },
                 {
                     "firstName": "Stephen",
                     "lastName": "Friend",
                     "organizations": [
-                        "Apple Health",
-                        "Sage Bionetworks"
+                        "Sage Bionetworks",
+                        "Apple Health"
                     ]
                 },
                 {
@@ -4169,7 +4201,11 @@
                     "name": "IBM Research",
                     "url": "https://www.research.ibm.com/"
                 }
-            ]
+            ],
+            "challengeResults": {
+                "nSubmissions": 8,
+                "nRegisteredParticipants": 39
+            }
         },
         {
             "name": "SMC-RNA",
@@ -4221,8 +4257,8 @@
                     "firstName": "Stephen",
                     "lastName": "Friend",
                     "organizations": [
-                        "Apple Health",
-                        "Sage Bionetworks"
+                        "Sage Bionetworks",
+                        "Apple Health"
                     ]
                 },
                 {
@@ -4271,7 +4307,11 @@
                     "name": "IBM Research",
                     "url": "https://www.research.ibm.com/"
                 }
-            ]
+            ],
+            "challengeResults": {
+                "nSubmissions": 34,
+                "nRegisteredParticipants": 222
+            }
         },
         {
             "name": "Digital Mammography",
@@ -4324,7 +4364,11 @@
                     "url": "https://www.cancer.gov/",
                     "shortName": "NCI"
                 }
-            ]
+            ],
+            "challengeResults": {
+                "nSubmissions": 49,
+                "nRegisteredParticipants": 1402
+            }
         },
         {
             "name": "Multiple Myeloma",
@@ -4352,7 +4396,11 @@
                     "url": "https://sagebionetworks.org/",
                     "shortName": "Sage"
                 }
-            ]
+            ],
+            "challengeResults": {
+                "nSubmissions": 80,
+                "nRegisteredParticipants": 525
+            }
         },
         {
             "name": "GA4GH/DREAM Workflow Execution",
@@ -4405,8 +4453,8 @@
                     "firstName": "Denis",
                     "lastName": "Yuen",
                     "organizations": [
-                        "Ontario Institute for Cancer Research",
-                        "Dockstore"
+                        "Dockstore",
+                        "Ontario Institute for Cancer Research"
                     ]
                 }
             ],
@@ -4435,7 +4483,11 @@
                     "name": "Dockstore",
                     "url": "https://dockstore.org/"
                 }
-            ]
+            ],
+            "challengeResults": {
+                "nSubmissions": 24,
+                "nRegisteredParticipants": 129
+            }
         },
         {
             "name": "Parkinsons Disease Digital Biomarker",
@@ -4583,7 +4635,11 @@
                     "name": "Verily",
                     "url": "https://verily.com/"
                 }
-            ]
+            ],
+            "challengeResults": {
+                "nSubmissions": 151,
+                "nRegisteredParticipants": 459
+            }
         },
         {
             "name": "NCI-CPTAC Proteogenomics",
@@ -4685,8 +4741,8 @@
                     "lastName": "Saez-Rodriguez",
                     "organizations": [
                         "Heidelberg University",
-                        "RWTH Aachen University",
-                        "European Bioinformatics Institute"
+                        "European Bioinformatics Institute",
+                        "RWTH Aachen University"
                     ]
                 }
             ],
@@ -4730,7 +4786,11 @@
                     "url": "https://oicr.on.ca/",
                     "shortName": "OICR"
                 }
-            ]
+            ],
+            "challengeResults": {
+                "nSubmissions": 120,
+                "nRegisteredParticipants": 516
+            }
         },
         {
             "name": "Multi-Targeting Drug",
@@ -4826,7 +4886,11 @@
                     "url": "https://sagebionetworks.org/",
                     "shortName": "Sage"
                 }
-            ]
+            ],
+            "challengeResults": {
+                "nSubmissions": 18,
+                "nRegisteredParticipants": 189
+            }
         },
         {
             "name": "Single Cell Transcriptomics",
@@ -4880,8 +4944,8 @@
                     "lastName": "Saez-Rodriguez",
                     "organizations": [
                         "Heidelberg University",
-                        "RWTH Aachen University",
-                        "European Bioinformatics Institute"
+                        "European Bioinformatics Institute",
+                        "RWTH Aachen University"
                     ]
                 },
                 {
@@ -4918,7 +4982,11 @@
                     "url": "https://sagebionetworks.org/",
                     "shortName": "Sage"
                 }
-            ]
+            ],
+            "challengeResults": {
+                "nSubmissions": 111,
+                "nRegisteredParticipants": 413
+            }
         },
         {
             "name": "IDG Drug-Kinase Binding",
@@ -5018,7 +5086,11 @@
                     "name": "IBM Research",
                     "url": "https://www.research.ibm.com/"
                 }
-            ]
+            ],
+            "challengeResults": {
+                "nSubmissions": 0,
+                "nRegisteredParticipants": 532
+            }
         },
         {
             "name": "Malaria",
@@ -5144,7 +5216,11 @@
                     "url": "https://sagebionetworks.org/",
                     "shortName": "Sage"
                 }
-            ]
+            ],
+            "challengeResults": {
+                "nSubmissions": 311,
+                "nRegisteredParticipants": 384
+            }
         },
         {
             "name": "Preterm Birth Prediction Challenge, Transcriptomics",
@@ -5243,7 +5319,11 @@
                     "name": "IBM Research",
                     "url": "https://www.research.ibm.com/"
                 }
-            ]
+            ],
+            "challengeResults": {
+                "nSubmissions": 453,
+                "nRegisteredParticipants": 533
+            }
         },
         {
             "name": "Single Cell Signaling in Breast Cancer",
@@ -5285,8 +5365,8 @@
                     "lastName": "Saez-Rodriguez",
                     "organizations": [
                         "Heidelberg University",
-                        "RWTH Aachen University",
-                        "European Bioinformatics Institute"
+                        "European Bioinformatics Institute",
+                        "RWTH Aachen University"
                     ]
                 },
                 {
@@ -5338,7 +5418,11 @@
                     "url": "https://sagebionetworks.org/",
                     "shortName": "Sage"
                 }
-            ]
+            ],
+            "challengeResults": {
+                "nSubmissions": 495,
+                "nRegisteredParticipants": 293
+            }
         },
         {
             "name": "EHR Mortality Prediction",
@@ -5355,8 +5439,8 @@
                     "firstName": "Tim",
                     "lastName": "Bergquist",
                     "organizations": [
-                        "University of Washington",
-                        "Sage Bionetworks"
+                        "Sage Bionetworks",
+                        "University of Washington"
                     ]
                 },
                 {
@@ -5413,7 +5497,11 @@
                     "url": "https://sagebionetworks.org/",
                     "shortName": "Sage"
                 }
-            ]
+            ],
+            "challengeResults": {
+                "nSubmissions": 0,
+                "nRegisteredParticipants": 377
+            }
         },
         {
             "name": "Allen Institute Cell Lineage Reconstruction",
@@ -5518,7 +5606,7 @@
                     ]
                 },
                 {
-                    "firstName": "Mike",
+                    "firstName": "Michael",
                     "lastName": "Mason",
                     "organizations": [
                         "Sage Bionetworks"
@@ -5565,7 +5653,11 @@
                     "url": "https://sagebionetworks.org/",
                     "shortName": "Sage"
                 }
-            ]
+            ],
+            "challengeResults": {
+                "nSubmissions": 22,
+                "nRegisteredParticipants": 184
+            }
         },
         {
             "name": "Tumor Deconvolution",
@@ -5602,7 +5694,11 @@
                     "url": "https://www.stanford.edu/",
                     "shortName": "Stanford"
                 }
-            ]
+            ],
+            "challengeResults": {
+                "nSubmissions": 0,
+                "nRegisteredParticipants": 370
+            }
         },
         {
             "name": "CTD2 Pancancer Drug Activity",
@@ -5649,8 +5745,9 @@
                     "firstName": "Daniela",
                     "lastName": "Gerhard",
                     "organizations": [
-                        "Cancer Target Discovery And Development",
-                        "National Cancer Institute"
+                        "National Institutes of Health",
+                        "National Cancer Institute",
+                        "Cancer Target Discovery And Development"
                     ]
                 },
                 {
@@ -5658,8 +5755,8 @@
                     "lastName": "Saez-Rodriguez",
                     "organizations": [
                         "Heidelberg University",
-                        "RWTH Aachen University",
-                        "European Bioinformatics Institute"
+                        "European Bioinformatics Institute",
+                        "RWTH Aachen University"
                     ]
                 },
                 {
@@ -5746,7 +5843,11 @@
                     "url": "https://sagebionetworks.org/",
                     "shortName": "Sage"
                 }
-            ]
+            ],
+            "challengeResults": {
+                "nSubmissions": 20,
+                "nRegisteredParticipants": 137
+            }
         },
         {
             "name": "CTD2 BeatAML",
@@ -5763,9 +5864,9 @@
                     "firstName": "Adam",
                     "lastName": "Margolin",
                     "organizations": [
-                        "Icahn School of Medicine at Mount Sinai",
+                        "Sage Bionetworks",
                         "Oregon Health & Science University",
-                        "Sage Bionetworks"
+                        "Icahn School of Medicine at Mount Sinai"
                     ]
                 },
                 {
@@ -5783,7 +5884,7 @@
                     ]
                 },
                 {
-                    "firstName": "Mike",
+                    "firstName": "Michael",
                     "lastName": "Mason",
                     "organizations": [
                         "Sage Bionetworks"
@@ -5818,10 +5919,12 @@
                     ]
                 },
                 {
-                    "firstName": "Daniela S.",
+                    "firstName": "Daniela",
                     "lastName": "Gerhard",
                     "organizations": [
-                        "National Institutes of Health"
+                        "National Institutes of Health",
+                        "National Cancer Institute",
+                        "Cancer Target Discovery And Development"
                     ]
                 },
                 {
@@ -5888,7 +5991,11 @@
                     "url": "https://sagebionetworks.org/",
                     "shortName": "Sage"
                 }
-            ]
+            ],
+            "challengeResults": {
+                "nSubmissions": 42,
+                "nRegisteredParticipants": 290
+            }
         },
         {
             "name": "Metadata Automation DREAM Challenge",
@@ -6001,7 +6108,11 @@
                     "url": "https://sagebionetworks.org/",
                     "shortName": "Sage"
                 }
-            ]
+            ],
+            "challengeResults": {
+                "nSubmissions": 10,
+                "nRegisteredParticipants": 129
+            }
         },
         {
             "name": "Automated Scoring of Radiographic Joint Damage",
@@ -6058,7 +6169,7 @@
                     ]
                 },
                 {
-                    "firstName": "James C",
+                    "firstName": "James",
                     "lastName": "Costello",
                     "organizations": [
                         "University of Colorado Anschutz Medical Campus"
@@ -6111,7 +6222,11 @@
                     "url": "https://sagebionetworks.org/",
                     "shortName": "Sage"
                 }
-            ]
+            ],
+            "challengeResults": {
+                "nSubmissions": 42,
+                "nRegisteredParticipants": 288
+            }
         },
         {
             "name": "Electronic Medical Record NLP DREAM Challenge",
@@ -6125,7 +6240,7 @@
             ],
             "organizers": [
                 {
-                    "firstName": "Mike",
+                    "firstName": "Michael",
                     "lastName": "Mason",
                     "organizations": [
                         "Sage Bionetworks"
@@ -6135,8 +6250,8 @@
                     "firstName": "Tim",
                     "lastName": "Bergquist",
                     "organizations": [
-                        "University of Washington",
-                        "Sage Bionetworks"
+                        "Sage Bionetworks",
+                        "University of Washington"
                     ]
                 },
                 {
@@ -6234,7 +6349,11 @@
                     "url": "https://sagebionetworks.org/",
                     "shortName": "Sage"
                 }
-            ]
+            ],
+            "challengeResults": {
+                "nSubmissions": 0,
+                "nRegisteredParticipants": 0
+            }
         }
     ]
 }

@@ -81,18 +81,27 @@ def add_person(api, person, organizations):
 def add_challenge(api, challenge, persons):
     """Create a new Challenge entry in the database.
 
-    TODO:
-        Use 'name' property to check for duplicates
+    Exception:
+        409: challenge name already exists
     """
+    try:
+        # Replace challenge.organizers with properly-formatted list
+        organizers = [
+            persons.get(person.get("firstName") + person.get("lastName"))
+            for person in challenge.get("organizers")
+        ]
+        challenge["organizers"] = organizers
 
-    # Replace challenge.organizers with properly-formatted list
-    organizers = [
-        persons.get(person.get("firstName") + person.get("lastName"))
-        for person in challenge.get("organizers")
-    ]
-    challenge["organizers"] = organizers
+        # TODO: add ChallengeResults object
+        del challenge["challengeResults"]
+        api.create_challenge(challenge=challenge)
 
-    api.create_challenge(challenge=challenge)
+    except ApiException as err:
+        if err.status == 409:
+            print(f"Duplicate challenge: {challenge.get('name')}")
+        else:
+            print("Exception when calling ChallengeApi ->"
+                  f"create_challenge: {err}")
 
 
 def populate_db(client, dump):
@@ -105,16 +114,19 @@ def populate_db(client, dump):
     data = json.load(dump)
 
     # Add 5ms of sleep so connection does not time out.
+    print("Adding tags...")
     tags = data.get("tags")
     for tag in tags:
         add_tag(tag_api, tag)
         time.sleep(0.05)
 
+    print("Adding organizations...")
     organizations = data.get("organizations")
     for _, org in organizations.items():
         add_organization(org_api, org)
         time.sleep(0.05)
 
+    print("Adding persons...")
     person_ids = {}
     persons = data.get("persons")
     for person in persons:
@@ -123,6 +135,7 @@ def populate_db(client, dump):
         person_ids[name] = person_id
         time.sleep(0.05)
 
+    print("Adding challenges...")
     challenges = data.get("challenges")
     for challenge in challenges:
         add_challenge(challenge_api, challenge, person_ids)
@@ -133,8 +146,8 @@ def main():
     """Main function."""
 
     configuration = roccclient.Configuration(
-        host="http://10.41.27.32:8080/api/v1"  # prod
-        # host="http://localhost:8080/api/v1"  # dev
+        # host="http://10.41.27.32:8080/api/v1"  # prod
+        host="http://localhost:8080/api/v1"  # dev
     )
     json_filename = "past_dream_challenges.json"
     with roccclient.ApiClient(configuration) as api_client, \

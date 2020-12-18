@@ -34,29 +34,60 @@ class ChallengeResults(object):
                             and the value is json key in definition.
     """
     openapi_types = {
+        'n_submissions': 'int',
         'n_final_submissions': 'int',
         'n_registered_participants': 'int'
     }
 
     attribute_map = {
+        'n_submissions': 'nSubmissions',
         'n_final_submissions': 'nFinalSubmissions',
         'n_registered_participants': 'nRegisteredParticipants'
     }
 
-    def __init__(self, n_final_submissions=None, n_registered_participants=None, local_vars_configuration=None):  # noqa: E501
+    def __init__(self, n_submissions=None, n_final_submissions=None, n_registered_participants=None, local_vars_configuration=None):  # noqa: E501
         """ChallengeResults - a model defined in OpenAPI"""  # noqa: E501
         if local_vars_configuration is None:
             local_vars_configuration = Configuration()
         self.local_vars_configuration = local_vars_configuration
 
+        self._n_submissions = None
         self._n_final_submissions = None
         self._n_registered_participants = None
         self.discriminator = None
 
+        if n_submissions is not None:
+            self.n_submissions = n_submissions
         if n_final_submissions is not None:
             self.n_final_submissions = n_final_submissions
         if n_registered_participants is not None:
             self.n_registered_participants = n_registered_participants
+
+    @property
+    def n_submissions(self):
+        """Gets the n_submissions of this ChallengeResults.  # noqa: E501
+
+        Number of submissions throughout the challenge # noqa: E501
+
+        :return: The n_submissions of this ChallengeResults.  # noqa: E501
+        :rtype: int
+        """
+        return self._n_submissions
+
+    @n_submissions.setter
+    def n_submissions(self, n_submissions):
+        """Sets the n_final_submissions of this ChallengeResults.
+
+        Number of submissions throughout the challenge  # noqa: E501
+
+        :param n_submissions: The n_submissions of this ChallengeResults.  # noqa: E501
+        :type n_submissions: int
+        """
+        if (self.local_vars_configuration.client_side_validation and
+                n_submissions is not None and n_submissions < 0):  # noqa: E501
+            raise ValueError("Invalid value for `n_submissions`, must be a value greater than or equal to `0`")  # noqa: E501
+
+        self._n_submissions = n_submissions
 
     @property
     def n_final_submissions(self):
