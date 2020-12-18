@@ -1,6 +1,9 @@
 README.md
 docs/Challenge.md
 docs/ChallengeApi.md
+docs/ChallengeFilter.md
+docs/ChallengeResults.md
+docs/ChallengeStatus.md
 docs/Error.md
 docs/Grant.md
 docs/GrantApi.md
@@ -18,6 +21,7 @@ docs/PageOfTags.md
 docs/PageOfTagsAllOf.md
 docs/Person.md
 docs/PersonApi.md
+docs/PersonFilter.md
 docs/ResponsePageMetadata.md
 docs/ResponsePageMetadataLinks.md
 docs/Tag.md
@@ -35,6 +39,9 @@ roccclient/configuration.py
 roccclient/exceptions.py
 roccclient/models/__init__.py
 roccclient/models/challenge.py
+roccclient/models/challenge_filter.py
+roccclient/models/challenge_results.py
+roccclient/models/challenge_status.py
 roccclient/models/error.py
 roccclient/models/grant.py
 roccclient/models/organization.py
@@ -49,10 +56,14 @@ roccclient/models/page_of_persons_all_of.py
 roccclient/models/page_of_tags.py
 roccclient/models/page_of_tags_all_of.py
 roccclient/models/person.py
+roccclient/models/person_filter.py
 roccclient/models/response_page_metadata.py
 roccclient/models/response_page_metadata_links.py
 roccclient/models/tag.py
 roccclient/models/tag_filter.py
 roccclient/rest.py
 test/__init__.py
-test/test_tag_filter.py
+test/test_challenge_filter.py
+test/test_challenge_results.py
+test/test_challenge_status.py
+test/test_person_filter.py
