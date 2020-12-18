@@ -91,9 +91,6 @@ def add_challenge(api, challenge, persons):
             for person in challenge.get("organizers")
         ]
         challenge["organizers"] = organizers
-
-        # TODO: add ChallengeResults object
-        del challenge["challengeResults"]
         api.create_challenge(challenge=challenge)
 
     except ApiException as err:
