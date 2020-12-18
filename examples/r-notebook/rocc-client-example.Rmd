@@ -1,0 +1,69 @@
+---
+title: "Using ROCC Client Library for Python in R"
+author: "Thomas Schaffter, thomas.schaffter@sagebionetworks.org"
+date: "Run on `r format(Sys.time(), '%c')`"
+output:
+  html_notebook:
+    code_folding: show
+---
+
+```{r}
+# Start from a clean environment
+rm(list=ls())
+```
+
+
+```{r results='hide'}
+# Use the package versions listed in renv.lock
+renv::restore()
+
+# Install dependencies
+packages <- c(
+  # 'dplyr',
+  # 'fs',
+  # 'jsonlite',
+  # 'parallel',
+  # 'purrr',
+  # 'renv',
+  'reticulate'
+  # 'rlist',
+  # 'rprojroot',
+  # 'stringr',
+  # 'tibble',
+  # 'tidyr',
+  # 'xml2'
+)
+
+# TODO: Shall we also check the version of the package installed instead of just
+# the name?
+new.packages <- packages[!(packages %in% installed.packages()[,"Package"])]
+if (length(new.packages)) install.packages(new.packages)
+
+# Import dependencies
+noop <- lapply(packages, require, character.only = TRUE)
+```
+
+```{r}
+# Activate Sage conda environment
+use_condaenv("rocc", required = TRUE)
+```
+
+```{python}
+from __future__ import print_function
+
+import roccclient
+from roccclient.rest import ApiException
+
+# Defining the host is optional and defaults to http://example.com/api/v1
+# See configuration.py for a list of all supported configuration parameters.
+configuration = roccclient.Configuration(
+    host="http://host.docker.internal:8080/api/v1"  # local ROCC API service
+    # host="http://10.41.27.32:8080/api/v1"  # ROCC API service
+)
+
+with roccclient.ApiClient(configuration) as api_client:
+    tag_api = roccclient.TagApi(api_client)
+
+    tags = tag_api.list_tags()
+    print(f'tags: {tags}')
+```

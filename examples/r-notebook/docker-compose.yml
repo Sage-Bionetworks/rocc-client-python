@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  rstudio:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: rocc-rstudio
+    environment:
+      - USER=rstudio
+      - PASSWORD=plop
+      - USERID=1000
+      - GROUPID=1000
+      - ROOT=FALSE
+    restart: always
+    volumes:
+      - ${PWD}:/home/rstudio/rocc-client-example
+    # network_mode: host
+    ports:
+      - "8787:8787"
+    # environment:
