@@ -21,10 +21,12 @@ renv::restore()
 packages <- c(
   'dplyr',
   # 'fs',
+  'ggplot2',
   # 'jsonlite',
   # 'parallel',
   # 'purrr',
   # 'renv',
+  'reshape2',
   'reticulate',
   # 'rlist',
   # 'rprojroot',
@@ -111,19 +113,26 @@ challenges <- do.call(rbind, lapply(py$challenges, function(challenge) {
 challenges
 ```
 
-### Number of Participants in Challenges
+### Number of registered participants in Challenges
 
-```{r}
+```{r fig.width=12}
+challenges$nameWithYear = paste0(challenges$name, " (", substr(data$startDate, 1, 4), ")")
 
+ggplot(challenges, aes(x=nRegisteredParticipants, y=reorder(nameWithYear, startDate))) +
+  geom_bar(stat = 'identity', fill = "#619dff") +
+  xlab("Number of registered participants") +
+  ylab("Challenge")
 ```
 
+### List upcoming Challenges
 
+```{r}
+challenges[challenges$status == 'upcoming',]
+```
 
+### List Organizers
 
-
-
-
-```{python}
+```{python echo=FALSE}
 from __future__ import print_function
 
 import roccclient
@@ -145,15 +154,20 @@ with roccclient.ApiClient(configuration) as api_client:
       + person_api.list_persons(offset=200, limit=100).persons
 ```
 
-### List all the Organizers
-
-```{r rows.print=15}
+```{r rows.print=15, echo=FALSE}
 persons <- do.call(rbind, lapply(py$persons, function(person) {
   person = unlist(person)
+  
+  nChallengesOrganized = do.call(sum, lapply(py$challenges, function(challenge) {
+    person['person_id'] %in% challenge['organizers']
+  }))
+  
   data.frame(
     firstName=person['first_name'],
     lastName=person['last_name'],
-    organizations=paste(person['organizations'], sep = ','),
+    organizations=paste(person['organizations'], collapse = ' | '),
+    personId=person['person_id'],
+    nChallengesOrganized=nChallengesOrganized,
     stringsAsFactors=FALSE
   )
 }))
@@ -162,33 +176,12 @@ persons %>%
   arrange(firstName)
 ```
 
-### List only the Organizers at Sage Bionetworks
+### List of most prolific Organizers at Sage Bionetworks
 
 ```{r rows.print=15}
 persons %>%
   filter(across(organizations, ~ grepl('sage', .))) %>%
-  arrange(firstName)
-```
-
-### List Challenges
-
-
-
-
-```{r rows.print=15, echo=FALSE}
-challenges <- do.call(rbind, lapply(py$challenges, function(challenge) {
-  data.frame(
-    name=challenge['name'],
-    status=challenge['status'],
-    startDate=challenge['start_date'],
-    endDate=challenge['end_date'],
-    nOrganizers=length(challenge['organizers']),
-    # tags=paste(challenge['tags'], collapse=", "),
-    nSubmissions=challenge['challenge_results']['n_submissions'],
-    stringsAsFactors=FALSE
-  )
-}))
-
-challenges[challenges$status == 'open']
+  arrange(desc(nChallengesOrganized)) %>%
+  select(-organizations, -personId)
 ```
 
