@@ -1,8 +1,9 @@
 # Custom
 .env
 .vscode/settings.json
-node_modules
 dist.yaml
+node_modules
+openapi.yaml
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

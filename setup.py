@@ -7,7 +7,7 @@ with open("README.md", "r") as fh:
 setuptools.setup(
     # basic
     name='rocc-client',
-    version='0.1.3',
+    version='0.1.4',
     # packages=setuptools.find_packages(exclude=["tests", "tests.*"]),
     # py_modules=['hello'],
     # scripts=['bin/nlp-evaluate'],
