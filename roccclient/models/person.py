@@ -66,7 +66,8 @@ class Person(object):
             self.person_id = person_id
         self.first_name = first_name
         self.last_name = last_name
-        self.email = email
+        if email is not None:
+            self.email = email
         if organizations is not None:
             self.organizations = organizations
 
@@ -163,8 +164,6 @@ class Person(object):
         :param email: The email of this Person.  # noqa: E501
         :type email: str
         """
-        if self.local_vars_configuration.client_side_validation and email is None:  # noqa: E501
-            raise ValueError("Invalid value for `email`, must not be `None`")  # noqa: E501
 
         self._email = email
 
