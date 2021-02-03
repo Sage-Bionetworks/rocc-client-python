@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **create_organization**
-> Organization create_organization(organization_id, organization=organization)
+> OrganizationCreateResponse create_organization(organization_id, organization_create_request=organization_create_request)
 
 Create an organization
 
@@ -37,11 +37,11 @@ with roccclient.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = roccclient.OrganizationApi(api_client)
     organization_id = 'organization_id_example' # str | The ID of the organization that is being created
-organization = roccclient.Organization() # Organization |  (optional)
+organization_create_request = roccclient.OrganizationCreateRequest() # OrganizationCreateRequest |  (optional)
 
     try:
         # Create an organization
-        api_response = api_instance.create_organization(organization_id, organization=organization)
+        api_response = api_instance.create_organization(organization_id, organization_create_request=organization_create_request)
         pprint(api_response)
     except ApiException as e:
         print("Exception when calling OrganizationApi->create_organization: %s\n" % e)
@@ -52,11 +52,11 @@ organization = roccclient.Organization() # Organization |  (optional)
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **organization_id** | **str**| The ID of the organization that is being created | 
- **organization** | [**Organization**](Organization.md)|  | [optional] 
+ **organization_create_request** | [**OrganizationCreateRequest**](OrganizationCreateRequest.md)|  | [optional] 
 
 ### Return type
 
-[**Organization**](Organization.md)
+[**OrganizationCreateResponse**](OrganizationCreateResponse.md)
 
 ### Authorization
 
@@ -70,15 +70,15 @@ No authorization required
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Success |  -  |
-**403** | Unauthorized |  -  |
-**404** | The specified resource was not found |  -  |
+**201** | Success |  -  |
+**400** | Invalid request |  -  |
 **409** | The request conflicts with current state of the target resource |  -  |
+**500** | The request cannot be fulfilled due to an unexpected server error |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **delete_organization**
-> Organization delete_organization(organization_id)
+> object delete_organization(organization_id)
 
 Delete an organization
 
@@ -121,7 +121,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Organization**](Organization.md)
+**object**
 
 ### Authorization
 
@@ -136,8 +136,8 @@ No authorization required
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | Success |  -  |
-**403** | Unauthorized |  -  |
 **404** | The specified resource was not found |  -  |
+**500** | The request cannot be fulfilled due to an unexpected server error |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -200,8 +200,8 @@ No authorization required
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | Success |  -  |
-**403** | Unauthorized |  -  |
 **404** | The specified resource was not found |  -  |
+**500** | The request cannot be fulfilled due to an unexpected server error |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -266,8 +266,8 @@ No authorization required
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | Success |  -  |
-**403** | Unauthorized |  -  |
-**404** | The specified resource was not found |  -  |
+**400** | Invalid request |  -  |
+**500** | The request cannot be fulfilled due to an unexpected server error |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 

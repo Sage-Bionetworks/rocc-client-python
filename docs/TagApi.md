@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **create_tag**
-> Tag create_tag(tag_id, tag=tag)
+> TagCreateResponse create_tag(tag_id, tag_create_request=tag_create_request)
 
 Create a tag
 
@@ -37,11 +37,11 @@ with roccclient.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = roccclient.TagApi(api_client)
     tag_id = 'tag_id_example' # str | The ID of the tag that is being created
-tag = roccclient.Tag() # Tag |  (optional)
+tag_create_request = roccclient.TagCreateRequest() # TagCreateRequest |  (optional)
 
     try:
         # Create a tag
-        api_response = api_instance.create_tag(tag_id, tag=tag)
+        api_response = api_instance.create_tag(tag_id, tag_create_request=tag_create_request)
         pprint(api_response)
     except ApiException as e:
         print("Exception when calling TagApi->create_tag: %s\n" % e)
@@ -52,11 +52,11 @@ tag = roccclient.Tag() # Tag |  (optional)
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **tag_id** | **str**| The ID of the tag that is being created | 
- **tag** | [**Tag**](Tag.md)|  | [optional] 
+ **tag_create_request** | [**TagCreateRequest**](TagCreateRequest.md)|  | [optional] 
 
 ### Return type
 
-[**Tag**](Tag.md)
+[**TagCreateResponse**](TagCreateResponse.md)
 
 ### Authorization
 
@@ -70,16 +70,15 @@ No authorization required
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Success |  -  |
+**201** | Success |  -  |
 **400** | Invalid request |  -  |
-**403** | Unauthorized |  -  |
-**404** | The specified resource was not found |  -  |
 **409** | The request conflicts with current state of the target resource |  -  |
+**500** | The request cannot be fulfilled due to an unexpected server error |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **delete_tag**
-> Tag delete_tag(tag_id)
+> object delete_tag(tag_id)
 
 Delete a tag
 
@@ -122,7 +121,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Tag**](Tag.md)
+**object**
 
 ### Authorization
 
@@ -137,8 +136,8 @@ No authorization required
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | Success |  -  |
-**403** | Unauthorized |  -  |
 **404** | The specified resource was not found |  -  |
+**500** | The request cannot be fulfilled due to an unexpected server error |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -201,8 +200,8 @@ No authorization required
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | Success |  -  |
-**403** | Unauthorized |  -  |
 **404** | The specified resource was not found |  -  |
+**500** | The request cannot be fulfilled due to an unexpected server error |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -269,8 +268,8 @@ No authorization required
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | Success |  -  |
-**403** | Unauthorized |  -  |
-**404** | The specified resource was not found |  -  |
+**400** | Invalid request |  -  |
+**500** | The request cannot be fulfilled due to an unexpected server error |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 

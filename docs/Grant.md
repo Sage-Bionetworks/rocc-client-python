@@ -5,7 +5,7 @@ Information about monetary resources for challenge
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **grant_id** | **str** | The ID of the grant | [optional] 
-**name** | **str** | The grant name | [optional] 
+**name** | **str** | The grant name | 
 **description** | **str** | A description of the grant | [optional] 
 **url** | **str** | The URL to the grant | [optional] 
 

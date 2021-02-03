@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **create_challenge**
-> Challenge create_challenge(challenge)
+> ChallengeCreateResponse create_challenge(challenge_create_request)
 
 Add a challenge
 
@@ -36,11 +36,11 @@ configuration = roccclient.Configuration(
 with roccclient.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = roccclient.ChallengeApi(api_client)
-    challenge = roccclient.Challenge() # Challenge | 
+    challenge_create_request = roccclient.ChallengeCreateRequest() # ChallengeCreateRequest | 
 
     try:
         # Add a challenge
-        api_response = api_instance.create_challenge(challenge)
+        api_response = api_instance.create_challenge(challenge_create_request)
         pprint(api_response)
     except ApiException as e:
         print("Exception when calling ChallengeApi->create_challenge: %s\n" % e)
@@ -50,11 +50,11 @@ with roccclient.ApiClient() as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **challenge** | [**Challenge**](Challenge.md)|  | 
+ **challenge_create_request** | [**ChallengeCreateRequest**](ChallengeCreateRequest.md)|  | 
 
 ### Return type
 
-[**Challenge**](Challenge.md)
+[**ChallengeCreateResponse**](ChallengeCreateResponse.md)
 
 ### Authorization
 
@@ -68,16 +68,15 @@ No authorization required
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Success |  -  |
+**201** | Success |  -  |
 **400** | Invalid request |  -  |
-**403** | Unauthorized |  -  |
-**404** | The specified resource was not found |  -  |
 **409** | The request conflicts with current state of the target resource |  -  |
+**500** | The request cannot be fulfilled due to an unexpected server error |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **delete_challenge**
-> Challenge delete_challenge(challenge_id)
+> object delete_challenge(challenge_id)
 
 Delete a challenge
 
@@ -120,7 +119,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Challenge**](Challenge.md)
+**object**
 
 ### Authorization
 
@@ -135,8 +134,8 @@ No authorization required
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | Success |  -  |
-**403** | Unauthorized |  -  |
 **404** | The specified resource was not found |  -  |
+**500** | The request cannot be fulfilled due to an unexpected server error |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -199,8 +198,8 @@ No authorization required
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | Success |  -  |
-**403** | Unauthorized |  -  |
 **404** | The specified resource was not found |  -  |
+**500** | The request cannot be fulfilled due to an unexpected server error |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -268,8 +267,7 @@ No authorization required
 |-------------|-------------|------------------|
 **200** | Success |  -  |
 **400** | Invalid request |  -  |
-**403** | Unauthorized |  -  |
-**404** | The specified resource was not found |  -  |
+**500** | The request cannot be fulfilled due to an unexpected server error |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
