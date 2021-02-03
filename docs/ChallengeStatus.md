@@ -1,6 +1,6 @@
 # ChallengeStatus
 
-The status of challenge
+The status of the challenge
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------

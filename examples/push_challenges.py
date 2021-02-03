@@ -1,5 +1,20 @@
+"""Push Challenge Metadata to Database
+
+Using the ROCC client, this script will add metadata from the DREAM
+Landscape to the ROCC database, either to:
+  * prod: http://10.41.27.32:8080/api/v1
+  *  dev: http://localhost:8080/api/v1 (default)
+
+Assumptions:
+  * DREAM Landscape must be in JSON format. If needed, use the
+    `reformat_csv_to_json.py` script before using this one.
+  * Database is currently empty. If not, it may add duplicate
+    entries that do not require uniqueness, e.g. persons
+"""
+
 from __future__ import print_function
 
+import argparse
 import json
 import re
 import time
@@ -27,7 +42,8 @@ def add_tag(api, tag):
     """
     tag_id = reformat_id(tag.get("tagId"))
     try:
-        api.create_tag(tag_id, tag=roccclient.Tag())
+        api.create_tag(tag_id,
+                       tag_create_request=roccclient.TagCreateRequest())
     except ApiException as err:
         if err.status == 409:
             print(f"Duplicate tag: {tag_id}")
@@ -44,11 +60,14 @@ def add_organization(api, org):
 
     # Use organization's short name for ID; otherwise, full name.
     org_id = reformat_id(org.get("shortName", org.get("name")))
+    org_request = roccclient.OrganizationCreateRequest(
+        name=org.get("name"),
+        short_name=org.get("shortName"),
+        url=org.get("url")
+    )
     try:
-        api.create_organization(
-            org_id,
-            organization=org
-        )
+        api.create_organization(org_id,
+                                organization_create_request=org_request)
     except ApiException as err:
         if err.status == 409:
             print(f"Duplicate organization: {org_id}")
@@ -74,7 +93,7 @@ def add_person(api, person, organizations):
     ]
     person["organizations"] = person_orgs
 
-    person = api.create_person(person=person)
+    person = api.create_person(person_create_request=person)
     return person.person_id
 
 
@@ -91,7 +110,7 @@ def add_challenge(api, challenge, persons):
             for person in challenge.get("organizers")
         ]
         challenge["organizers"] = organizers
-        api.create_challenge(challenge=challenge)
+        api.create_challenge(challenge_create_request=challenge)
 
     except ApiException as err:
         if err.status == 409:
@@ -136,19 +155,26 @@ def populate_db(client, dump):
     challenges = data.get("challenges")
     for challenge in challenges:
         add_challenge(challenge_api, challenge, person_ids)
-        time.sleep(0.05)
+        time.sleep(1)
 
 
 def main():
     """Main function."""
 
-    configuration = roccclient.Configuration(
-        # host="http://10.41.27.32:8080/api/v1"  # prod
-        host="http://localhost:8080/api/v1"  # dev
-    )
-    json_filename = "past_dream_challenges.json"
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--prod",
+                        action="store_true",
+                        help="Push data to the production db if flagged")
+    parser.add_argument("-j", "--json_file",
+                        type=str, default="past_dream_challenges.json",
+                        help="JSON file containing the DREAM Landscape")
+    args = parser.parse_args()
+
+    host = "http://10.41.27.32:8080/api/v1" if args.prod \
+        else "http://localhost:8080/api/v1"
+    configuration = roccclient.Configuration(host=host)
     with roccclient.ApiClient(configuration) as api_client, \
-            open(json_filename) as json_dump:
+            open(args.json_file) as json_dump:
         populate_db(api_client, json_dump)
 
 

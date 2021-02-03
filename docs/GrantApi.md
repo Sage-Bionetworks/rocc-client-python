@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **create_grant**
-> Grant create_grant(grant=grant)
+> GrantCreateResponse create_grant(grant_create_request=grant_create_request)
 
 Create a grant
 
@@ -36,11 +36,11 @@ configuration = roccclient.Configuration(
 with roccclient.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = roccclient.GrantApi(api_client)
-    grant = roccclient.Grant() # Grant |  (optional)
+    grant_create_request = roccclient.GrantCreateRequest() # GrantCreateRequest |  (optional)
 
     try:
         # Create a grant
-        api_response = api_instance.create_grant(grant=grant)
+        api_response = api_instance.create_grant(grant_create_request=grant_create_request)
         pprint(api_response)
     except ApiException as e:
         print("Exception when calling GrantApi->create_grant: %s\n" % e)
@@ -50,11 +50,11 @@ with roccclient.ApiClient() as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **grant** | [**Grant**](Grant.md)|  | [optional] 
+ **grant_create_request** | [**GrantCreateRequest**](GrantCreateRequest.md)|  | [optional] 
 
 ### Return type
 
-[**Grant**](Grant.md)
+[**GrantCreateResponse**](GrantCreateResponse.md)
 
 ### Authorization
 
@@ -68,15 +68,15 @@ No authorization required
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
-**200** | Success |  -  |
-**403** | Unauthorized |  -  |
-**404** | The specified resource was not found |  -  |
+**201** | Success |  -  |
+**400** | Invalid request |  -  |
 **409** | The request conflicts with current state of the target resource |  -  |
+**500** | The request cannot be fulfilled due to an unexpected server error |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **delete_grant**
-> Grant delete_grant(grant_id)
+> object delete_grant(grant_id)
 
 Delete a grant
 
@@ -119,7 +119,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**Grant**](Grant.md)
+**object**
 
 ### Authorization
 
@@ -134,8 +134,8 @@ No authorization required
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | Success |  -  |
-**403** | Unauthorized |  -  |
 **404** | The specified resource was not found |  -  |
+**500** | The request cannot be fulfilled due to an unexpected server error |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -198,8 +198,8 @@ No authorization required
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | Success |  -  |
-**403** | Unauthorized |  -  |
 **404** | The specified resource was not found |  -  |
+**500** | The request cannot be fulfilled due to an unexpected server error |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -264,8 +264,8 @@ No authorization required
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
 **200** | Success |  -  |
-**403** | Unauthorized |  -  |
-**404** | The specified resource was not found |  -  |
+**400** | Invalid request |  -  |
+**500** | The request cannot be fulfilled due to an unexpected server error |  -  |
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
