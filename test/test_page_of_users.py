@@ -39,18 +39,27 @@ class TestPageOfUsers(unittest.TestCase):
             return PageOfUsers(
                 offset = 56, 
                 limit = 56, 
-                links = roccclient.models.response_page_metadata_links.ResponsePageMetadata_links(
+                links = roccclient.models.response_page_metadata_links.ResponsePageMetadataLinks(
                     next = '0', ), 
                 total_results = 56, 
                 users = [
-                    roccclient.models.user.User()
-                    ]
+                    roccclient.models.user.User(
+                        username = 'awesome-user', 
+                        role = 'user', 
+                        first_name = '0', 
+                        last_name = '0', 
+                        email = 'john.smith@example.com', 
+                        organizations = [
+                            'awesome-organization'
+                        ]
+                    )
+                ]
             )
         else :
             return PageOfUsers(
                 offset = 56,
                 limit = 56,
-                links = roccclient.models.response_page_metadata_links.ResponsePageMetadata_links(
+                links = roccclient.models.response_page_metadata_links.ResponsePageMetadataLinks(
                     next = '0', ),
         )
 

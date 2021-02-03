@@ -38,8 +38,17 @@ class TestPageOfUsersAllOf(unittest.TestCase):
         if include_optional :
             return PageOfUsersAllOf(
                 users = [
-                    roccclient.models.user.User()
-                    ]
+                    roccclient.models.user.User(
+                        username = 'awesome-user', 
+                        role = 'user', 
+                        first_name = '0', 
+                        last_name = '0', 
+                        email = 'john.smith@example.com', 
+                        organizations = [
+                            'awesome-organization'
+                        ]
+                    )
+                ]
             )
         else :
             return PageOfUsersAllOf(
