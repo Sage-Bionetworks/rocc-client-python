@@ -6,9 +6,21 @@ updates:
     schedule:
       interval: "monthly"
     target-branch: "develop"
+    reviewers:
+      - "Sage-Bionetworks/rocc-maitainers"
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    target-branch: "develop"
+    reviewers:
+      - "Sage-Bionetworks/rocc-maitainers"
 
   - package-ecosystem: "pip"
     directory: "/"
     schedule:
       interval: "monthly"
     target-branch: "develop"
+    reviewers:
+      - "Sage-Bionetworks/rocc-maitainers"
